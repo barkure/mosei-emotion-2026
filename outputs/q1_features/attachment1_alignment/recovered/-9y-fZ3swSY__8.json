@@ -1,0 +1,356 @@
+{
+  "stable_id": "-9y-fZ3swSY$_$8",
+  "official_text": "That’s a more decent and more polite way to call a lady",
+  "category": "previous_auto_accepted",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "That’s",
+      "normalized_target": "THATS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "That’s",
+        "chosen": "THATS",
+        "dropped": [
+          "’"
+        ]
+      },
+      "candidate_start": 0.26,
+      "candidate_end": 0.44,
+      "start": 0.26,
+      "end": 0.44,
+      "confidence": 0.9732726693153382,
+      "local_confidence": 0.9732726693153382,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8903000950813293,
+      "local_start": 0.26,
+      "local_end": 0.44
+    },
+    {
+      "word_index": 1,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 0.58,
+      "candidate_end": 0.6,
+      "start": 0.58,
+      "end": 0.6,
+      "confidence": 0.796453595161438,
+      "local_confidence": 0.796453595161438,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.796453595161438,
+      "local_start": 0.58,
+      "local_end": 0.6
+    },
+    {
+      "word_index": 2,
+      "word": "more",
+      "normalized_target": "MORE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "more",
+        "chosen": "MORE",
+        "dropped": []
+      },
+      "candidate_start": 0.96,
+      "candidate_end": 1.16,
+      "start": 0.96,
+      "end": 1.16,
+      "confidence": 0.9982892721891403,
+      "local_confidence": 0.9982892721891403,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9939946532249451,
+      "local_start": 0.96,
+      "local_end": 1.16
+    },
+    {
+      "word_index": 3,
+      "word": "decent",
+      "normalized_target": "DECENT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "decent",
+        "chosen": "DECENT",
+        "dropped": []
+      },
+      "candidate_start": 1.36,
+      "candidate_end": 1.8,
+      "start": 1.36,
+      "end": 1.8,
+      "confidence": 0.9709523419539133,
+      "local_confidence": 0.9709523419539133,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8665348887443542,
+      "local_start": 1.36,
+      "local_end": 1.8
+    },
+    {
+      "word_index": 4,
+      "word": "and",
+      "normalized_target": "AND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "and",
+        "chosen": "AND",
+        "dropped": []
+      },
+      "candidate_start": 2.1,
+      "candidate_end": 2.16,
+      "start": 2.1,
+      "end": 2.16,
+      "confidence": 0.9915734529495239,
+      "local_confidence": 0.9915734529495239,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9884235262870789,
+      "local_start": 2.1,
+      "local_end": 2.16
+    },
+    {
+      "word_index": 5,
+      "word": "more",
+      "normalized_target": "MORE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "more",
+        "chosen": "MORE",
+        "dropped": []
+      },
+      "candidate_start": 2.2,
+      "candidate_end": 2.32,
+      "start": 2.2,
+      "end": 2.32,
+      "confidence": 0.9979601353406906,
+      "local_confidence": 0.9979601353406906,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9953805208206177,
+      "local_start": 2.2,
+      "local_end": 2.32
+    },
+    {
+      "word_index": 6,
+      "word": "polite",
+      "normalized_target": "POLITE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "polite",
+        "chosen": "POLITE",
+        "dropped": []
+      },
+      "candidate_start": 2.38,
+      "candidate_end": 2.78,
+      "start": 2.38,
+      "end": 2.78,
+      "confidence": 0.9463376601537069,
+      "local_confidence": 0.9463376601537069,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8444666266441345,
+      "local_start": 2.38,
+      "local_end": 2.78
+    },
+    {
+      "word_index": 7,
+      "word": "way",
+      "normalized_target": "WAY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "way",
+        "chosen": "WAY",
+        "dropped": []
+      },
+      "candidate_start": 2.92,
+      "candidate_end": 3.04,
+      "start": 2.92,
+      "end": 3.04,
+      "confidence": 0.9861475825309753,
+      "local_confidence": 0.9861475825309753,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9596685171127319,
+      "local_start": 2.92,
+      "local_end": 3.04
+    },
+    {
+      "word_index": 8,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 3.18,
+      "candidate_end": 3.28,
+      "start": 3.18,
+      "end": 3.28,
+      "confidence": 0.9995075762271881,
+      "local_confidence": 0.9995075762271881,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9994680285453796,
+      "local_start": 3.18,
+      "local_end": 3.28
+    },
+    {
+      "word_index": 9,
+      "word": "call",
+      "normalized_target": "CALL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "call",
+        "chosen": "CALL",
+        "dropped": []
+      },
+      "candidate_start": 3.34,
+      "candidate_end": 3.6,
+      "start": 3.34,
+      "end": 3.6,
+      "confidence": 0.9920619279146194,
+      "local_confidence": 0.9920619279146194,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9703364968299866,
+      "local_start": 3.34,
+      "local_end": 3.6
+    },
+    {
+      "word_index": 10,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 4.0,
+      "candidate_end": 4.02,
+      "start": 4.0,
+      "end": 4.02,
+      "confidence": 0.9933115839958191,
+      "local_confidence": 0.9933115839958191,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9933115839958191,
+      "local_start": 4.0,
+      "local_end": 4.02
+    },
+    {
+      "word_index": 11,
+      "word": "lady",
+      "normalized_target": "LADY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "lady",
+        "chosen": "LADY",
+        "dropped": []
+      },
+      "candidate_start": 4.08,
+      "candidate_end": 4.4,
+      "start": 4.08,
+      "end": 4.4,
+      "confidence": 0.7504385253996588,
+      "local_confidence": 0.7504385253996588,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.0021687711123377085,
+      "local_start": 4.08,
+      "local_end": 4.4
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "left": 0,
+      "right": 245
+    }
+  ],
+  "greedy_text": "A'AM THAT'S A MORE DECENT AND MORE POLITE WAY TO CALL A LADY AND ",
+  "silence": [
+    {
+      "start": 0.643,
+      "end": 0.9155,
+      "duration": 0.2725
+    },
+    {
+      "start": 1.18281,
+      "end": 1.36306,
+      "duration": 0.18025
+    },
+    {
+      "start": 3.66856,
+      "end": 3.99562,
+      "duration": 0.327063
+    },
+    {
+      "start": 4.40137,
+      "end": 4.73144,
+      "duration": 0.330062
+    }
+  ],
+  "fingerprint": "4a1713d7856b5caa7a0143efed05769d45adc733e27b63668c520bad5e5432a21b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983fdbf3dfda1a7ff3c2e188cc037511f9a9c5af6a30b292fa224b3de2bbebc4cd7a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [],
+  "source_candidate_sha256": "4a1713d7856b5caa7a0143efed05769d45adc733e27b63668c520bad5e5432a2",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "fdbf3dfda1a7ff3c2e188cc037511f9a9c5af6a30b292fa224b3de2bbebc4cd7",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

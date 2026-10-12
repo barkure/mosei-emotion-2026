@@ -1,0 +1,460 @@
+{
+  "stable_id": "-egA8-b7-3M$_$17",
+  "official_text": "As you have more experience, you have more times exhibiting, you get to know more people.",
+  "category": "previous_auto_accepted",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "As",
+      "normalized_target": "AS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "As",
+        "chosen": "AS",
+        "dropped": []
+      },
+      "candidate_start": 0.62,
+      "candidate_end": 0.7,
+      "start": 0.62,
+      "end": 0.7,
+      "confidence": 0.9915685653686523,
+      "local_confidence": 0.9915685653686523,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9831435680389404,
+      "local_start": 0.62,
+      "local_end": 0.7
+    },
+    {
+      "word_index": 1,
+      "word": "you",
+      "normalized_target": "YOU",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "you",
+        "chosen": "YOU",
+        "dropped": []
+      },
+      "candidate_start": 0.76,
+      "candidate_end": 0.86,
+      "start": 0.76,
+      "end": 0.86,
+      "confidence": 0.9990554054578146,
+      "local_confidence": 0.9990554054578146,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9974918365478516,
+      "local_start": 0.76,
+      "local_end": 0.86
+    },
+    {
+      "word_index": 2,
+      "word": "have",
+      "normalized_target": "HAVE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "have",
+        "chosen": "HAVE",
+        "dropped": []
+      },
+      "candidate_start": 0.96,
+      "candidate_end": 1.1,
+      "start": 0.96,
+      "end": 1.1,
+      "confidence": 0.9990213066339493,
+      "local_confidence": 0.9990213066339493,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.996852457523346,
+      "local_start": 0.96,
+      "local_end": 1.1
+    },
+    {
+      "word_index": 3,
+      "word": "more",
+      "normalized_target": "MORE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "more",
+        "chosen": "MORE",
+        "dropped": []
+      },
+      "candidate_start": 1.18,
+      "candidate_end": 1.36,
+      "start": 1.18,
+      "end": 1.36,
+      "confidence": 0.9376052469015121,
+      "local_confidence": 0.9376052469015121,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.750776469707489,
+      "local_start": 1.18,
+      "local_end": 1.36
+    },
+    {
+      "word_index": 4,
+      "word": "experience,",
+      "normalized_target": "EXPERIENCE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "experience,",
+        "chosen": "EXPERIENCE",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": 1.44,
+      "candidate_end": 2.06,
+      "start": 1.44,
+      "end": 2.06,
+      "confidence": 0.981232351064682,
+      "local_confidence": 0.981232351064682,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8135746717453003,
+      "local_start": 1.44,
+      "local_end": 2.06
+    },
+    {
+      "word_index": 5,
+      "word": "you",
+      "normalized_target": "YOU",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "you",
+        "chosen": "YOU",
+        "dropped": []
+      },
+      "candidate_start": 3.22,
+      "candidate_end": 3.3,
+      "start": 3.22,
+      "end": 3.3,
+      "confidence": 0.9985254605611166,
+      "local_confidence": 0.9985254605611166,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9958854913711548,
+      "local_start": 3.22,
+      "local_end": 3.3
+    },
+    {
+      "word_index": 6,
+      "word": "have",
+      "normalized_target": "HAVE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "have",
+        "chosen": "HAVE",
+        "dropped": []
+      },
+      "candidate_start": 3.4,
+      "candidate_end": 3.52,
+      "start": 3.4,
+      "end": 3.52,
+      "confidence": 0.9386297017335892,
+      "local_confidence": 0.9386297017335892,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7553489208221436,
+      "local_start": 3.4,
+      "local_end": 3.52
+    },
+    {
+      "word_index": 7,
+      "word": "more",
+      "normalized_target": "MORE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "more",
+        "chosen": "MORE",
+        "dropped": []
+      },
+      "candidate_start": 3.58,
+      "candidate_end": 3.76,
+      "start": 3.58,
+      "end": 3.76,
+      "confidence": 0.9906672686338425,
+      "local_confidence": 0.9906672686338425,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9779662489891052,
+      "local_start": 3.58,
+      "local_end": 3.76
+    },
+    {
+      "word_index": 8,
+      "word": "times",
+      "normalized_target": "TIMES",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "times",
+        "chosen": "TIMES",
+        "dropped": []
+      },
+      "candidate_start": 3.84,
+      "candidate_end": 4.18,
+      "start": 3.84,
+      "end": 4.18,
+      "confidence": 0.9971389174461365,
+      "local_confidence": 0.9971389174461365,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9873222708702087,
+      "local_start": 3.84,
+      "local_end": 4.18
+    },
+    {
+      "word_index": 9,
+      "word": "exhibiting,",
+      "normalized_target": "EXHIBITING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "exhibiting,",
+        "chosen": "EXHIBITING",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": 4.3,
+      "candidate_end": 4.84,
+      "start": 4.3,
+      "end": 4.84,
+      "confidence": 0.9660496592521668,
+      "local_confidence": 0.9660496592521668,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7835584282875061,
+      "local_start": 4.3,
+      "local_end": 4.84
+    },
+    {
+      "word_index": 10,
+      "word": "you",
+      "normalized_target": "YOU",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "you",
+        "chosen": "YOU",
+        "dropped": []
+      },
+      "candidate_start": 5.24,
+      "candidate_end": 5.32,
+      "start": 5.24,
+      "end": 5.32,
+      "confidence": 0.9985658526420593,
+      "local_confidence": 0.9985658526420593,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9958778619766235,
+      "local_start": 5.24,
+      "local_end": 5.32
+    },
+    {
+      "word_index": 11,
+      "word": "get",
+      "normalized_target": "GET",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "get",
+        "chosen": "GET",
+        "dropped": []
+      },
+      "candidate_start": 5.4,
+      "candidate_end": 5.52,
+      "start": 5.4,
+      "end": 5.52,
+      "confidence": 0.9992198944091797,
+      "local_confidence": 0.9992198944091797,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9986056685447693,
+      "local_start": 5.4,
+      "local_end": 5.52
+    },
+    {
+      "word_index": 12,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 5.58,
+      "candidate_end": 5.64,
+      "start": 5.58,
+      "end": 5.64,
+      "confidence": 0.9226262271404266,
+      "local_confidence": 0.9226262271404266,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8494051694869995,
+      "local_start": 5.58,
+      "local_end": 5.64
+    },
+    {
+      "word_index": 13,
+      "word": "know",
+      "normalized_target": "KNOW",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "know",
+        "chosen": "KNOW",
+        "dropped": []
+      },
+      "candidate_start": 5.7,
+      "candidate_end": 5.86,
+      "start": 5.7,
+      "end": 5.86,
+      "confidence": 0.693955659866333,
+      "local_confidence": 0.693955659866333,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.32310235500335693,
+      "local_start": 5.7,
+      "local_end": 5.86
+    },
+    {
+      "word_index": 14,
+      "word": "more",
+      "normalized_target": "MORE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "more",
+        "chosen": "MORE",
+        "dropped": []
+      },
+      "candidate_start": 5.94,
+      "candidate_end": 6.1,
+      "start": 5.94,
+      "end": 6.1,
+      "confidence": 0.9999783784151077,
+      "local_confidence": 0.9999783784151077,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9999472498893738,
+      "local_start": 5.94,
+      "local_end": 6.1
+    },
+    {
+      "word_index": 15,
+      "word": "people.",
+      "normalized_target": "PEOPLE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "people.",
+        "chosen": "PEOPLE",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 6.18,
+      "candidate_end": 6.5,
+      "start": 6.18,
+      "end": 6.5,
+      "confidence": 0.9996323883533478,
+      "local_confidence": 0.9996323883533478,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9981475472450256,
+      "local_start": 6.18,
+      "local_end": 6.5
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "left": 0,
+      "right": 354
+    }
+  ],
+  "greedy_text": "AS YOU HAVE MORE EXPERIENCE YOU HAVE MORE TIMES EXHIBITING YOU GET TO NO MORE PEOPLE ",
+  "silence": [
+    {
+      "start": 0.0,
+      "end": 0.522875,
+      "duration": 0.522875
+    },
+    {
+      "start": 2.18694,
+      "end": 3.24213,
+      "duration": 1.05519
+    },
+    {
+      "start": 4.98731,
+      "end": 5.26756,
+      "duration": 0.28025
+    },
+    {
+      "start": 6.56131,
+      "end": 7.09094,
+      "duration": 0.529625
+    }
+  ],
+  "fingerprint": "edd6a914f673b4bdf72c56608f3f29c3b1e4f20bd2bed897b2287f93c70d4e771b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec9837d3e1a6a66396a503ddd5e763a53bed620f3b6547a319fe26c452257476ab6e8a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [],
+  "source_candidate_sha256": "edd6a914f673b4bdf72c56608f3f29c3b1e4f20bd2bed897b2287f93c70d4e77",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "7d3e1a6a66396a503ddd5e763a53bed620f3b6547a319fe26c452257476ab6e8",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

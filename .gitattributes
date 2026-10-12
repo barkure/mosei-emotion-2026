@@ -1,0 +1,16 @@
+# 保留原始字节，避免换行转换改变结果文件和来源校验值。
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Windows 文本可使用 CRLF；检查实际行尾空格，不把 CR 误报为空白。
+
+# 二进制材料不显示文本差异。
+*.pdf binary
+*.docx binary
+*.npz binary
+*.npy binary
+*.pt binary
+*.pkl binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.TTF binary

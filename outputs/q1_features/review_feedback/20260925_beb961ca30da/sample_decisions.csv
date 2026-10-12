@@ -1,0 +1,77 @@
+﻿stable_id,sample_code,original_selection,review_scope,review_items,completed_items,verdict,next_action,reviewed_word_indices,notes,precise_boundaries_annotated
+-MeTTeMJBNc$_$0,S01,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[0],,False
+-MeTTeMJBNc$_$7,S02,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[25],,False
+-THoVjtIkeU$_$6,S03,local_low_confidence,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,locally_realign_reviewed_words,"[2, 3, 19]",,False
+-UUCSKoHeMA$_$0,S04,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[0],,False
+-UuX1xuaiiE$_$0,S05,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[0],,False
+-a55Q6RWvTA$_$3,S06,local_low_confidence,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,locally_realign_reviewed_words,"[1, 55, 64]",,False
+-dxfTGcXJoc$_$1,S07,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[22],,False
+-dxfTGcXJoc$_$6,S08,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[5],,False
+-egA8-b7-3M$_$26,S09,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[13],,False
+-lzEya4AM_4$_$5,S10,local_low_confidence,selected_words_content_and_obvious_offset,2,2,reviewed_words_content_consistent,locally_realign_reviewed_words,"[4, 18]",,False
+-lzEya4AM_4$_$6,S11,local_low_confidence,selected_words_content_and_obvious_offset,2,2,reviewed_words_content_consistent,locally_realign_reviewed_words,"[5, 24]","R016: 音视频是or poison is some type of petroleum 开头的 | R017: 音视频是nausea, as as the product burned on 开头的",False
+-s9qJ7ATP7w$_$5,S12,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[0],R018: 音视频中以 so we have i have...开头,False
+-t217m2on-s$_$2,S13,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[0],,False
+-tANM6ETl_M$_$3,S14,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[17],R020: never 听的不完整,False
+-tPCytz4rww$_$16,S15,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[7],,False
+-wny0OAz3g8$_$9,S16,local_low_confidence,selected_words_content_and_obvious_offset,1,1,reviewed_words_content_consistent,locally_realign_reviewed_words,[0],,False
+-dxfTGcXJoc$_$0,S17,global_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-s9qJ7ATP7w$_$6,S18,global_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-tPCytz4rww$_$10,S19,global_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-tPCytz4rww$_$18,S20,global_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-uywlfIYOS8$_$4,S21,global_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-wny0OAz3g8$_$0,S22,global_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-3g5yACwYnA$_$13,S23,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-3g5yACwYnA$_$2,S24,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-3g5yACwYnA$_$3,S25,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-3g5yACwYnA$_$9,S26,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-571d8cVauQ$_$0,S27,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-9y-fZ3swSY$_$0,S28,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-9y-fZ3swSY$_$4,S29,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-HeZS2-Prhc$_$2,S30,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-HwX2H8Z4hY$_$2,S31,mixed_low_confidence,whole_clip_content,1,1,部分内容一致，请看备注,recover_confirmed_local_content,[],R037: 音视频能听到Look at the record，前面的我不知道是什么,False
+-HwX2H8Z4hY$_$9,S32,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-I_e4mIh0yE$_$3,S33,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-RfYyzHpjk4$_$2,S34,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-UuX1xuaiiE$_$3,S35,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-UuX1xuaiiE$_$6,S36,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-aqamKhZ1Ec$_$0,S37,mixed_low_confidence,whole_clip_content,1,1,部分内容一致，请看备注,recover_confirmed_local_content,[],R043: tribal warfare in Kenya...... following a disputed election.中间好像还多了几个词,False
+-dxfTGcXJoc$_$2,S38,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-egA8-b7-3M$_$1,S39,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-hnBHBN8p5A$_$6,S40,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-hnBHBN8p5A$_$7,S41,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-iRBcNs9oI8$_$3,S42,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-iRBcNs9oI8$_$6,S43,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-iRBcNs9oI8$_$7,S44,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-iRBcNs9oI8$_$8,S45,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-iRBcNs9oI8$_$9,S46,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],R052: 能听到 Power 这个单词,False
+-mJ2ud6oKI8$_$6,S47,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-mJ2ud6oKI8$_$9,S48,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-qDkUB0GgYY$_$6,S49,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-ri04Z7vwnc$_$5,S50,mixed_low_confidence,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-s9qJ7ATP7w$_$0,S51,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-s9qJ7ATP7w$_$1,S52,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-s9qJ7ATP7w$_$4,S53,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-s9qJ7ATP7w$_$7,S54,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-s9qJ7ATP7w$_$8,S55,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-tPCytz4rww$_$12,S56,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-vxjVxOeScU$_$4,S57,mixed_low_confidence,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-yRb-Jum7EQ$_$5,S58,mixed_low_confidence,whole_clip_content,1,1,其他语言,retain_official_text_no_english_acoustic_alignment,[],R064: 希伯来语,False
+-yRb-Jum7EQ$_$6,S59,mixed_low_confidence,whole_clip_content,1,1,其他语言,retain_official_text_no_english_acoustic_alignment,[],R065: 希伯来语,False
+-AUZQgSxyPQ$_$2,S60,very_low_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-NFrJFQijFE$_$1,S61,very_low_similarity,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],R067: 是一段纯音乐风景纪录片视频,False
+-NFrJFQijFE$_$2,S62,very_low_similarity,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],R068: 是个纪录片好像,False
+-THoVjtIkeU$_$12,S63,very_low_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-mJ2ud6oKI8$_$1,S64,very_low_similarity,whole_clip_content,1,1,静音或未听到语音,retain_audio_source_mark_no_audible_speech,[],,False
+-mJ2ud6oKI8$_$2,S65,very_low_similarity,whole_clip_content,1,1,静音或未听到语音,retain_audio_source_mark_no_audible_speech,[],,False
+-mJ2ud6oKI8$_$8,S66,very_low_similarity,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],,False
+-ri04Z7vwnc$_$0,S67,very_low_similarity,whole_clip_content,1,1,静音或未听到语音,retain_audio_source_mark_no_audible_speech,[],R073: 只有纯音乐,False
+-ri04Z7vwnc$_$2,S68,very_low_similarity,whole_clip_content,1,1,实际内容与文本不一致,retain_native_features_text_relation_mismatch,[],R074: 最后出现了几个单词的语言，但和文本无关,False
+-t217m2on-s$_$7,S69,very_low_similarity,whole_clip_content,1,1,内容一致，未发现明显问题,realign_content_confirmed,[],,False
+-yRb-Jum7EQ$_$1,S70,very_low_similarity,whole_clip_content,1,1,其他语言,retain_official_text_no_english_acoustic_alignment,[],R076: 希伯来语,False
+-HwX2H8Z4hY$_$6,S71,accepted_control,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,retain_accepted_times_with_spot_check,"[0, 3, 6]",,False
+-RfYyzHpjk4$_$11,S72,accepted_control,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,retain_accepted_times_with_spot_check,"[0, 8, 16]",,False
+-wMB_hJL-3o$_$7,S73,accepted_control,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,retain_accepted_times_with_spot_check,"[0, 11, 21]",,False
+-wny0OAz3g8$_$5,S74,accepted_control,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,retain_accepted_times_with_spot_check,"[0, 10, 19]",,False
+-3nNcZdcdvU$_$5,S75,accepted_control,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,retain_accepted_times_with_spot_check,"[0, 9, 17]",,False
+-571d8cVauQ$_$5,S76,accepted_control,selected_words_content_and_obvious_offset,3,3,reviewed_words_content_consistent,retain_accepted_times_with_spot_check,"[0, 21, 42]",,False

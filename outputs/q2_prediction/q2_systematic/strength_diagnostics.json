@@ -1,0 +1,65 @@
+{
+  "source": "attachment2 valid; frozen gate_recon ensemble; sign-projected strength",
+  "n": 728,
+  "mae": 0.576868983364946,
+  "pearson": 0.6462887721410303,
+  "intervals": [
+    {
+      "true_strength_interval": "[−3, −2)",
+      "n": 18,
+      "mae": 1.627466693934467,
+      "median_residual": 1.5812585353851318,
+      "residual_q25": 1.239060789346695,
+      "residual_q75": 1.9979303926229477
+    },
+    {
+      "true_strength_interval": "[−2, −1)",
+      "n": 67,
+      "mae": 0.8784333896728198,
+      "median_residual": 0.854900598526001,
+      "residual_q25": 0.3618631362915039,
+      "residual_q75": 1.3311955586541444
+    },
+    {
+      "true_strength_interval": "[−1, 0)",
+      "n": 121,
+      "mae": 0.5274419520468435,
+      "median_residual": 0.3333333432674408,
+      "residual_q25": -0.013033688068389893,
+      "residual_q75": 0.6666666865348816
+    },
+    {
+      "true_strength_interval": "0",
+      "n": 184,
+      "mae": 0.30700724800079593,
+      "median_residual": 0.0,
+      "residual_q25": 0.0,
+      "residual_q75": 0.42671630531549454
+    },
+    {
+      "true_strength_interval": "(0, 1]",
+      "n": 224,
+      "mae": 0.44849703996334916,
+      "median_residual": -0.2239876687526703,
+      "residual_q25": -0.483917273581028,
+      "residual_q75": 0.13738389313220978
+    },
+    {
+      "true_strength_interval": "(1, 2]",
+      "n": 96,
+      "mae": 0.8534199188676818,
+      "median_residual": -0.68718621134758,
+      "residual_q25": -1.1305421143770218,
+      "residual_q75": -0.43144239485263824
+    },
+    {
+      "true_strength_interval": "(2, 3]",
+      "n": 18,
+      "mae": 1.6172068498821721,
+      "median_residual": -1.4699978828430176,
+      "residual_q25": -2.1501337960362434,
+      "residual_q75": -1.1480940282344818
+    }
+  ],
+  "interval_mark": "dot = median; thick segment = interquartile range, not confidence interval"
+}

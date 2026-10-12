@@ -1,0 +1,365 @@
+{
+  "stable_id": "-t217m2on-s$_$2",
+  "official_text": "But a good thing to do is yawning, chewing gum is effective.",
+  "category": "human_flagged_words_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "But",
+      "normalized_target": "BUT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "But",
+        "chosen": "BUT",
+        "dropped": []
+      },
+      "candidate_start": 0.52,
+      "candidate_end": 0.7,
+      "start": null,
+      "end": null,
+      "confidence": 0.3209243483919029,
+      "local_confidence": 0.3209243483919029,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.001531532616354525,
+      "local_start": 0.52,
+      "local_end": 0.7
+    },
+    {
+      "word_index": 1,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 0.92,
+      "candidate_end": 0.94,
+      "start": 0.92,
+      "end": 0.94,
+      "confidence": 0.9659922122955322,
+      "local_confidence": 0.9659922122955322,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9659922122955322,
+      "local_start": 0.92,
+      "local_end": 0.94
+    },
+    {
+      "word_index": 2,
+      "word": "good",
+      "normalized_target": "GOOD",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "good",
+        "chosen": "GOOD",
+        "dropped": []
+      },
+      "candidate_start": 1.44,
+      "candidate_end": 1.58,
+      "start": 1.44,
+      "end": 1.58,
+      "confidence": 0.963080883026123,
+      "local_confidence": 0.963080883026123,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8553389310836792,
+      "local_start": 1.44,
+      "local_end": 1.58
+    },
+    {
+      "word_index": 3,
+      "word": "thing",
+      "normalized_target": "THING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "thing",
+        "chosen": "THING",
+        "dropped": []
+      },
+      "candidate_start": 1.62,
+      "candidate_end": 1.74,
+      "start": 1.62,
+      "end": 1.74,
+      "confidence": 0.9899804711341857,
+      "local_confidence": 0.9899804711341857,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9574065804481506,
+      "local_start": 1.62,
+      "local_end": 1.74
+    },
+    {
+      "word_index": 4,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 1.76,
+      "candidate_end": 1.82,
+      "start": 1.76,
+      "end": 1.82,
+      "confidence": 0.7082121968269348,
+      "local_confidence": 0.7082121968269348,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.5230016112327576,
+      "local_start": 1.76,
+      "local_end": 1.82
+    },
+    {
+      "word_index": 5,
+      "word": "do",
+      "normalized_target": "DO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "do",
+        "chosen": "DO",
+        "dropped": []
+      },
+      "candidate_start": 1.86,
+      "candidate_end": 1.92,
+      "start": 1.86,
+      "end": 1.92,
+      "confidence": 0.9556447565555573,
+      "local_confidence": 0.9556447565555573,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9235998392105103,
+      "local_start": 1.86,
+      "local_end": 1.92
+    },
+    {
+      "word_index": 6,
+      "word": "is",
+      "normalized_target": "IS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "is",
+        "chosen": "IS",
+        "dropped": []
+      },
+      "candidate_start": 2.0,
+      "candidate_end": 2.06,
+      "start": 2.0,
+      "end": 2.06,
+      "confidence": 0.8636622130870819,
+      "local_confidence": 0.8636622130870819,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8198061585426331,
+      "local_start": 2.0,
+      "local_end": 2.06
+    },
+    {
+      "word_index": 7,
+      "word": "yawning,",
+      "normalized_target": "YAWNING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "yawning,",
+        "chosen": "YAWNING",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": 2.12,
+      "candidate_end": 2.56,
+      "start": 2.12,
+      "end": 2.56,
+      "confidence": 0.9329877666064671,
+      "local_confidence": 0.9329877666064671,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.5831778049468994,
+      "local_start": 2.12,
+      "local_end": 2.56
+    },
+    {
+      "word_index": 8,
+      "word": "chewing",
+      "normalized_target": "CHEWING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "chewing",
+        "chosen": "CHEWING",
+        "dropped": []
+      },
+      "candidate_start": 3.58,
+      "candidate_end": 3.9,
+      "start": 3.58,
+      "end": 3.9,
+      "confidence": 0.9925205792699542,
+      "local_confidence": 0.9925205792699542,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9581943154335022,
+      "local_start": 3.58,
+      "local_end": 3.9
+    },
+    {
+      "word_index": 9,
+      "word": "gum",
+      "normalized_target": "GUM",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "gum",
+        "chosen": "GUM",
+        "dropped": []
+      },
+      "candidate_start": 4.0,
+      "candidate_end": 4.18,
+      "start": 4.0,
+      "end": 4.18,
+      "confidence": 0.9599379499753317,
+      "local_confidence": 0.9599379499753317,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9014294147491455,
+      "local_start": 4.0,
+      "local_end": 4.18
+    },
+    {
+      "word_index": 10,
+      "word": "is",
+      "normalized_target": "IS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "is",
+        "chosen": "IS",
+        "dropped": []
+      },
+      "candidate_start": 4.3,
+      "candidate_end": 4.4,
+      "start": 4.3,
+      "end": 4.4,
+      "confidence": 0.9734079539775848,
+      "local_confidence": 0.9734079539775848,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9483000040054321,
+      "local_start": 4.3,
+      "local_end": 4.4
+    },
+    {
+      "word_index": 11,
+      "word": "effective.",
+      "normalized_target": "EFFECTIVE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "effective.",
+        "chosen": "EFFECTIVE",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 4.48,
+      "candidate_end": 5.06,
+      "start": 4.48,
+      "end": 5.06,
+      "confidence": 0.8824156373480542,
+      "local_confidence": 0.8824156373480542,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.0019287315662950277,
+      "local_start": 4.48,
+      "local_end": 5.06
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "left": 0,
+      "right": 281
+    }
+  ],
+  "greedy_text": "WHAT A A GOOD THING TO DO IS YAWNING A CHEWING GUM IS EFFECTIVE ",
+  "silence": [
+    {
+      "start": 0.0,
+      "end": 0.551188,
+      "duration": 0.551188
+    },
+    {
+      "start": 1.06956,
+      "end": 1.3065,
+      "duration": 0.236937
+    },
+    {
+      "start": 2.5925,
+      "end": 3.09644,
+      "duration": 0.503938
+    },
+    {
+      "start": 4.46431,
+      "end": 4.61763,
+      "duration": 0.153312
+    },
+    {
+      "start": 5.00019,
+      "end": 5.63019,
+      "duration": 0.63
+    }
+  ],
+  "fingerprint": "83f0fd871ea867250d4c8aeb3a7d047dd3a1f1d56e377dfa71b4b8cb95847d4f1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983928a116703b7655bc1d1e611270a15122cfdc84d2c07c778baccd72adb2ebccaa69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R019"
+  ],
+  "source_candidate_sha256": "83f0fd871ea867250d4c8aeb3a7d047dd3a1f1d56e377dfa71b4b8cb95847d4f",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "928a116703b7655bc1d1e611270a15122cfdc84d2c07c778baccd72adb2ebcca",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

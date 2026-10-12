@@ -1,0 +1,407 @@
+{
+  "stable_id": "-aqamKhZ1Ec$_$0",
+  "official_text": "In 2008, there were very serious tribal warfare in Kenya following a disputed election.",
+  "category": "human_partial_content",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "In",
+      "normalized_target": "IN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "In",
+        "chosen": "IN",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "outside_human_confirmed_phrase",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 1,
+      "word": "2008,",
+      "normalized_target": "TWO THOUSAND EIGHT",
+      "normalization": {
+        "kind": "number_reading",
+        "original": "2008,",
+        "chosen": "two thousand eight",
+        "alternatives": [
+          "two thousand eight",
+          "two thousand and eight"
+        ]
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "outside_human_confirmed_phrase",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 2,
+      "word": "there",
+      "normalized_target": "THERE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "there",
+        "chosen": "THERE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "outside_human_confirmed_phrase",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 3,
+      "word": "were",
+      "normalized_target": "WERE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "were",
+        "chosen": "WERE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "outside_human_confirmed_phrase",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 4,
+      "word": "very",
+      "normalized_target": "VERY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "very",
+        "chosen": "VERY",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "outside_human_confirmed_phrase",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 5,
+      "word": "serious",
+      "normalized_target": "SERIOUS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "serious",
+        "chosen": "SERIOUS",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "outside_human_confirmed_phrase",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 6,
+      "word": "tribal",
+      "normalized_target": "TRIBAL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "tribal",
+        "chosen": "TRIBAL",
+        "dropped": []
+      },
+      "candidate_start": 4.16,
+      "candidate_end": 4.52,
+      "start": 4.16,
+      "end": 4.52,
+      "confidence": 0.7946873605251312,
+      "local_confidence": 0.7946873605251312,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.34026527404785156,
+      "local_start": 4.16,
+      "local_end": 4.52
+    },
+    {
+      "word_index": 7,
+      "word": "warfare",
+      "normalized_target": "WARFARE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "warfare",
+        "chosen": "WARFARE",
+        "dropped": []
+      },
+      "candidate_start": 4.72,
+      "candidate_end": 5.22,
+      "start": 4.72,
+      "end": 5.22,
+      "confidence": 0.9317978535379682,
+      "local_confidence": 0.9317978535379682,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7134491205215454,
+      "local_start": 4.72,
+      "local_end": 5.22
+    },
+    {
+      "word_index": 8,
+      "word": "in",
+      "normalized_target": "IN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "in",
+        "chosen": "IN",
+        "dropped": []
+      },
+      "candidate_start": 5.44,
+      "candidate_end": 5.48,
+      "start": 5.44,
+      "end": 5.48,
+      "confidence": 0.9198185205459595,
+      "local_confidence": 0.9198185205459595,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9074627757072449,
+      "local_start": 5.44,
+      "local_end": 5.48
+    },
+    {
+      "word_index": 9,
+      "word": "Kenya",
+      "normalized_target": "KENYA",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "Kenya",
+        "chosen": "KENYA",
+        "dropped": []
+      },
+      "candidate_start": 5.96,
+      "candidate_end": 6.26,
+      "start": null,
+      "end": null,
+      "confidence": 0.40411380380392076,
+      "local_confidence": 0.40411380380392076,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.03253936767578125,
+      "local_start": 5.96,
+      "local_end": 6.26
+    },
+    {
+      "word_index": 10,
+      "word": "following",
+      "normalized_target": "FOLLOWING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "following",
+        "chosen": "FOLLOWING",
+        "dropped": []
+      },
+      "candidate_start": 8.98,
+      "candidate_end": 9.34,
+      "start": 8.98,
+      "end": 9.34,
+      "confidence": 0.9901239739523994,
+      "local_confidence": 0.9901239739523994,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9330947399139404,
+      "local_start": 8.98,
+      "local_end": 9.34
+    },
+    {
+      "word_index": 11,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 9.4,
+      "candidate_end": 9.42,
+      "start": 9.4,
+      "end": 9.42,
+      "confidence": 0.8669742941856384,
+      "local_confidence": 0.8669742941856384,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8669742941856384,
+      "local_start": 9.4,
+      "local_end": 9.42
+    },
+    {
+      "word_index": 12,
+      "word": "disputed",
+      "normalized_target": "DISPUTED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "disputed",
+        "chosen": "DISPUTED",
+        "dropped": []
+      },
+      "candidate_start": 9.48,
+      "candidate_end": 9.94,
+      "start": 9.48,
+      "end": 9.94,
+      "confidence": 0.9552678018808365,
+      "local_confidence": 0.9552678018808365,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7721192836761475,
+      "local_start": 9.48,
+      "local_end": 9.94
+    },
+    {
+      "word_index": 13,
+      "word": "election.",
+      "normalized_target": "ELECTION",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "election.",
+        "chosen": "ELECTION",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 10.02,
+      "candidate_end": 10.4,
+      "start": 10.02,
+      "end": 10.4,
+      "confidence": 0.9572231099009514,
+      "local_confidence": 0.9572231099009514,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.763323187828064,
+      "local_start": 10.02,
+      "local_end": 10.4
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "left": 200,
+      "right": 323,
+      "phrase_locator_similarity": 0.8695652173913043,
+      "matched_asr": "TRIBAL WARFARE IN ANYON"
+    },
+    {
+      "indices": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "left": 441,
+      "right": 529,
+      "phrase_locator_similarity": 0.9830508474576272,
+      "matched_asr": "FOLLOWING AT DISPUTED ELECTION"
+    }
+  ],
+  "greedy_text": "TWO THOUSAND AND OF EIHT THERE WERE VERY SERIOUS TRIBAL WARFARE IN ANYON AND AND EVEN AS THE TF FOLLOWING AT DISPUTED ELECTION AND EVEN",
+  "silence": [
+    {
+      "start": 1.6755,
+      "end": 1.95594,
+      "duration": 0.280438
+    },
+    {
+      "start": 5.19994,
+      "end": 5.39931,
+      "duration": 0.199375
+    },
+    {
+      "start": 5.575,
+      "end": 5.9095,
+      "duration": 0.3345
+    },
+    {
+      "start": 6.30412,
+      "end": 6.57706,
+      "duration": 0.272937
+    },
+    {
+      "start": 6.68025,
+      "end": 6.92638,
+      "duration": 0.246125
+    },
+    {
+      "start": 8.72575,
+      "end": 8.97819,
+      "duration": 0.252437
+    }
+  ],
+  "fingerprint": "e013b69088b09d442e3ae6a18a2f2d91c8bda4c1a35bdc461a80a06ff4391ff01b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983764c8ec5b30369eb80a3ecc34dfee7b2074c7a3485570bdc2c9646fd26a493cda69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R043"
+  ],
+  "source_candidate_sha256": "e013b69088b09d442e3ae6a18a2f2d91c8bda4c1a35bdc461a80a06ff4391ff0",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "764c8ec5b30369eb80a3ecc34dfee7b2074c7a3485570bdc2c9646fd26a493cd",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

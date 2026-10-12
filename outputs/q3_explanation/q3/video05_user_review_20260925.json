@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-25",
+  "source": "用户对上一轮明确检查范围的反馈",
+  "user_feedback": "你让我检查的 05 也没问题。",
+  "sample_id": "05",
+  "text": "Hi, my name",
+  "candidate_interval_seconds": [
+    1.26,
+    2.24
+  ],
+  "frame_seconds": 1.733333,
+  "status": "user_reviewed_content_and_nearby_frame",
+  "scope": "话语候选区间与邻近画面无明显问题",
+  "feature_to_frame_mapping": "approximate_cross_modal_mapping; no independent exact mapping verification",
+  "followup_reviews": [
+    {
+      "date": "2026-09-25",
+      "user_feedback": "人物非常清楚，没有切镜头，音频完全正确。",
+      "review_scope": {
+        "sample_id": "05",
+        "candidate_interval_seconds": [
+          1.26,
+          2.24
+        ],
+        "frame_seconds": 1.733333,
+        "target_text": "Hi, my name"
+      },
+      "findings": {
+        "person_clearly_visible": true,
+        "no_shot_change": true,
+        "target_audio_confirmed": true
+      },
+      "status": "user_reviewed_content_and_nearby_frame",
+      "feature_to_frame_mapping": "not_verified_by_this_review"
+    }
+  ]
+}

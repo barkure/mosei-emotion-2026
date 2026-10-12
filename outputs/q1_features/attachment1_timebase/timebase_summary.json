@@ -1,0 +1,70 @@
+{
+  "purpose": "附件 1 全部 100 条视频的解码帧级音画时间基准核验",
+  "tool_versions": {
+    "ffprobe": "ffprobe version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2007-2021 the FFmpeg developers",
+    "ffmpeg": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers"
+  },
+  "scope": "只做解码帧级核验：字段完整性、帧时间单调性、音频帧时间与累计样本时间的残差、音画起点/终点偏移，以及临时 16 kHz 解码的样本数与时长。不读取附件 2—4，不训练模型，不做词级对齐或情感特征提取。",
+  "verified_definition": "verified 仅指上述解码帧级检查全部通过；**不宣称**重采样后的样本级绝对延迟已标定。",
+  "tolerances": {
+    "frame_time_tolerance_seconds": 2e-06,
+    "wav16k_tolerance_seconds": 6.45e-05,
+    "audio_frame_seconds": 0.02322,
+    "note": "音频帧时间残差容差 = ffprobe 时间戳的 6 位小数分辨率；16 kHz 时长容差 = 1 个样本 + 该分辨率"
+  },
+  "counts": {
+    "n_samples": 100,
+    "n_verified": 100,
+    "n_failed": 0,
+    "n_with_anomalies": 96,
+    "total_video_frames": 23241,
+    "total_audio_frames": 33508
+  },
+  "ranges": {
+    "av_start_offset_seconds": [
+      0.0,
+      0.0
+    ],
+    "av_end_coverage_offset_seconds": [
+      -0.174376,
+      0.04254
+    ],
+    "audio_max_residual_seconds": [
+      4.83e-07,
+      4.99e-07
+    ],
+    "video_coverage_end_seconds": [
+      2.235567,
+      29.266666
+    ],
+    "audio_coverage_end_seconds": [
+      2.228118,
+      29.109751
+    ],
+    "video_frame_count": [
+      67.0,
+      875.0
+    ],
+    "audio_frame_count": [
+      96.0,
+      1254.0
+    ],
+    "format_duration_seconds": [
+      2.648,
+      34.567
+    ]
+  },
+  "largest_audio_residual": {
+    "stable_id": "-3g5yACwYnA$_$2",
+    "max_residual_seconds": 4.99e-07
+  },
+  "anomaly_counts": {
+    "audio_video_end_offset_over_audio_frame": 96
+  },
+  "failed_ids": [],
+  "outputs": {
+    "per_sample_dir": "outputs/attachment1_timebase/per_sample",
+    "summary_csv": "outputs/attachment1_timebase/summary.csv",
+    "anomaly_ids": "outputs/attachment1_timebase/anomaly_ids.json"
+  }
+}

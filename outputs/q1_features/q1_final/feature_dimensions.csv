@@ -1,0 +1,70 @@
+﻿modality,index_zero_based,column_one_based,feature_name,feature_group,meaning,unit,native_valid_mask,word_valid_mask
+audio,0,1,mfcc_0,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,1,2,mfcc_1,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,2,3,mfcc_2,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,3,4,mfcc_3,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,4,5,mfcc_4,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,5,6,mfcc_5,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,6,7,mfcc_6,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,7,8,mfcc_7,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,8,9,mfcc_8,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,9,10,mfcc_9,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,10,11,mfcc_10,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,11,12,mfcc_11,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,12,13,mfcc_12,MFCC,对数mel谱的正交倒谱系数,无量纲,audio_window_observed,word_audio_observed
+audio,13,14,log_rms,对数RMS,去均值波形均方根幅值的自然对数,无量纲,audio_window_observed,word_audio_observed
+audio,14,15,f0_hz,基频,自相关峰值对应的周期频率,Hz,audio_window_pitch_observed,word_pitch_observed
+audio,15,16,spectral_centroid_hz,频谱质心,幅值谱的频率加权均值,Hz,audio_window_observed,word_audio_observed
+audio,16,17,zero_crossing_rate,过零率,相邻采样点符号变化次数除以399,无量纲,audio_window_observed,word_audio_observed
+video,0,1,_neutral,基准系数,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,1,2,browDownLeft,眉部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,2,3,browDownRight,眉部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,3,4,browInnerUp,眉部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,4,5,browOuterUpLeft,眉部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,5,6,browOuterUpRight,眉部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,6,7,cheekPuff,面颊,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,7,8,cheekSquintLeft,面颊,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,8,9,cheekSquintRight,面颊,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,9,10,eyeBlinkLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,10,11,eyeBlinkRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,11,12,eyeLookDownLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,12,13,eyeLookDownRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,13,14,eyeLookInLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,14,15,eyeLookInRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,15,16,eyeLookOutLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,16,17,eyeLookOutRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,17,18,eyeLookUpLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,18,19,eyeLookUpRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,19,20,eyeSquintLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,20,21,eyeSquintRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,21,22,eyeWideLeft,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,22,23,eyeWideRight,眼部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,23,24,jawForward,下颌,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,24,25,jawLeft,下颌,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,25,26,jawOpen,下颌,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,26,27,jawRight,下颌,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,27,28,mouthClose,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,28,29,mouthDimpleLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,29,30,mouthDimpleRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,30,31,mouthFrownLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,31,32,mouthFrownRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,32,33,mouthFunnel,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,33,34,mouthLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,34,35,mouthLowerDownLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,35,36,mouthLowerDownRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,36,37,mouthPressLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,37,38,mouthPressRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,38,39,mouthPucker,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,39,40,mouthRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,40,41,mouthRollLower,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,41,42,mouthRollUpper,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,42,43,mouthShrugLower,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,43,44,mouthShrugUpper,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,44,45,mouthSmileLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,45,46,mouthSmileRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,46,47,mouthStretchLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,47,48,mouthStretchRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,48,49,mouthUpperUpLeft,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,49,50,mouthUpperUpRight,口部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,50,51,noseSneerLeft,鼻部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed
+video,51,52,noseSneerRight,鼻部,Face Landmarker形变系数,无量纲,vision_frame_single_face_valid,word_video_observed

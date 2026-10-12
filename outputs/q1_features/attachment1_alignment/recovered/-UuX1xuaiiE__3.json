@@ -1,0 +1,260 @@
+{
+  "stable_id": "-UuX1xuaiiE$_$3",
+  "official_text": "My goal is to become a human rights lawyer",
+  "category": "human_whole_content_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "My",
+      "normalized_target": "MY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "My",
+        "chosen": "MY",
+        "dropped": []
+      },
+      "candidate_start": 0.56,
+      "candidate_end": 0.64,
+      "start": 0.56,
+      "end": 0.64,
+      "confidence": 0.9930630326271057,
+      "local_confidence": 0.9930630326271057,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9922729134559631,
+      "local_start": 0.56,
+      "local_end": 0.64
+    },
+    {
+      "word_index": 1,
+      "word": "goal",
+      "normalized_target": "GOAL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "goal",
+        "chosen": "GOAL",
+        "dropped": []
+      },
+      "candidate_start": 0.7,
+      "candidate_end": 0.98,
+      "start": 0.7,
+      "end": 0.98,
+      "confidence": 0.9626045078039169,
+      "local_confidence": 0.9626045078039169,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9229750633239746,
+      "local_start": 0.7,
+      "local_end": 0.98
+    },
+    {
+      "word_index": 2,
+      "word": "is",
+      "normalized_target": "IS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "is",
+        "chosen": "IS",
+        "dropped": []
+      },
+      "candidate_start": 1.24,
+      "candidate_end": 1.3,
+      "start": 1.24,
+      "end": 1.3,
+      "confidence": 0.9940241277217865,
+      "local_confidence": 0.9940241277217865,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9936127662658691,
+      "local_start": 1.24,
+      "local_end": 1.3
+    },
+    {
+      "word_index": 3,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 1.46,
+      "candidate_end": 1.58,
+      "start": null,
+      "end": null,
+      "confidence": 0.19145334511995316,
+      "local_confidence": 0.19145334511995316,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.091041699051857,
+      "local_start": 1.46,
+      "local_end": 1.58
+    },
+    {
+      "word_index": 4,
+      "word": "become",
+      "normalized_target": "BECOME",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "become",
+        "chosen": "BECOME",
+        "dropped": []
+      },
+      "candidate_start": 1.72,
+      "candidate_end": 2.04,
+      "start": 1.72,
+      "end": 2.04,
+      "confidence": 0.915283183256785,
+      "local_confidence": 0.915283183256785,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8739913105964661,
+      "local_start": 1.72,
+      "local_end": 2.04
+    },
+    {
+      "word_index": 5,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 2.62,
+      "candidate_end": 2.64,
+      "start": 2.62,
+      "end": 2.64,
+      "confidence": 0.9629149436950684,
+      "local_confidence": 0.9629149436950684,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9629149436950684,
+      "local_start": 2.62,
+      "local_end": 2.64
+    },
+    {
+      "word_index": 6,
+      "word": "human",
+      "normalized_target": "HUMAN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "human",
+        "chosen": "HUMAN",
+        "dropped": []
+      },
+      "candidate_start": 2.68,
+      "candidate_end": 2.9,
+      "start": 2.68,
+      "end": 2.9,
+      "confidence": 0.9464779615402221,
+      "local_confidence": 0.9464779615402221,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8347654938697815,
+      "local_start": 2.68,
+      "local_end": 2.9
+    },
+    {
+      "word_index": 7,
+      "word": "rights",
+      "normalized_target": "RIGHTS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "rights",
+        "chosen": "RIGHTS",
+        "dropped": []
+      },
+      "candidate_start": 2.94,
+      "candidate_end": 3.16,
+      "start": 2.94,
+      "end": 3.16,
+      "confidence": 0.940358837445577,
+      "local_confidence": 0.940358837445577,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.776016891002655,
+      "local_start": 2.94,
+      "local_end": 3.16
+    },
+    {
+      "word_index": 8,
+      "word": "lawyer",
+      "normalized_target": "LAWYER",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "lawyer",
+        "chosen": "LAWYER",
+        "dropped": []
+      },
+      "candidate_start": 3.24,
+      "candidate_end": 3.64,
+      "start": 3.24,
+      "end": 3.64,
+      "confidence": 0.8100819969549775,
+      "local_confidence": 0.8100819969549775,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.008804431185126305,
+      "local_start": 3.24,
+      "local_end": 3.64
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "left": 0,
+      "right": 201
+    }
+  ],
+  "greedy_text": "SIDE MY GOAL IS CHESE BECOME A HUMAN RIGHT'S LAWYER TH",
+  "silence": [],
+  "fingerprint": "b35850760273b503117daff35883e67a08c144fc03bb1b50faa296a620ceaf181b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983e47f2b38267677b77a0599881209c39be3b0aa84ed0316949a64d42a7616d890a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R041"
+  ],
+  "source_candidate_sha256": "b35850760273b503117daff35883e67a08c144fc03bb1b50faa296a620ceaf18",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "e47f2b38267677b77a0599881209c39be3b0aa84ed0316949a64d42a7616d890",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

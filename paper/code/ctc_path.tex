@@ -1,0 +1,49 @@
+% Generated from the actual Q1 source; formatting only.
+\begin{lstlisting}
+def min_required_frames(targets: list[int]) -> int:
+    """CTC 强制对齐所需最少帧数：每个目标字符至少 1 帧，且相邻相同字符之间必须有 blank。"""
+    repeats = sum((1 for i in range(1, len(targets)) if targets[i] == targets[i - 1]))
+    return len(targets) + repeats
+
+def ctc_path(lp, targets):
+    """Vectorized Viterbi; return first AND last emitting frames, excluding blanks."""
+    T, V = lp.shape
+    if not targets or T < min_required_frames(targets):
+        raise ValueError('Unreachable CTC target')
+    labels = np.zeros(2 * len(targets) + 1, dtype=np.int64)
+    labels[1::2] = targets
+    E = len(labels)
+    neg = -np.inf
+    previous = np.full(E, neg)
+    previous[:2] = lp[0, labels[:2]]
+    back = np.zeros((T, E), np.int8)
+    skip = np.zeros(E, bool)
+    skip[2:] = (labels[2:] != 0) & (labels[2:] != labels[:-2])
+    for t in range(1, T):
+        advance = np.r_[neg, previous[:-1]]
+        jump = np.r_[neg, neg, previous[:-2]]
+        jump[~skip] = neg
+        options = np.stack([previous, advance, jump])
+        move = options.argmax(axis=0)
+        back[t] = move
+        previous = options[move, np.arange(E)] + lp[t, labels]
+    state = E - 1 if previous[-1] >= previous[-2] else E - 2
+    score = previous[state]
+    if not np.isfinite(score):
+        raise ValueError('No finite CTC path')
+    path = np.empty(T, np.int32)
+    for t in range(T - 1, -1, -1):
+        path[t] = state
+        state -= int(back[t, state])
+    starts = []
+    ends = []
+    conf = []
+    for j, token in enumerate(targets):
+        frames = np.flatnonzero(path == 2 * j + 1)
+        if not len(frames):
+            raise ValueError('Missing emitting state')
+        starts.append(int(frames[0]))
+        ends.append(int(frames[-1] + 1))
+        conf.append(float(np.exp(lp[frames, token].mean())))
+    return (np.array(starts), np.array(ends), np.array(conf), float(score))
+\end{lstlisting}

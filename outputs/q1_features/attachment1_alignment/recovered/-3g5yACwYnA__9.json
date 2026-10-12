@@ -1,0 +1,600 @@
+{
+  "stable_id": "-3g5yACwYnA$_$9",
+  "official_text": "We have many new opportunities through the way things have changed through the years, looking for new niche high-end, value-added products.",
+  "category": "human_whole_content_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "We",
+      "normalized_target": "WE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "We",
+        "chosen": "WE",
+        "dropped": []
+      },
+      "candidate_start": 0.8,
+      "candidate_end": 0.88,
+      "start": 0.8,
+      "end": 0.88,
+      "confidence": 0.9987481534481049,
+      "local_confidence": 0.9987481534481049,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9979440569877625,
+      "local_start": 0.8,
+      "local_end": 0.88
+    },
+    {
+      "word_index": 1,
+      "word": "have",
+      "normalized_target": "HAVE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "have",
+        "chosen": "HAVE",
+        "dropped": []
+      },
+      "candidate_start": 0.94,
+      "candidate_end": 1.06,
+      "start": 0.94,
+      "end": 1.06,
+      "confidence": 0.9899758696556091,
+      "local_confidence": 0.9899758696556091,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9645871520042419,
+      "local_start": 0.94,
+      "local_end": 1.06
+    },
+    {
+      "word_index": 2,
+      "word": "many",
+      "normalized_target": "MANY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "many",
+        "chosen": "MANY",
+        "dropped": []
+      },
+      "candidate_start": 1.12,
+      "candidate_end": 1.32,
+      "start": 1.12,
+      "end": 1.32,
+      "confidence": 0.9435994774103165,
+      "local_confidence": 0.9435994774103165,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7754637002944946,
+      "local_start": 1.12,
+      "local_end": 1.32
+    },
+    {
+      "word_index": 3,
+      "word": "new",
+      "normalized_target": "NEW",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "new",
+        "chosen": "NEW",
+        "dropped": []
+      },
+      "candidate_start": 1.7,
+      "candidate_end": 1.82,
+      "start": 1.7,
+      "end": 1.82,
+      "confidence": 0.9945157567660013,
+      "local_confidence": 0.9945157567660013,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9847503900527954,
+      "local_start": 1.7,
+      "local_end": 1.82
+    },
+    {
+      "word_index": 4,
+      "word": "opportunities",
+      "normalized_target": "OPPORTUNITIES",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "opportunities",
+        "chosen": "OPPORTUNITIES",
+        "dropped": []
+      },
+      "candidate_start": 1.92,
+      "candidate_end": 2.46,
+      "start": 1.92,
+      "end": 2.46,
+      "confidence": 0.8784115268633916,
+      "local_confidence": 0.8784115268633916,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.37189263105392456,
+      "local_start": 1.92,
+      "local_end": 2.46
+    },
+    {
+      "word_index": 5,
+      "word": "through",
+      "normalized_target": "THROUGH",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "through",
+        "chosen": "THROUGH",
+        "dropped": []
+      },
+      "candidate_start": 2.48,
+      "candidate_end": 2.72,
+      "start": 2.48,
+      "end": 2.72,
+      "confidence": 0.9676931074687413,
+      "local_confidence": 0.9676931074687413,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8892231583595276,
+      "local_start": 2.48,
+      "local_end": 2.72
+    },
+    {
+      "word_index": 6,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": 3.36,
+      "candidate_end": 3.44,
+      "start": 3.36,
+      "end": 3.44,
+      "confidence": 0.9990477164586385,
+      "local_confidence": 0.9990477164586385,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9982568621635437,
+      "local_start": 3.36,
+      "local_end": 3.44
+    },
+    {
+      "word_index": 7,
+      "word": "way",
+      "normalized_target": "WAY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "way",
+        "chosen": "WAY",
+        "dropped": []
+      },
+      "candidate_start": 3.48,
+      "candidate_end": 3.6,
+      "start": 3.48,
+      "end": 3.6,
+      "confidence": 0.988697866598765,
+      "local_confidence": 0.988697866598765,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9752007722854614,
+      "local_start": 3.48,
+      "local_end": 3.6
+    },
+    {
+      "word_index": 8,
+      "word": "things",
+      "normalized_target": "THINGS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "things",
+        "chosen": "THINGS",
+        "dropped": []
+      },
+      "candidate_start": 3.68,
+      "candidate_end": 3.86,
+      "start": 3.68,
+      "end": 3.86,
+      "confidence": 0.977168470621109,
+      "local_confidence": 0.977168470621109,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8965221047401428,
+      "local_start": 3.68,
+      "local_end": 3.86
+    },
+    {
+      "word_index": 9,
+      "word": "have",
+      "normalized_target": "HAVE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "have",
+        "chosen": "HAVE",
+        "dropped": []
+      },
+      "candidate_start": 3.9,
+      "candidate_end": 4.0,
+      "start": 3.9,
+      "end": 4.0,
+      "confidence": 0.8497759401798248,
+      "local_confidence": 0.8497759401798248,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8061259984970093,
+      "local_start": 3.9,
+      "local_end": 4.0
+    },
+    {
+      "word_index": 10,
+      "word": "changed",
+      "normalized_target": "CHANGED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "changed",
+        "chosen": "CHANGED",
+        "dropped": []
+      },
+      "candidate_start": 4.02,
+      "candidate_end": 4.28,
+      "start": 4.02,
+      "end": 4.28,
+      "confidence": 0.8570723874228341,
+      "local_confidence": 0.8570723874228341,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.6202160716056824,
+      "local_start": 4.02,
+      "local_end": 4.28
+    },
+    {
+      "word_index": 11,
+      "word": "through",
+      "normalized_target": "THROUGH",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "through",
+        "chosen": "THROUGH",
+        "dropped": []
+      },
+      "candidate_start": 4.3,
+      "candidate_end": 4.46,
+      "start": null,
+      "end": null,
+      "confidence": 0.46941973907606943,
+      "local_confidence": 0.46941973907606943,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.24312111735343933,
+      "local_start": 4.3,
+      "local_end": 4.46
+    },
+    {
+      "word_index": 12,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": 4.48,
+      "candidate_end": 4.54,
+      "start": 4.48,
+      "end": 4.54,
+      "confidence": 0.9885513186454773,
+      "local_confidence": 0.9885513186454773,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9868859052658081,
+      "local_start": 4.48,
+      "local_end": 4.54
+    },
+    {
+      "word_index": 13,
+      "word": "years,",
+      "normalized_target": "YEARS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "years,",
+        "chosen": "YEARS",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": 4.58,
+      "candidate_end": 4.86,
+      "start": 4.58,
+      "end": 4.86,
+      "confidence": 0.9630523681640625,
+      "local_confidence": 0.9630523681640625,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8541378378868103,
+      "local_start": 4.58,
+      "local_end": 4.86
+    },
+    {
+      "word_index": 14,
+      "word": "looking",
+      "normalized_target": "LOOKING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "looking",
+        "chosen": "LOOKING",
+        "dropped": []
+      },
+      "candidate_start": 5.64,
+      "candidate_end": 5.86,
+      "start": 5.64,
+      "end": 5.86,
+      "confidence": 0.9995463575635638,
+      "local_confidence": 0.9995463575635638,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9989168643951416,
+      "local_start": 5.64,
+      "local_end": 5.86
+    },
+    {
+      "word_index": 15,
+      "word": "for",
+      "normalized_target": "FOR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "for",
+        "chosen": "FOR",
+        "dropped": []
+      },
+      "candidate_start": 5.92,
+      "candidate_end": 6.0,
+      "start": 5.92,
+      "end": 6.0,
+      "confidence": 0.9983227054278055,
+      "local_confidence": 0.9983227054278055,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9979385137557983,
+      "local_start": 5.92,
+      "local_end": 6.0
+    },
+    {
+      "word_index": 16,
+      "word": "new",
+      "normalized_target": "NEW",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "new",
+        "chosen": "NEW",
+        "dropped": []
+      },
+      "candidate_start": 6.08,
+      "candidate_end": 6.18,
+      "start": 6.08,
+      "end": 6.18,
+      "confidence": 0.9971626996994019,
+      "local_confidence": 0.9971626996994019,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.995473325252533,
+      "local_start": 6.08,
+      "local_end": 6.18
+    },
+    {
+      "word_index": 17,
+      "word": "niche",
+      "normalized_target": "NICHE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "niche",
+        "chosen": "NICHE",
+        "dropped": []
+      },
+      "candidate_start": 6.26,
+      "candidate_end": 6.54,
+      "start": 6.26,
+      "end": 6.54,
+      "confidence": 0.828038340806961,
+      "local_confidence": 0.828038340806961,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.2243969738483429,
+      "local_start": 6.26,
+      "local_end": 6.54
+    },
+    {
+      "word_index": 18,
+      "word": "high-end,",
+      "normalized_target": "HIGHEND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "high-end,",
+        "chosen": "HIGHEND",
+        "dropped": [
+          "-",
+          ","
+        ]
+      },
+      "candidate_start": 6.64,
+      "candidate_end": 7.02,
+      "start": 6.64,
+      "end": 7.02,
+      "confidence": 0.7912935800850391,
+      "local_confidence": 0.7912935800850391,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.020935725420713425,
+      "local_start": 6.64,
+      "local_end": 7.02
+    },
+    {
+      "word_index": 19,
+      "word": "value-added",
+      "normalized_target": "VALUEADDED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "value-added",
+        "chosen": "VALUEADDED",
+        "dropped": [
+          "-"
+        ]
+      },
+      "candidate_start": 7.08,
+      "candidate_end": 7.62,
+      "start": 7.08,
+      "end": 7.62,
+      "confidence": 0.605295034055598,
+      "local_confidence": 0.605295034055598,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.0008095118682831526,
+      "local_start": 7.08,
+      "local_end": 7.62
+    },
+    {
+      "word_index": 20,
+      "word": "products.",
+      "normalized_target": "PRODUCTS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "products.",
+        "chosen": "PRODUCTS",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 7.64,
+      "candidate_end": 8.48,
+      "start": 7.64,
+      "end": 8.48,
+      "confidence": 0.7351792536935591,
+      "local_confidence": 0.7351792536935591,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 2.8085529265808873e-05,
+      "local_start": 7.64,
+      "local_end": 8.48
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "left": 0,
+      "right": 434
+    }
+  ],
+  "greedy_text": " WE HAVE MANY A NEW OPPORTUNITYE THROUGH THE WAY THINGS HAVE CHANGED TO THE YEARS ON LOOKING FOR NEW NICH HIGH AND VALUE AT A PRODUCTS AND ",
+  "silence": [
+    {
+      "start": 0.035812,
+      "end": 0.787188,
+      "duration": 0.751375
+    },
+    {
+      "start": 2.78406,
+      "end": 3.3875,
+      "duration": 0.603437
+    },
+    {
+      "start": 4.82238,
+      "end": 5.464,
+      "duration": 0.641625
+    },
+    {
+      "start": 6.37581,
+      "end": 6.67331,
+      "duration": 0.2975
+    },
+    {
+      "start": 7.96256,
+      "end": 8.20988,
+      "duration": 0.247313
+    },
+    {
+      "start": 8.34275,
+      "end": 8.69613,
+      "duration": 0.353375
+    }
+  ],
+  "fingerprint": "24fed3cee22414c255f6b2783857689fcbff987d953b7590ff3283980b5360f11b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec98344494d2db64e0cb8c93e32206df4666e0dfb0f6711c396aae587b379c0fa69a7a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R032"
+  ],
+  "source_candidate_sha256": "24fed3cee22414c255f6b2783857689fcbff987d953b7590ff3283980b5360f1",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "44494d2db64e0cb8c93e32206df4666e0dfb0f6711c396aae587b379c0fa69a7",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "samples": 100,
+  "official_words": 1932,
+  "accepted_words": 1533,
+  "samples_with_accepted_words": 80,
+  "fully_accepted_samples": 32,
+  "categories": {
+    "human_whole_content_confirmed": 32,
+    "previous_auto_accepted": 30,
+    "human_partial_content": 2,
+    "human_flagged_words_confirmed": 16,
+    "content_mismatch": 14,
+    "no_audible_speech": 3,
+    "other_language": 3
+  },
+  "word_reasons": {
+    "accepted_automatic_with_content_evidence": 1533,
+    "low_character_confidence": 82,
+    "inside_detected_silence": 6,
+    "outside_human_confirmed_phrase": 10,
+    "no_supported_target_characters": 4,
+    "content_mismatch": 171,
+    "excessive_word_span": 1,
+    "no_audible_speech": 32,
+    "other_language": 93
+  },
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "code_sha256": "a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc"
+}

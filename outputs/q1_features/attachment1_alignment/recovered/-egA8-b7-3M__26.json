@@ -1,0 +1,428 @@
+{
+  "stable_id": "-egA8-b7-3M$_$26",
+  "official_text": "We're updating it all the time and looking forward to your comments on our videos.",
+  "category": "human_flagged_words_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "We're",
+      "normalized_target": "WE'RE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "We're",
+        "chosen": "WE'RE",
+        "dropped": []
+      },
+      "candidate_start": 0.52,
+      "candidate_end": 0.7,
+      "start": 0.52,
+      "end": 0.7,
+      "confidence": 0.8208100318908691,
+      "local_confidence": 0.8208100318908691,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.3595348596572876,
+      "local_start": 0.52,
+      "local_end": 0.7
+    },
+    {
+      "word_index": 1,
+      "word": "updating",
+      "normalized_target": "UPDATING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "updating",
+        "chosen": "UPDATING",
+        "dropped": []
+      },
+      "candidate_start": 0.78,
+      "candidate_end": 1.16,
+      "start": 0.78,
+      "end": 1.16,
+      "confidence": 0.9504573941230774,
+      "local_confidence": 0.9504573941230774,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7752740979194641,
+      "local_start": 0.78,
+      "local_end": 1.16
+    },
+    {
+      "word_index": 2,
+      "word": "it",
+      "normalized_target": "IT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "it",
+        "chosen": "IT",
+        "dropped": []
+      },
+      "candidate_start": 1.24,
+      "candidate_end": 1.28,
+      "start": 1.24,
+      "end": 1.28,
+      "confidence": 0.9804863929748535,
+      "local_confidence": 0.9804863929748535,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9643237590789795,
+      "local_start": 1.24,
+      "local_end": 1.28
+    },
+    {
+      "word_index": 3,
+      "word": "all",
+      "normalized_target": "ALL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "all",
+        "chosen": "ALL",
+        "dropped": []
+      },
+      "candidate_start": 1.4,
+      "candidate_end": 1.54,
+      "start": 1.4,
+      "end": 1.54,
+      "confidence": 0.978757401307424,
+      "local_confidence": 0.978757401307424,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.937907338142395,
+      "local_start": 1.4,
+      "local_end": 1.54
+    },
+    {
+      "word_index": 4,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": 1.6,
+      "candidate_end": 1.68,
+      "start": 1.6,
+      "end": 1.68,
+      "confidence": 0.9842907587687174,
+      "local_confidence": 0.9842907587687174,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9583470821380615,
+      "local_start": 1.6,
+      "local_end": 1.68
+    },
+    {
+      "word_index": 5,
+      "word": "time",
+      "normalized_target": "TIME",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "time",
+        "chosen": "TIME",
+        "dropped": []
+      },
+      "candidate_start": 1.74,
+      "candidate_end": 2.0,
+      "start": 1.74,
+      "end": 2.0,
+      "confidence": 0.9997399747371674,
+      "local_confidence": 0.9997399747371674,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9993067979812622,
+      "local_start": 1.74,
+      "local_end": 2.0
+    },
+    {
+      "word_index": 6,
+      "word": "and",
+      "normalized_target": "AND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "and",
+        "chosen": "AND",
+        "dropped": []
+      },
+      "candidate_start": 2.48,
+      "candidate_end": 2.56,
+      "start": 2.48,
+      "end": 2.56,
+      "confidence": 0.9998900294303894,
+      "local_confidence": 0.9998900294303894,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9997987747192383,
+      "local_start": 2.48,
+      "local_end": 2.56
+    },
+    {
+      "word_index": 7,
+      "word": "looking",
+      "normalized_target": "LOOKING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "looking",
+        "chosen": "LOOKING",
+        "dropped": []
+      },
+      "candidate_start": 2.62,
+      "candidate_end": 2.9,
+      "start": 2.62,
+      "end": 2.9,
+      "confidence": 0.9997307658195496,
+      "local_confidence": 0.9997307658195496,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9985685348510742,
+      "local_start": 2.62,
+      "local_end": 2.9
+    },
+    {
+      "word_index": 8,
+      "word": "forward",
+      "normalized_target": "FORWARD",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "forward",
+        "chosen": "FORWARD",
+        "dropped": []
+      },
+      "candidate_start": 3.0,
+      "candidate_end": 3.3,
+      "start": 3.0,
+      "end": 3.3,
+      "confidence": 0.9974790896688189,
+      "local_confidence": 0.9974790896688189,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9906229376792908,
+      "local_start": 3.0,
+      "local_end": 3.3
+    },
+    {
+      "word_index": 9,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 3.38,
+      "candidate_end": 3.46,
+      "start": 3.38,
+      "end": 3.46,
+      "confidence": 0.9999315142631531,
+      "local_confidence": 0.9999315142631531,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.999904215335846,
+      "local_start": 3.38,
+      "local_end": 3.46
+    },
+    {
+      "word_index": 10,
+      "word": "your",
+      "normalized_target": "YOUR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "your",
+        "chosen": "YOUR",
+        "dropped": []
+      },
+      "candidate_start": 3.52,
+      "candidate_end": 3.7,
+      "start": 3.52,
+      "end": 3.7,
+      "confidence": 0.9887104332447052,
+      "local_confidence": 0.9887104332447052,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9762009382247925,
+      "local_start": 3.52,
+      "local_end": 3.7
+    },
+    {
+      "word_index": 11,
+      "word": "comments",
+      "normalized_target": "COMMENTS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "comments",
+        "chosen": "COMMENTS",
+        "dropped": []
+      },
+      "candidate_start": 3.78,
+      "candidate_end": 4.26,
+      "start": 3.78,
+      "end": 4.26,
+      "confidence": 0.9706531539559364,
+      "local_confidence": 0.9706531539559364,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8594284653663635,
+      "local_start": 3.78,
+      "local_end": 4.26
+    },
+    {
+      "word_index": 12,
+      "word": "on",
+      "normalized_target": "ON",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "on",
+        "chosen": "ON",
+        "dropped": []
+      },
+      "candidate_start": 4.46,
+      "candidate_end": 4.5,
+      "start": 4.46,
+      "end": 4.5,
+      "confidence": 0.9980220794677734,
+      "local_confidence": 0.9980220794677734,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9974855780601501,
+      "local_start": 4.46,
+      "local_end": 4.5
+    },
+    {
+      "word_index": 13,
+      "word": "our",
+      "normalized_target": "OUR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "our",
+        "chosen": "OUR",
+        "dropped": []
+      },
+      "candidate_start": 4.6,
+      "candidate_end": 4.68,
+      "start": null,
+      "end": null,
+      "confidence": 0.4452495574951172,
+      "local_confidence": 0.4452495574951172,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.21382924914360046,
+      "local_start": 4.6,
+      "local_end": 4.68
+    },
+    {
+      "word_index": 14,
+      "word": "videos.",
+      "normalized_target": "VIDEOS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "videos.",
+        "chosen": "VIDEOS",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 4.72,
+      "candidate_end": 5.2,
+      "start": 4.72,
+      "end": 5.2,
+      "confidence": 0.7793427870298425,
+      "local_confidence": 0.7793427870298425,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.024720648303627968,
+      "local_start": 4.72,
+      "local_end": 5.2
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "left": 0,
+      "right": 295
+    }
+  ],
+  "greedy_text": "WERE UPDATING IT ALL THE TIME AND LOOKING FORWARD TO YOUR COMMENTS ON ARVIDIOS ",
+  "silence": [
+    {
+      "start": 0.120938,
+      "end": 0.529062,
+      "duration": 0.408125
+    },
+    {
+      "start": 2.09925,
+      "end": 2.46531,
+      "duration": 0.366063
+    },
+    {
+      "start": 5.33319,
+      "end": 5.92056,
+      "duration": 0.587375
+    }
+  ],
+  "fingerprint": "01fb30dcccc5d1ba66266f08cb1d4ab69632dd592774bc0eed75ac93aa1da74d1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983065b594b6b75bf9d61dc5058be2de8fe0c0263fa70a1ecacbe7b4cd0f39db08da69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R013"
+  ],
+  "source_candidate_sha256": "01fb30dcccc5d1ba66266f08cb1d4ab69632dd592774bc0eed75ac93aa1da74d",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "065b594b6b75bf9d61dc5058be2de8fe0c0263fa70a1ecacbe7b4cd0f39db08d",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

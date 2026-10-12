@@ -1,0 +1,80 @@
+{
+  "packet_id": "q1-local-review-20260925-v2",
+  "feedback_exported_at": "2026-09-25T04:31:20.062Z",
+  "user_corrections": [
+    {
+      "review_id": "R074",
+      "stable_id": "-ri04Z7vwnc$_$2",
+      "previous_verdict": "听不清或无法判断",
+      "verdict": "实际内容与文本不一致",
+      "user_statement": "那其实就是没关系",
+      "context": "用户明确最后出现的语音与官方文本没有关系。",
+      "date": "2026-09-25"
+    }
+  ],
+  "source_sha256": "beb961ca30da23e634fb1317980959b5f7a2d76af0a2c99a1e63cc0802f47613",
+  "packet_manifest_sha256": "0f8ef320a85dd066a2492e015254f7b9c7bcb3dcc072186b7dd6956f2ad823a7",
+  "review_items": 94,
+  "completed_items": 94,
+  "samples": 76,
+  "verdict_counts": {
+    "内容一致，未发现明显问题": 72,
+    "部分内容一致，请看备注": 2,
+    "实际内容与文本不一致": 14,
+    "其他语言": 3,
+    "静音或未听到语音": 3
+  },
+  "groups": {
+    "accepted_control": {
+      "samples": 6,
+      "items": 18,
+      "verdict_counts": {
+        "内容一致，未发现明显问题": 18
+      }
+    },
+    "global_similarity": {
+      "samples": 6,
+      "items": 6,
+      "verdict_counts": {
+        "内容一致，未发现明显问题": 6
+      }
+    },
+    "local_low_confidence": {
+      "samples": 16,
+      "items": 22,
+      "verdict_counts": {
+        "内容一致，未发现明显问题": 22
+      }
+    },
+    "mixed_low_confidence": {
+      "samples": 37,
+      "items": 37,
+      "verdict_counts": {
+        "内容一致，未发现明显问题": 23,
+        "部分内容一致，请看备注": 2,
+        "实际内容与文本不一致": 10,
+        "其他语言": 2
+      }
+    },
+    "very_low_similarity": {
+      "samples": 11,
+      "items": 11,
+      "verdict_counts": {
+        "内容一致，未发现明显问题": 3,
+        "实际内容与文本不一致": 4,
+        "静音或未听到语音": 3,
+        "其他语言": 1
+      }
+    }
+  },
+  "whole_clip_verdict_counts": {
+    "内容一致，未发现明显问题": 32,
+    "部分内容一致，请看备注": 2,
+    "实际内容与文本不一致": 14,
+    "其他语言": 3,
+    "静音或未听到语音": 3
+  },
+  "local_low_confidence_samples_confirmed": 16,
+  "precise_boundaries_annotated": false,
+  "note": "Content feedback is evidence for realignment, not a measured word-boundary error or new accepted word times. Silence/no speech includes music-only clips and does not imply a missing audio stream."
+}

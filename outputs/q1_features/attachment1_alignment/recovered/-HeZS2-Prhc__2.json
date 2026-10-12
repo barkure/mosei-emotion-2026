@@ -1,0 +1,468 @@
+{
+  "stable_id": "-HeZS2-Prhc$_$2",
+  "official_text": "The August jobs report is out and it was seen overall as solid but not great.",
+  "category": "human_whole_content_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "The",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "The",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": 0.14,
+      "candidate_end": 0.4,
+      "start": null,
+      "end": null,
+      "confidence": 0.32923147672257375,
+      "local_confidence": 0.32923147672257375,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 8.199133844755124e-06,
+      "local_start": 0.14,
+      "local_end": 0.4
+    },
+    {
+      "word_index": 1,
+      "word": "August",
+      "normalized_target": "AUGUST",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "August",
+        "chosen": "AUGUST",
+        "dropped": []
+      },
+      "candidate_start": 1.94,
+      "candidate_end": 2.2,
+      "start": 1.94,
+      "end": 2.2,
+      "confidence": 0.951096753279368,
+      "local_confidence": 0.951096753279368,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7579384446144104,
+      "local_start": 1.94,
+      "local_end": 2.2
+    },
+    {
+      "word_index": 2,
+      "word": "jobs",
+      "normalized_target": "JOBS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "jobs",
+        "chosen": "JOBS",
+        "dropped": []
+      },
+      "candidate_start": 2.32,
+      "candidate_end": 2.62,
+      "start": 2.32,
+      "end": 2.62,
+      "confidence": 0.978227898478508,
+      "local_confidence": 0.978227898478508,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9198002219200134,
+      "local_start": 2.32,
+      "local_end": 2.62
+    },
+    {
+      "word_index": 3,
+      "word": "report",
+      "normalized_target": "REPORT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "report",
+        "chosen": "REPORT",
+        "dropped": []
+      },
+      "candidate_start": 2.68,
+      "candidate_end": 2.98,
+      "start": 2.68,
+      "end": 2.98,
+      "confidence": 0.976898729801178,
+      "local_confidence": 0.976898729801178,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.94721919298172,
+      "local_start": 2.68,
+      "local_end": 2.98
+    },
+    {
+      "word_index": 4,
+      "word": "is",
+      "normalized_target": "IS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "is",
+        "chosen": "IS",
+        "dropped": []
+      },
+      "candidate_start": 3.06,
+      "candidate_end": 3.14,
+      "start": null,
+      "end": null,
+      "confidence": 0.4321038471534848,
+      "local_confidence": 0.4321038471534848,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.030694255605340004,
+      "local_start": 3.06,
+      "local_end": 3.14
+    },
+    {
+      "word_index": 5,
+      "word": "out",
+      "normalized_target": "OUT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "out",
+        "chosen": "OUT",
+        "dropped": []
+      },
+      "candidate_start": 3.32,
+      "candidate_end": 3.42,
+      "start": 3.32,
+      "end": 3.42,
+      "confidence": 0.9977919856707255,
+      "local_confidence": 0.9977919856707255,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9960740208625793,
+      "local_start": 3.32,
+      "local_end": 3.42
+    },
+    {
+      "word_index": 6,
+      "word": "and",
+      "normalized_target": "AND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "and",
+        "chosen": "AND",
+        "dropped": []
+      },
+      "candidate_start": 3.86,
+      "candidate_end": 3.98,
+      "start": 3.86,
+      "end": 3.98,
+      "confidence": 0.9663810729980469,
+      "local_confidence": 0.9663810729980469,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9050686359405518,
+      "local_start": 3.86,
+      "local_end": 3.98
+    },
+    {
+      "word_index": 7,
+      "word": "it",
+      "normalized_target": "IT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "it",
+        "chosen": "IT",
+        "dropped": []
+      },
+      "candidate_start": 4.2,
+      "candidate_end": 4.24,
+      "start": 4.2,
+      "end": 4.24,
+      "confidence": 0.9947428405284882,
+      "local_confidence": 0.9947428405284882,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9939268231391907,
+      "local_start": 4.2,
+      "local_end": 4.24
+    },
+    {
+      "word_index": 8,
+      "word": "was",
+      "normalized_target": "WAS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "was",
+        "chosen": "WAS",
+        "dropped": []
+      },
+      "candidate_start": 4.3,
+      "candidate_end": 4.4,
+      "start": 4.3,
+      "end": 4.4,
+      "confidence": 0.9956828157107035,
+      "local_confidence": 0.9956828157107035,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9944402575492859,
+      "local_start": 4.3,
+      "local_end": 4.4
+    },
+    {
+      "word_index": 9,
+      "word": "seen",
+      "normalized_target": "SEEN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "seen",
+        "chosen": "SEEN",
+        "dropped": []
+      },
+      "candidate_start": 4.5,
+      "candidate_end": 4.74,
+      "start": 4.5,
+      "end": 4.74,
+      "confidence": 0.930849239230156,
+      "local_confidence": 0.930849239230156,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7445999383926392,
+      "local_start": 4.5,
+      "local_end": 4.74
+    },
+    {
+      "word_index": 10,
+      "word": "overall",
+      "normalized_target": "OVERALL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "overall",
+        "chosen": "OVERALL",
+        "dropped": []
+      },
+      "candidate_start": 5.26,
+      "candidate_end": 5.72,
+      "start": 5.26,
+      "end": 5.72,
+      "confidence": 0.9368183016777039,
+      "local_confidence": 0.9368183016777039,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.5962730050086975,
+      "local_start": 5.26,
+      "local_end": 5.72
+    },
+    {
+      "word_index": 11,
+      "word": "as",
+      "normalized_target": "AS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "as",
+        "chosen": "AS",
+        "dropped": []
+      },
+      "candidate_start": 6.2,
+      "candidate_end": 6.24,
+      "start": 6.2,
+      "end": 6.24,
+      "confidence": 0.6740806698799133,
+      "local_confidence": 0.6740806698799133,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.36616069078445435,
+      "local_start": 6.2,
+      "local_end": 6.24
+    },
+    {
+      "word_index": 12,
+      "word": "solid",
+      "normalized_target": "SOLID",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "solid",
+        "chosen": "SOLID",
+        "dropped": []
+      },
+      "candidate_start": 6.38,
+      "candidate_end": 6.72,
+      "start": 6.38,
+      "end": 6.72,
+      "confidence": 0.9501006245613098,
+      "local_confidence": 0.9501006245613098,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7535406351089478,
+      "local_start": 6.38,
+      "local_end": 6.72
+    },
+    {
+      "word_index": 13,
+      "word": "but",
+      "normalized_target": "BUT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "but",
+        "chosen": "BUT",
+        "dropped": []
+      },
+      "candidate_start": 6.8,
+      "candidate_end": 6.92,
+      "start": 6.8,
+      "end": 6.92,
+      "confidence": 0.978258748849233,
+      "local_confidence": 0.978258748849233,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9373190402984619,
+      "local_start": 6.8,
+      "local_end": 6.92
+    },
+    {
+      "word_index": 14,
+      "word": "not",
+      "normalized_target": "NOT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "not",
+        "chosen": "NOT",
+        "dropped": []
+      },
+      "candidate_start": 7.02,
+      "candidate_end": 7.2,
+      "start": 7.02,
+      "end": 7.2,
+      "confidence": 0.9959348638852438,
+      "local_confidence": 0.9959348638852438,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.992775559425354,
+      "local_start": 7.02,
+      "local_end": 7.2
+    },
+    {
+      "word_index": 15,
+      "word": "great.",
+      "normalized_target": "GREAT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "great.",
+        "chosen": "GREAT",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 7.34,
+      "candidate_end": 8.12,
+      "start": 7.34,
+      "end": 8.12,
+      "confidence": 0.614930490590632,
+      "local_confidence": 0.614930490590632,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.00411833543330431,
+      "local_start": 7.34,
+      "local_end": 8.12
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "left": 0,
+      "right": 407
+    }
+  ],
+  "greedy_text": "IT TO DAY AH THE AUGUST JOBS REPORTES OUT AND IT WAS SEEN OVER ALL A SOLID BUT NOT CRATE THE REPORT",
+  "silence": [
+    {
+      "start": 0.503875,
+      "end": 0.9495,
+      "duration": 0.445625
+    },
+    {
+      "start": 1.06262,
+      "end": 1.22875,
+      "duration": 0.166125
+    },
+    {
+      "start": 4.87369,
+      "end": 5.13588,
+      "duration": 0.262188
+    },
+    {
+      "start": 5.76856,
+      "end": 6.13894,
+      "duration": 0.370375
+    },
+    {
+      "start": 7.16113,
+      "end": 7.32131,
+      "duration": 0.160188
+    },
+    {
+      "start": 7.59194,
+      "end": 7.75119,
+      "duration": 0.15925
+    }
+  ],
+  "fingerprint": "ac894a51e2ee1af0118ddc5633c26e1e862a818936fd84cc61ace966a471b72c1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec98333fab4b24bbfbb4f380e9ab853573e3e8c7c7a6c0c1ef6359a1d6b04ef2e21f4a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R036"
+  ],
+  "source_candidate_sha256": "ac894a51e2ee1af0118ddc5633c26e1e862a818936fd84cc61ace966a471b72c",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "33fab4b24bbfbb4f380e9ab853573e3e8c7c7a6c0c1ef6359a1d6b04ef2e21f4",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

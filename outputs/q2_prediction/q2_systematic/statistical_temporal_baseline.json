@@ -1,0 +1,290 @@
+{
+  "record_type": "document_and_recorded_execution_evidence",
+  "method": "统计融合与回归混合",
+  "data_version": "aligned_50",
+  "split": "attachment2_valid",
+  "train_n": 3395,
+  "valid_n": 728,
+  "seed": 2026,
+  "original_predictions_available": false,
+  "weights_available": false,
+  "current_recomputation": false,
+  "evidence_scope": "保留既有文档中的配置、汇总和哈希，并补充从原实验运行记录提取的指标输出；原权重、完整结果文件及逐样本预测仍不可用，未重新训练或独立复算。",
+  "metric_decimal_places": 4,
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "aligned_record",
+        "git_commit": "b03caf41217e76198264b6c4a518f70e879499ff",
+        "original_path": "docs/问题二对齐版缺失模型记录.md",
+        "document_sha256": "1e457171b4059d679f980970cdd8018588e60f9f61332b7134687c70193bdc12"
+      },
+      {
+        "source_id": "comparison_record",
+        "git_commit": "b03caf41217e76198264b6c4a518f70e879499ff",
+        "original_path": "docs/问题二系统性并行试验记录.md",
+        "document_sha256": "8d31524d2bda4d0ad3d9336d84c0aaf719a6f454468e7e739e63fd6e351ce5f9"
+      }
+    ],
+    "excerpts": [
+      {
+        "source_id": "aligned_record",
+        "line": 3,
+        "text": "日期：2026-09-23。初版模型、版本、检查点和后处理规则在读取附件三具体输入前写定；随后因队伍要求继续改进问题二，仅用附件二训练／验证数据比较新模型，附件三的无标签输入和初版预测均未用于改模或选模。附件四未用于方法设计或选模。**2026-09-24 清理说明：**本文件提到的初版权重和旧预测 CSV 已删除，保留实验数值与哈希作历史记录；最终权重见 `outputs/q2_systematic/gate_recon_seed*.pt`。"
+      },
+      {
+        "source_id": "aligned_record",
+        "line": 48,
+        "text": "最终保留初版三模态分类头，只把强度预测改为“初版回归头与时序模型回归头各占 0.5”，再按极性一致性投影。这个权重仅由附件二验证集选出：完整输入的 ACC/Macro-F1 仍为 0.6277/0.6091，后处理 MAE 从 0.6184 降到 **0.6042**，Pearson 从 0.5884 升到 **0.6068**；18 个局部缺失场景的平均 MAE 从 0.6303 降到 **0.6201**，平均 Pearson 从 0.5659 升到 **0.5816**。19 个验证条件中，Pearson 全部改善，MAE 有 18 个改善。详细对照在 `outputs/regression_mix_validation.json`。新增回归检查点为 `outputs/robust_aligned_v2_textdrop_best.pt`，SHA-256 `e0195037b282729b0305f068844250ccac1b6a5dece2a17e472abe84ff24f9fd`，大小约 2.8 MB。"
+      },
+      {
+        "source_id": "comparison_record",
+        "line": 31,
+        "text": "| 旧正式组合，seed 2026 | 1 | 0.6277 | 0.6091 | 0.4690 | 0.5619 | 0.6042 | 0.6068 |"
+      }
+    ],
+    "dataset": {
+      "source_id": "aligned_record",
+      "line": 7
+    },
+    "precision_note": "文档指标保留原记录的四位小数；recovered_execution_evidence逐字保留当时程序输出的精度，其中逐场景摘要和差值仅有四位小数，未推断未输出的小数位。"
+  },
+  "method_configuration": {
+    "status": "documented_configuration_only",
+    "text": {
+      "model": "google-bert/bert-base-uncased",
+      "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+      "frozen": true,
+      "representation": "CLS拼接实际观测内容词元最后层均值；模拟文本缺失后重新编码",
+      "source": {
+        "source_id": "aligned_record",
+        "line": 9
+      }
+    },
+    "statistical_classifier": {
+      "mlp_widths": [
+        1974,
+        256,
+        128
+      ],
+      "audio_input_dim": 74,
+      "vision_input_dim": 35,
+      "av_statistics": [
+        "全段均值",
+        "标准差",
+        "前半段均值",
+        "后半段均值",
+        "观测比例"
+      ],
+      "normalization_fit_split": "attachment2_train",
+      "training": {
+        "seed": 2026,
+        "optimizer": "AdamW",
+        "learning_rate": 0.0003,
+        "batch_size": 64,
+        "weight_decay": 0.01,
+        "max_epochs": 18,
+        "patience": 6,
+        "selected_epoch": 2,
+        "classification_loss": "训练集类别频数平方根倒数加权交叉熵",
+        "regression_loss": "SmoothL1",
+        "regression_loss_weight": 0.2,
+        "selection_score": "macro_f1 + 0.1 * pearson_raw - 0.1 * mae_raw",
+        "missing_probability": 0.7,
+        "missing_fraction_range": [
+          0.15,
+          0.4
+        ],
+        "two_modality_fraction_among_augmented_samples": 0.2
+      },
+      "sources": [
+        {
+          "source_id": "aligned_record",
+          "line": 9
+        },
+        {
+          "source_id": "aligned_record",
+          "line": 11
+        }
+      ]
+    },
+    "temporal_regressor": {
+      "av_encoder_as_recorded": "一维时序卷积及注意力池化",
+      "full_text_drop_probability": 0.1,
+      "source": {
+        "source_id": "aligned_record",
+        "line": 46
+      }
+    },
+    "output_rule": {
+      "classification": "仅使用统计融合模型分类头",
+      "raw_strength": "0.5 * statistical_strength + 0.5 * temporal_strength",
+      "regression_mix_weights": [
+        0.5,
+        0.5
+      ],
+      "mix_weight_selection_split": "attachment2_valid",
+      "sign_projection": "负/中/正分别取min(s,-1e-6)/0/max(s,1e-6)，再clip至[-3,3]",
+      "sources": [
+        {
+          "source_id": "aligned_record",
+          "line": 48
+        },
+        {
+          "source_id": "aligned_record",
+          "line": 24
+        }
+      ]
+    }
+  },
+  "complete": {
+    "accuracy": 0.6277,
+    "macro_f1": 0.6091,
+    "neutral_f1": 0.469,
+    "mae_consistent": 0.6042,
+    "pearson_consistent": 0.6068,
+    "source": {
+      "source_id": "comparison_record",
+      "line": 31
+    }
+  },
+  "classification_missing_summaries": {
+    "local_scenario_definition": {
+      "fractions": [
+        0.2,
+        0.4
+      ],
+      "positions": [
+        "start",
+        "middle",
+        "end"
+      ],
+      "scenarios_per_modality": 6,
+      "source": {
+        "source_id": "aligned_record",
+        "line": 28
+      }
+    },
+    "local_macro_f1_mean": {
+      "text": 0.5619,
+      "audio": 0.6083,
+      "vision": 0.6056
+    },
+    "text_middle_40_macro_f1": 0.5384,
+    "full_modality_removal_macro_f1": {
+      "text": 0.41,
+      "audio": 0.6028,
+      "vision": 0.5923
+    },
+    "sources": [
+      {
+        "source_id": "aligned_record",
+        "line": 32
+      },
+      {
+        "source_id": "aligned_record",
+        "line": 33
+      },
+      {
+        "source_id": "aligned_record",
+        "line": 34
+      },
+      {
+        "source_id": "aligned_record",
+        "line": 36
+      }
+    ]
+  },
+  "regression_mix_local_scenarios": {
+    "n_scenarios": 18,
+    "mae_consistent_mean": 0.6201,
+    "pearson_consistent_mean": 0.5816,
+    "source": {
+      "source_id": "aligned_record",
+      "line": 48
+    }
+  },
+  "recorded_checkpoints": [
+    {
+      "role": "statistical_classifier_and_regressor",
+      "original_path": "outputs/robust_aligned_best.pt",
+      "recorded_sha256": "1a795708d27e84d9f57c5208b70d4c5fee7bcb060f190ad1b0cad9446f13074a",
+      "available": false,
+      "hash_verified_against_original_file": false,
+      "source": {
+        "source_id": "aligned_record",
+        "line": 13
+      }
+    },
+    {
+      "role": "temporal_regressor",
+      "original_path": "outputs/robust_aligned_v2_textdrop_best.pt",
+      "recorded_sha256": "e0195037b282729b0305f068844250ccac1b6a5dece2a17e472abe84ff24f9fd",
+      "available": false,
+      "hash_verified_against_original_file": false,
+      "source": {
+        "source_id": "aligned_record",
+        "line": 48
+      }
+    }
+  ],
+  "missing_original_evidence": {
+    "result_files": [
+      "outputs/robust_aligned_results.json",
+      "outputs/robust_aligned_validation.json",
+      "outputs/regression_mix_validation.json"
+    ],
+    "limitations": [
+      "原始检查点、原始逐样本预测与完整逐场景JSON不在已检查的工作区、Git对象、临时归档、回收站或编辑器备份中。",
+      "运行记录恢复了统计融合24场景的四位小数摘要，以及混合回归完整输入和18场景均值；未恢复混合回归逐场景的完整精度结果。",
+      "原记录中的数值与哈希可以核对，但没有恢复原权重，未重新训练、推理或独立复算。"
+    ]
+  },
+  "recovered_execution_evidence": [
+    {
+      "kind": "selected_statistical_model",
+      "scope": "统计融合单模型选中轮次与完整输入指标；MAE/Pearson为其原始回归输出。",
+      "source_session": "rollout-2026-09-23T15-19-13-01a0cd22-019d-7053-afb4-c753b2358996.jsonl",
+      "source_line": 1268,
+      "executed_at": "2026-09-23T08:06:45.709Z",
+      "stdout_sha256": "99f25663585df59c57a8964569c7b83dccf20def8b339f9056f3ce1cd51663ec",
+      "stdout": "selected 2 {'accuracy': 0.6277472527472527, 'macro_f1': 0.6090829151599745, 'per_class_f1': [0.6651162790697674, 0.46900269541778977, 0.6931297709923664], 'mae': 0.639319121837616, 'pearson': 0.5901953270609066}\ntext acc_range 0.5467 0.5879 f1_range 0.5384 0.5771 mae_max 0.6828\naudio acc_range 0.6236 0.6291 f1_range 0.605 0.6147 mae_max 0.6407\nvision acc_range 0.6181 0.6264 f1_range 0.6013 0.6095 mae_max 0.64\n"
+    },
+    {
+      "kind": "statistical_model_24_scenarios",
+      "scope": "统计融合单模型24场景摘要，四位小数；MAE为原始回归输出，未使用混合回归。",
+      "source_session": "rollout-2026-09-23T15-19-13-01a0cd22-019d-7053-afb4-c753b2358996.jsonl",
+      "source_line": 1353,
+      "executed_at": "2026-09-23T08:09:10.613Z",
+      "stdout_sha256": "55aa90a278c44f8696758f2578253aadf94a782b8287995b6ab62adfbda48e1c",
+      "stdout": "text 0.2 start acc=0.5797 F1=0.5720 MAE=0.6538\ntext 0.2 middle acc=0.5879 F1=0.5771 MAE=0.6606\ntext 0.2 end acc=0.5783 F1=0.5683 MAE=0.6659\ntext 0.4 start acc=0.5673 F1=0.5582 MAE=0.6801\ntext 0.4 middle acc=0.5467 F1=0.5384 MAE=0.6704\ntext 0.4 end acc=0.5659 F1=0.5573 MAE=0.6828\ntext 1.0 middle acc=0.4135 F1=0.4100 MAE=0.7822\naudio 0.2 start acc=0.6236 F1=0.6062 MAE=0.6390\naudio 0.2 middle acc=0.6250 F1=0.6079 MAE=0.6388\naudio 0.2 end acc=0.6236 F1=0.6050 MAE=0.6355\naudio 0.4 start acc=0.6291 F1=0.6147 MAE=0.6407\naudio 0.4 middle acc=0.6236 F1=0.6059 MAE=0.6388\naudio 0.4 end acc=0.6264 F1=0.6099 MAE=0.6338\naudio 1.0 middle acc=0.6154 F1=0.6028 MAE=0.6309\nvision 0.2 start acc=0.6236 F1=0.6064 MAE=0.6388\nvision 0.2 middle acc=0.6250 F1=0.6071 MAE=0.6397\nvision 0.2 end acc=0.6236 F1=0.6056 MAE=0.6400\nvision 0.4 start acc=0.6181 F1=0.6013 MAE=0.6400\nvision 0.4 middle acc=0.6209 F1=0.6035 MAE=0.6392\nvision 0.4 end acc=0.6264 F1=0.6095 MAE=0.6391\nvision 1.0 middle acc=0.6030 F1=0.5923 MAE=0.6408\ntext+audio 0.4 middle acc=0.5522 F1=0.5431 MAE=0.6691\ntext+vision 0.4 middle acc=0.5481 F1=0.5394 MAE=0.6704\naudio+vision 0.4 middle acc=0.6223 F1=0.6052 MAE=0.6389\n"
+    },
+    {
+      "kind": "statistical_model_modality_means_and_hashes",
+      "scope": "统计融合单模型各模态六场景均值及当时记录的文件SHA-256；MAE为符号投影后值。",
+      "source_session": "rollout-2026-09-23T15-19-13-01a0cd22-019d-7053-afb4-c753b2358996.jsonl",
+      "source_line": 1413,
+      "executed_at": "2026-09-23T08:11:21.734Z",
+      "stdout_sha256": "2e4456f2f21f164286a20ce4199453b1711d1053b6e9426e7d793e985e628dc3",
+      "stdout": "text avg_acc 0.5709706959706958 avg_F1 0.5618912827107995 worst_F1 0.5384173146040719 avg_MAE_consistent 0.6528703272342682\naudio avg_acc 0.6252289377289377 avg_F1 0.6082558591997764 worst_F1 0.6050037889608614 avg_MAE_consistent 0.6182758410771688\nvision avg_acc 0.6229395604395604 avg_F1 0.6055819526132721 worst_F1 0.601326578363751 avg_MAE_consistent 0.6197176575660706\noutputs/robust_aligned_best.pt 1a795708d27e84d9f57c5208b70d4c5fee7bcb060f190ad1b0cad9446f13074a\nsrc/train_robust_aligned.py f8346a2080f7f3497e709ca50c44f075e68b6bbea7c30d8e8cf170278473250a\noutputs/robust_aligned_validation.json 81045f8f26de8052207ac6908128b48cc58274ee4aeb827c765362dee8c11a4d\n"
+    },
+    {
+      "kind": "regression_mix_weight_evaluation",
+      "scope": "三种混合权重的完整输入与18场景平均指标；beta=0.5为论文对照方案。",
+      "source_session": "rollout-2026-09-23T15-19-13-01a0cd22-019d-7053-afb4-c753b2358996.jsonl",
+      "source_line": 1938,
+      "executed_at": "2026-09-23T08:30:27.183Z",
+      "stdout_sha256": "b6986a27e6b06be15ba3839cd416a7716402722e5c54bd3fe450fe1c567a04ad",
+      "stdout": "{\"beta\": 0.0, \"complete\": {\"scenario\": \"complete\", \"beta\": 0.0, \"mae\": 0.6184464693069458, \"pearson\": 0.5883703717037768}, \"missing_mean_mae\": 0.6302879419591692, \"missing_mean_pearson\": 0.5658927479808569}\n{\"beta\": 0.5, \"complete\": {\"scenario\": \"complete\", \"beta\": 0.5, \"mae\": 0.6041949987411499, \"pearson\": 0.6068056980392419}, \"missing_mean_mae\": 0.6200603246688843, \"missing_mean_pearson\": 0.5815575404960788}\n{\"beta\": 1.0, \"complete\": {\"scenario\": \"complete\", \"beta\": 1.0, \"mae\": 0.604083776473999, \"pearson\": 0.6084751473750225}, \"missing_mean_mae\": 0.6216519342528449, \"missing_mean_pearson\": 0.5798513973045789}\n"
+    },
+    {
+      "kind": "ensemble_minus_statistical_model",
+      "scope": "三种子MoE减统计融合单模型的21场景差值，四位小数；回归差值比较的是未混合的统计模型，不能作为混合回归对照的逐场景差值。",
+      "source_session": "rollout-2026-09-23T16-59-22-01a0cd7d-b35d-76d2-893d-a40d838729bf.jsonl",
+      "source_line": 726,
+      "executed_at": "2026-09-23T09:43:02.976Z",
+      "stdout_sha256": "3c1ce641c3d06f768270026a6a3bee143d6b9649391e54e2bbb244da8e54ab32",
+      "stdout": "('audio', 0.2, 'end') dF1 0.0212 dACC 0.0247 dMAE -0.0404\n('audio', 0.2, 'middle') dF1 0.0206 dACC 0.0247 dMAE -0.0433\n('audio', 0.2, 'start') dF1 0.0181 dACC 0.022 dMAE -0.0411\n('audio', 0.4, 'end') dF1 0.0182 dACC 0.0234 dMAE -0.0369\n('audio', 0.4, 'middle') dF1 0.0189 dACC 0.022 dMAE -0.0424\n('audio', 0.4, 'start') dF1 0.0096 dACC 0.0165 dMAE -0.0413\n('audio', 1.0, 'middle') dF1 0.0301 dACC 0.0371 dMAE -0.0338\n('text', 0.2, 'end') dF1 -0.0156 dACC -0.0027 dMAE -0.036\n('text', 0.2, 'middle') dF1 0.0125 dACC 0.0234 dMAE -0.033\n('text', 0.2, 'start') dF1 0.0324 dACC 0.0467 dMAE -0.0397\n('text', 0.4, 'end') dF1 -0.0042 dACC 0.0096 dMAE -0.0232\n('text', 0.4, 'middle') dF1 0.029 dACC 0.044 dMAE -0.0387\n('text', 0.4, 'start') dF1 0.0208 dACC 0.0302 dMAE -0.0241\n('text', 1.0, 'middle') dF1 0.0004 dACC 0.0165 dMAE -0.0083\n('vision', 0.2, 'end') dF1 0.0221 dACC 0.0247 dMAE -0.0425\n('vision', 0.2, 'middle') dF1 0.0206 dACC 0.0234 dMAE -0.0424\n('vision', 0.2, 'start') dF1 0.0204 dACC 0.0247 dMAE -0.0425\n('vision', 0.4, 'end') dF1 0.0174 dACC 0.0206 dMAE -0.04\n('vision', 0.4, 'middle') dF1 0.0241 dACC 0.0275 dMAE -0.0428\n('vision', 0.4, 'start') dF1 0.0276 dACC 0.0316 dMAE -0.0448\n('vision', 1.0, 'middle') dF1 0.0188 dACC 0.0234 dMAE -0.0407\n"
+    }
+  ]
+}

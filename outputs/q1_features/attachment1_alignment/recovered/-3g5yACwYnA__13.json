@@ -1,0 +1,443 @@
+{
+  "stable_id": "-3g5yACwYnA$_$13",
+  "official_text": "They've been able to find solutions or at least bring some answers to the table.",
+  "category": "human_whole_content_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "They've",
+      "normalized_target": "THEY'VE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "They've",
+        "chosen": "THEY'VE",
+        "dropped": []
+      },
+      "candidate_start": 1.44,
+      "candidate_end": 1.6,
+      "start": 1.44,
+      "end": 1.6,
+      "confidence": 0.9689017023359027,
+      "local_confidence": 0.9689017023359027,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9120326042175293,
+      "local_start": 1.44,
+      "local_end": 1.6
+    },
+    {
+      "word_index": 1,
+      "word": "been",
+      "normalized_target": "BEEN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "been",
+        "chosen": "BEEN",
+        "dropped": []
+      },
+      "candidate_start": 1.62,
+      "candidate_end": 1.74,
+      "start": 1.62,
+      "end": 1.74,
+      "confidence": 0.975184977054596,
+      "local_confidence": 0.975184977054596,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9185484647750854,
+      "local_start": 1.62,
+      "local_end": 1.74
+    },
+    {
+      "word_index": 2,
+      "word": "able",
+      "normalized_target": "ABLE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "able",
+        "chosen": "ABLE",
+        "dropped": []
+      },
+      "candidate_start": 1.76,
+      "candidate_end": 1.9,
+      "start": 1.76,
+      "end": 1.9,
+      "confidence": 0.9987754076719284,
+      "local_confidence": 0.9987754076719284,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9964929223060608,
+      "local_start": 1.76,
+      "local_end": 1.9
+    },
+    {
+      "word_index": 3,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 1.96,
+      "candidate_end": 2.02,
+      "start": null,
+      "end": null,
+      "confidence": 0.9419618546962738,
+      "local_confidence": 0.9419618546962738,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "inside_detected_silence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8844637274742126,
+      "local_start": 1.96,
+      "local_end": 2.02
+    },
+    {
+      "word_index": 4,
+      "word": "find",
+      "normalized_target": "FIND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "find",
+        "chosen": "FIND",
+        "dropped": []
+      },
+      "candidate_start": 2.18,
+      "candidate_end": 2.38,
+      "start": 2.18,
+      "end": 2.38,
+      "confidence": 0.9970809817314148,
+      "local_confidence": 0.9970809817314148,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9909044504165649,
+      "local_start": 2.18,
+      "local_end": 2.38
+    },
+    {
+      "word_index": 5,
+      "word": "solutions",
+      "normalized_target": "SOLUTIONS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "solutions",
+        "chosen": "SOLUTIONS",
+        "dropped": []
+      },
+      "candidate_start": 2.44,
+      "candidate_end": 2.92,
+      "start": 2.44,
+      "end": 2.92,
+      "confidence": 0.9658387700716654,
+      "local_confidence": 0.9658387700716654,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8342846632003784,
+      "local_start": 2.44,
+      "local_end": 2.92
+    },
+    {
+      "word_index": 6,
+      "word": "or",
+      "normalized_target": "OR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "or",
+        "chosen": "OR",
+        "dropped": []
+      },
+      "candidate_start": 3.02,
+      "candidate_end": 3.06,
+      "start": 3.02,
+      "end": 3.06,
+      "confidence": 0.8471339643001556,
+      "local_confidence": 0.8471339643001556,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7672745585441589,
+      "local_start": 3.02,
+      "local_end": 3.06
+    },
+    {
+      "word_index": 7,
+      "word": "at",
+      "normalized_target": "AT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "at",
+        "chosen": "AT",
+        "dropped": []
+      },
+      "candidate_start": 3.16,
+      "candidate_end": 3.24,
+      "start": 3.16,
+      "end": 3.24,
+      "confidence": 0.5835689753293991,
+      "local_confidence": 0.5835689753293991,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.41648009419441223,
+      "local_start": 3.16,
+      "local_end": 3.24
+    },
+    {
+      "word_index": 8,
+      "word": "least",
+      "normalized_target": "LEAST",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "least",
+        "chosen": "LEAST",
+        "dropped": []
+      },
+      "candidate_start": 3.26,
+      "candidate_end": 3.4,
+      "start": null,
+      "end": null,
+      "confidence": 0.24069942503701897,
+      "local_confidence": 0.24069942503701897,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.0011499725515022874,
+      "local_start": 3.26,
+      "local_end": 3.4
+    },
+    {
+      "word_index": 9,
+      "word": "bring",
+      "normalized_target": "BRING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "bring",
+        "chosen": "BRING",
+        "dropped": []
+      },
+      "candidate_start": 3.46,
+      "candidate_end": 3.72,
+      "start": 3.46,
+      "end": 3.72,
+      "confidence": 0.7792260587215424,
+      "local_confidence": 0.7792260587215424,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.2846814692020416,
+      "local_start": 3.46,
+      "local_end": 3.72
+    },
+    {
+      "word_index": 10,
+      "word": "some",
+      "normalized_target": "SOME",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "some",
+        "chosen": "SOME",
+        "dropped": []
+      },
+      "candidate_start": 3.8,
+      "candidate_end": 3.96,
+      "start": 3.8,
+      "end": 3.96,
+      "confidence": 0.9829490482807159,
+      "local_confidence": 0.9829490482807159,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9686267375946045,
+      "local_start": 3.8,
+      "local_end": 3.96
+    },
+    {
+      "word_index": 11,
+      "word": "answers",
+      "normalized_target": "ANSWERS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "answers",
+        "chosen": "ANSWERS",
+        "dropped": []
+      },
+      "candidate_start": 4.06,
+      "candidate_end": 4.34,
+      "start": 4.06,
+      "end": 4.34,
+      "confidence": 0.6832017611180033,
+      "local_confidence": 0.6832017611180033,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.1244482472538948,
+      "local_start": 4.06,
+      "local_end": 4.34
+    },
+    {
+      "word_index": 12,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 4.38,
+      "candidate_end": 4.42,
+      "start": 4.38,
+      "end": 4.42,
+      "confidence": 0.9914768636226654,
+      "local_confidence": 0.9914768636226654,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9868296384811401,
+      "local_start": 4.38,
+      "local_end": 4.42
+    },
+    {
+      "word_index": 13,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": 4.46,
+      "candidate_end": 4.56,
+      "start": 4.46,
+      "end": 4.56,
+      "confidence": 0.936993420124054,
+      "local_confidence": 0.936993420124054,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8596891164779663,
+      "local_start": 4.46,
+      "local_end": 4.56
+    },
+    {
+      "word_index": 14,
+      "word": "table.",
+      "normalized_target": "TABLE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "table.",
+        "chosen": "TABLE",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 4.6,
+      "candidate_end": 4.86,
+      "start": 4.6,
+      "end": 4.86,
+      "confidence": 0.9969716906547547,
+      "local_confidence": 0.9969716906547547,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9855897426605225,
+      "local_start": 4.6,
+      "local_end": 4.86
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "left": 0,
+      "right": 269
+    }
+  ],
+  "greedy_text": "THAT WE DO O THEY'VE BEEN ABLE TO FIND SOLUTIONS OR EARTLY SOPRING SOME MANCERS TO THE TABLE ",
+  "silence": [
+    {
+      "start": 0.615125,
+      "end": 1.1495,
+      "duration": 0.534375
+    },
+    {
+      "start": 1.8975,
+      "end": 2.21488,
+      "duration": 0.317375
+    },
+    {
+      "start": 2.35819,
+      "end": 2.52419,
+      "duration": 0.166
+    },
+    {
+      "start": 3.30244,
+      "end": 3.50631,
+      "duration": 0.203875
+    },
+    {
+      "start": 3.65294,
+      "end": 3.85931,
+      "duration": 0.206375
+    },
+    {
+      "start": 4.82906,
+      "end": 5.39912,
+      "duration": 0.570063
+    }
+  ],
+  "fingerprint": "8dd846f845d162ba5888f047fd73b389bb2c99a7cea1364cea96dc5fc5ed973d1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec9837f999bc267be303cb8e41022e216f8acec2941debc5f2e8216ec64ed8f01bc64a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R029"
+  ],
+  "source_candidate_sha256": "8dd846f845d162ba5888f047fd73b389bb2c99a7cea1364cea96dc5fc5ed973d",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "7f999bc267be303cb8e41022e216f8acec2941debc5f2e8216ec64ed8f01bc64",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

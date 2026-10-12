@@ -1,0 +1,21 @@
+{
+  "source": "attachment2 validation; fixed ensemble; 40% wider-window transfer",
+  "groups": {
+    "预测正确": {
+      "n": 472,
+      "positive_text_phi": 461,
+      "median_text_phi": 0.3755731520553429,
+      "median_wider_gain": 0.05858719348907471,
+      "mean_wider_gain": 0.0992823680073528,
+      "positive_wider_gain": 317
+    },
+    "预测错误": {
+      "n": 256,
+      "positive_text_phi": 237,
+      "median_text_phi": 0.23550831526517868,
+      "median_wider_gain": 0.06888261437416077,
+      "mean_wider_gain": 0.08987817578599788,
+      "positive_wider_gain": 177
+    }
+  }
+}

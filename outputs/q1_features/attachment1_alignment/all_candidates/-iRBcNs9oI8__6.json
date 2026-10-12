@@ -1,0 +1,213 @@
+{
+  "label": "-iRBcNs9oI8__6",
+  "stable_id": "-iRBcNs9oI8$_$6",
+  "relative_path": "data/attachment1/-iRBcNs9oI8/6.mp4",
+  "official_text": "What is a power pose",
+  "n_words": 5,
+  "audio": {
+    "wav_path": "outputs/attachment1_alignment/audio/-iRBcNs9oI8__6.wav",
+    "sampling_rate": 16000,
+    "n_samples": 45127,
+    "duration_seconds": 2.820438
+  },
+  "index_to_seconds": {
+    "audio_sample_to_seconds": "sample_index / 16000",
+    "acoustic_frame_to_seconds": "frame_index * 0.02",
+    "frame_stride_samples": 320,
+    "acoustic_frames": 140,
+    "emission_span_seconds": 2.8
+  },
+  "self_check": {
+    "recovered_sequence_equals_target": true,
+    "n_target_tokens": 20,
+    "min_required_frames": 20
+  },
+  "diagnostic_asr": {
+    "note": "仅用于诊断文本与音频是否匹配，不作为对齐目标，也不替换官方转写",
+    "greedy_text": "HELP YOU IF YOU HAVE AN ENGLISH JOB INTERVIEW",
+    "char_similarity_to_official": 0.307692
+  },
+  "status": "ctc_path_found",
+  "alignment_status": "needs_review",
+  "alignment_status_reason": [
+    "诊断字符相似度 0.308 < 0.9",
+    "存在低置信词：占比 0.800（失败置信占比 0.400）"
+  ],
+  "alignment_status_criteria": {
+    "primary_rule": "诊断字符相似度 < 0.2 -> not_usable_for_formal_alignment（英文模型与官方文本不相容）；相似度 < 0.9 或存在低置信词 -> needs_review；相似度 >= 0.9 且无低置信词 -> candidate_for_manual_spot_check",
+    "similarity_high": 0.9,
+    "similarity_low": 0.2,
+    "low_confidence_threshold": 0.5,
+    "failed_confidence_threshold": 0.1,
+    "low_confidence_fraction": 0.8,
+    "failed_confidence_fraction": 0.4,
+    "similarity_role": "仅用于判断“英文声学模型与官方文本是否相容”，不作为官方标签正确性、视频配对正确性或语音语种判断的证据",
+    "word_usable_rule": "只有样本级状态为 candidate_for_manual_spot_check 且词级状态为 usable_candidate 的词，才允许进入后续特征对齐",
+    "note": "阈值一次性在三条试点样本上设定并固定，未在附件 2/3/4 上做任何选择；扩展时作为固定规则沿用"
+  },
+  "words_usable_for_feature_alignment": [],
+  "words": [
+    {
+      "word_index": 0,
+      "word": "What",
+      "start": 0.34,
+      "end": 0.76,
+      "duration": 0.42,
+      "start_frame": 17,
+      "end_frame": 37,
+      "confidence_mean": 0.445239,
+      "confidence_min": 6e-06,
+      "n_chars_kept": 4,
+      "chars_dropped": [],
+      "status": "ctc_path_found",
+      "entirely_in_silence": false,
+      "low_confidence": true,
+      "failed_confidence": false,
+      "time_status": "needs_review",
+      "usable_for_feature_alignment": false,
+      "exclusion_reason": "样本级状态为 needs_review（诊断字符相似度 0.308 < 0.9）"
+    },
+    {
+      "word_index": 1,
+      "word": "is",
+      "start": 1.16,
+      "end": 1.2,
+      "duration": 0.04,
+      "start_frame": 58,
+      "end_frame": 59,
+      "confidence_mean": 0.998787,
+      "confidence_min": 0.997615,
+      "n_chars_kept": 2,
+      "chars_dropped": [],
+      "status": "ctc_path_found",
+      "entirely_in_silence": false,
+      "low_confidence": false,
+      "failed_confidence": false,
+      "time_status": "usable_candidate",
+      "usable_for_feature_alignment": false,
+      "exclusion_reason": "样本级状态为 needs_review（诊断字符相似度 0.308 < 0.9）"
+    },
+    {
+      "word_index": 2,
+      "word": "a",
+      "start": 1.62,
+      "end": 1.64,
+      "duration": 0.02,
+      "start_frame": 81,
+      "end_frame": 81,
+      "confidence_mean": 2.2e-05,
+      "confidence_min": 2.2e-05,
+      "n_chars_kept": 1,
+      "chars_dropped": [],
+      "status": "ctc_path_found",
+      "entirely_in_silence": false,
+      "low_confidence": true,
+      "failed_confidence": true,
+      "time_status": "not_usable",
+      "usable_for_feature_alignment": false,
+      "exclusion_reason": "样本级状态为 needs_review（诊断字符相似度 0.308 < 0.9）"
+    },
+    {
+      "word_index": 3,
+      "word": "power",
+      "start": 2.06,
+      "end": 2.28,
+      "duration": 0.22,
+      "start_frame": 103,
+      "end_frame": 113,
+      "confidence_mean": 0.397821,
+      "confidence_min": 0.0,
+      "n_chars_kept": 5,
+      "chars_dropped": [],
+      "status": "ctc_path_found",
+      "entirely_in_silence": false,
+      "low_confidence": true,
+      "failed_confidence": false,
+      "time_status": "needs_review",
+      "usable_for_feature_alignment": false,
+      "exclusion_reason": "样本级状态为 needs_review（诊断字符相似度 0.308 < 0.9）"
+    },
+    {
+      "word_index": 4,
+      "word": "pose",
+      "start": 2.54,
+      "end": 2.62,
+      "duration": 0.08,
+      "start_frame": 127,
+      "end_frame": 130,
+      "confidence_mean": 0.000412,
+      "confidence_min": 2e-06,
+      "n_chars_kept": 4,
+      "chars_dropped": [],
+      "status": "ctc_path_found",
+      "entirely_in_silence": false,
+      "low_confidence": true,
+      "failed_confidence": true,
+      "time_status": "not_usable",
+      "usable_for_feature_alignment": false,
+      "exclusion_reason": "样本级状态为 needs_review（诊断字符相似度 0.308 < 0.9）"
+    }
+  ],
+  "silence": {
+    "params": {
+      "noise": "-35dB",
+      "min_duration_s": 0.15,
+      "filter": "silencedetect"
+    },
+    "segments": [
+      {
+        "start": 1.83556,
+        "end": 2.01094,
+        "duration": 0.175375
+      },
+      {
+        "start": 2.59075,
+        "end": 2.82044,
+        "duration": 0.229688
+      }
+    ]
+  },
+  "checks": {
+    "ctc_path_found_for_all_words": true,
+    "word_start_times_monotonic_increasing": true,
+    "words_out_of_audio_range": [],
+    "words_out_of_video_display_range": [],
+    "audio_span_seconds": 2.820438,
+    "video_display_span_seconds": [
+      0.0,
+      2.836167
+    ],
+    "total_path_logprob": -417.697087,
+    "mean_word_logprob": -20.884854,
+    "video_frame_offset_is_not_accuracy_evidence": "词时间与邻近视频帧时间的差只说明“如何从候选时间找到附近视频帧”，不构成词边界准确性的证据"
+  },
+  "quality": {
+    "n_words": 5,
+    "n_ctc_path_found": 5,
+    "ctc_path_found_fraction": 1.0,
+    "word_coverage": 1.0,
+    "quality_status": "needs_review",
+    "quality_status_reason": [
+      "诊断字符相似度 0.308 < 0.9",
+      "存在低置信词：占比 0.800（失败置信占比 0.400）"
+    ],
+    "n_words_usable_for_feature_alignment": 0,
+    "low_confidence_fraction": 0.8,
+    "failed_confidence_fraction": 0.4,
+    "n_failed_no_usable_chars": 0,
+    "n_failed_no_frames": 0,
+    "confidence_mean": 0.368456,
+    "confidence_min": 2.2e-05,
+    "confidence_median": 0.397821,
+    "n_low_confidence": 4,
+    "n_failed_confidence": 2,
+    "n_words_entirely_in_silence": 0,
+    "diagnostic_char_similarity_to_official": 0.307692,
+    "mean_word_logprob": -20.884854,
+    "thresholds": {
+      "low_confidence": 0.5,
+      "failed_confidence": 0.1,
+      "note": "报告用固定阈值，不参与任何调参，未在附件 3、4 上选择"
+    }
+  }
+}

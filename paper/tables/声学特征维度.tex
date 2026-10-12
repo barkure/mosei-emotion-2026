@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering
+\caption{17维声学特征的排列与有效性}\label{tab:appendix-audio-dimensions}
+\begin{tblr}{width=\linewidth,colspec={c c c X[c] X[c]},cells={valign=m,font=\normalsize\songti},
+ colsep=4pt,rowsep=3pt,hline{1,7}={0.8pt},hline{2}={0.4pt}}
+列序号 & 特征 & 维数 & 定义 & 可用条件 \\
+1--13 & MFCC $c_0$--$c_{12}$ & 13 & 26通道对数mel谱的前13个正交倒谱系数 & 存在完整声学窗 \\
+14 & 对数RMS & 1 & 去均值波形均方根幅值的自然对数 & 存在完整声学窗 \\
+15 & 基频/Hz & 1 & 60--400 Hz内自相关峰值对应频率 & 峰值至少0.30，RMS至少$10^{-3}$ \\
+16 & 频谱质心/Hz & 1 & 幅值谱的频率加权均值 & 完整声学窗；全零谱取零 \\
+17 & 过零率 & 1 & 相邻采样点符号变化次数除以399 & 存在完整声学窗 \\
+\end{tblr}
+\end{table}

@@ -1,0 +1,262 @@
+{
+  "stable_id": "-wny0OAz3g8$_$0",
+  "official_text": "trade labor unions didn’t allow Black workers to join",
+  "category": "human_whole_content_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "trade",
+      "normalized_target": "TRADE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "trade",
+        "chosen": "TRADE",
+        "dropped": []
+      },
+      "candidate_start": 0.32,
+      "candidate_end": 0.5,
+      "start": 0.32,
+      "end": 0.5,
+      "confidence": 0.9312167525291443,
+      "local_confidence": 0.9312167525291443,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.760515034198761,
+      "local_start": 0.32,
+      "local_end": 0.5
+    },
+    {
+      "word_index": 1,
+      "word": "labor",
+      "normalized_target": "LABOR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "labor",
+        "chosen": "LABOR",
+        "dropped": []
+      },
+      "candidate_start": 0.54,
+      "candidate_end": 0.72,
+      "start": 0.54,
+      "end": 0.72,
+      "confidence": 0.9424525737762451,
+      "local_confidence": 0.9424525737762451,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7675068974494934,
+      "local_start": 0.54,
+      "local_end": 0.72
+    },
+    {
+      "word_index": 2,
+      "word": "unions",
+      "normalized_target": "UNIONS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "unions",
+        "chosen": "UNIONS",
+        "dropped": []
+      },
+      "candidate_start": 0.82,
+      "candidate_end": 1.06,
+      "start": 0.82,
+      "end": 1.06,
+      "confidence": 0.9895996550718943,
+      "local_confidence": 0.9895996550718943,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.967577338218689,
+      "local_start": 0.82,
+      "local_end": 1.06
+    },
+    {
+      "word_index": 3,
+      "word": "didn’t",
+      "normalized_target": "DIDNT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "didn’t",
+        "chosen": "DIDNT",
+        "dropped": [
+          "’"
+        ]
+      },
+      "candidate_start": 1.14,
+      "candidate_end": 1.36,
+      "start": 1.14,
+      "end": 1.36,
+      "confidence": 0.9965935468673706,
+      "local_confidence": 0.9965935468673706,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9838088750839233,
+      "local_start": 1.14,
+      "local_end": 1.36
+    },
+    {
+      "word_index": 4,
+      "word": "allow",
+      "normalized_target": "ALLOW",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "allow",
+        "chosen": "ALLOW",
+        "dropped": []
+      },
+      "candidate_start": 1.44,
+      "candidate_end": 1.66,
+      "start": 1.44,
+      "end": 1.66,
+      "confidence": 0.9999029159545898,
+      "local_confidence": 0.9999029159545898,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9997047781944275,
+      "local_start": 1.44,
+      "local_end": 1.66
+    },
+    {
+      "word_index": 5,
+      "word": "Black",
+      "normalized_target": "BLACK",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "Black",
+        "chosen": "BLACK",
+        "dropped": []
+      },
+      "candidate_start": 1.76,
+      "candidate_end": 1.94,
+      "start": 1.76,
+      "end": 1.94,
+      "confidence": 0.944403862953186,
+      "local_confidence": 0.944403862953186,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.7235994935035706,
+      "local_start": 1.76,
+      "local_end": 1.94
+    },
+    {
+      "word_index": 6,
+      "word": "workers",
+      "normalized_target": "WORKERS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "workers",
+        "chosen": "WORKERS",
+        "dropped": []
+      },
+      "candidate_start": 2.0,
+      "candidate_end": 2.3,
+      "start": 2.0,
+      "end": 2.3,
+      "confidence": 0.9714599762644086,
+      "local_confidence": 0.9714599762644086,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8090429902076721,
+      "local_start": 2.0,
+      "local_end": 2.3
+    },
+    {
+      "word_index": 7,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 2.34,
+      "candidate_end": 2.42,
+      "start": 2.34,
+      "end": 2.42,
+      "confidence": 0.969056636095047,
+      "local_confidence": 0.969056636095047,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9381746649742126,
+      "local_start": 2.34,
+      "local_end": 2.42
+    },
+    {
+      "word_index": 8,
+      "word": "join",
+      "normalized_target": "JOIN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "join",
+        "chosen": "JOIN",
+        "dropped": []
+      },
+      "candidate_start": 2.48,
+      "candidate_end": 2.7,
+      "start": 2.48,
+      "end": 2.7,
+      "confidence": 0.9971788972616196,
+      "local_confidence": 0.9971788972616196,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9909833669662476,
+      "local_start": 2.48,
+      "local_end": 2.7
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "left": 0,
+      "right": 163
+    }
+  ],
+  "greedy_text": "TRADE LABOR UNIONS DIDN'T ALLOW BLACK WORKERS TO JOIN AND BECAUSE ",
+  "silence": [],
+  "fingerprint": "1dc500ae15ae2f09a45128c8d29959a5b283141984c7acc283512bf18122e8b61b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec9838c92a52b1d03579f2c9e18f8cc25136394d15daae55bddfcddeba34bf0dc58c4a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R028"
+  ],
+  "source_candidate_sha256": "1dc500ae15ae2f09a45128c8d29959a5b283141984c7acc283512bf18122e8b6",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "8c92a52b1d03579f2c9e18f8cc25136394d15daae55bddfcddeba34bf0dc58c4",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

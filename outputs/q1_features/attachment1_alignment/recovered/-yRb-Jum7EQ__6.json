@@ -1,0 +1,433 @@
+{
+  "stable_id": "-yRb-Jum7EQ$_$6",
+  "official_text": "Therefore, the world needs to stand with Israel against this incitement, which is the number one cause of terrorism.",
+  "category": "other_language",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "Therefore,",
+      "normalized_target": "THEREFORE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "Therefore,",
+        "chosen": "THEREFORE",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 1,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 2,
+      "word": "world",
+      "normalized_target": "WORLD",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "world",
+        "chosen": "WORLD",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 3,
+      "word": "needs",
+      "normalized_target": "NEEDS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "needs",
+        "chosen": "NEEDS",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 4,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 5,
+      "word": "stand",
+      "normalized_target": "STAND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "stand",
+        "chosen": "STAND",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 6,
+      "word": "with",
+      "normalized_target": "WITH",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "with",
+        "chosen": "WITH",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 7,
+      "word": "Israel",
+      "normalized_target": "ISRAEL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "Israel",
+        "chosen": "ISRAEL",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 8,
+      "word": "against",
+      "normalized_target": "AGAINST",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "against",
+        "chosen": "AGAINST",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 9,
+      "word": "this",
+      "normalized_target": "THIS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "this",
+        "chosen": "THIS",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 10,
+      "word": "incitement,",
+      "normalized_target": "INCITEMENT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "incitement,",
+        "chosen": "INCITEMENT",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 11,
+      "word": "which",
+      "normalized_target": "WHICH",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "which",
+        "chosen": "WHICH",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 12,
+      "word": "is",
+      "normalized_target": "IS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "is",
+        "chosen": "IS",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 13,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 14,
+      "word": "number",
+      "normalized_target": "NUMBER",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "number",
+        "chosen": "NUMBER",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 15,
+      "word": "one",
+      "normalized_target": "ONE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "one",
+        "chosen": "ONE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 16,
+      "word": "cause",
+      "normalized_target": "CAUSE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "cause",
+        "chosen": "CAUSE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 17,
+      "word": "of",
+      "normalized_target": "OF",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "of",
+        "chosen": "OF",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 18,
+      "word": "terrorism.",
+      "normalized_target": "TERRORISM",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "terrorism.",
+        "chosen": "TERRORISM",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "other_language",
+      "human_content_reviewed": true
+    }
+  ],
+  "blocks": [],
+  "greedy_text": "",
+  "silence": [],
+  "fingerprint": "f39d63c3f4b73b4c1a3062c3b4450ed3bdb54643384d43f934c65da3957744931b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec98306ab68aa9a53ba269fc191ce95ccd72cafefa47862da21b853cd21e3ebc5ee84a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R065"
+  ],
+  "source_candidate_sha256": "f39d63c3f4b73b4c1a3062c3b4450ed3bdb54643384d43f934c65da395774493",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "06ab68aa9a53ba269fc191ce95ccd72cafefa47862da21b853cd21e3ebc5ee84",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

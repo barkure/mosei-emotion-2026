@@ -1,0 +1,51 @@
+{
+  "data_version": "aligned_50",
+  "mode": "gate_recon",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "n_predictions": 20,
+  "input_files": [
+    "01.pkl",
+    "02.pkl",
+    "03.pkl",
+    "04.pkl",
+    "05.pkl",
+    "06.pkl",
+    "07.pkl",
+    "08.pkl",
+    "09.pkl",
+    "10.pkl",
+    "11.pkl",
+    "12.pkl",
+    "13.pkl",
+    "14.pkl",
+    "15.pkl",
+    "16.pkl",
+    "17.pkl",
+    "18.pkl",
+    "19.pkl",
+    "20.pkl"
+  ],
+  "checkpoint_sha256": {
+    "2026": "81289a114bbc291f10ed59079f830a57a7e9ea21587e7859f4661cf60e0171f6",
+    "2027": "bbd4a564b7eb7fd2683018351e063634675e1e33f6c95bfb33a50367090d387e",
+    "2028": "b3282088198d2440be39bbd510fa2fe6d4f98c88220fd2f636f7d83100aa6204"
+  },
+  "csv": "outputs/q3_explanation/q3/attachment4_predictions_explanations.csv",
+  "csv_sha256": "949efbd6d4aa17fd39f453bb659fdb22a530e3a64c3556c5eb3d702c6048e811",
+  "details": "outputs/q3_explanation/q3/attachment4_explanations_full.json",
+  "time_status": "7 text intervals reviewed for approximate content coverage; 05 nearby frame reviewed",
+  "alignment_candidates": "outputs/q3_explanation/q3/attachment4_word_alignment_candidates.json",
+  "n_candidate_text_times": 7,
+  "n_candidate_video_frames": 1,
+  "details_sha256": "30741b95a9927d25b66dfb141487f6c7a065bdb3ef564f60d9b8575487ab6326",
+  "n_reviewed_text_intervals": 7,
+  "n_reviewed_nearby_video_frames": 1,
+  "human_review_sources": {
+    "outputs/q3_explanation/q3/text_time_user_review_20260925.json": "63e9763b8e5dcdd9291fcb2f5a27d406ceabc828ee1ab536cefe1e64e8cc7c57",
+    "outputs/q3_explanation/q3/video05_user_review_20260925.json": "2e18457911eca05ee0f83a92d63f7fad0598f3bae1bf6b3675b0329bec27b5d7"
+  }
+}

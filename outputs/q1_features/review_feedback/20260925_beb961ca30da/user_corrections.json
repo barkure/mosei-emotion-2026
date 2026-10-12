@@ -1,0 +1,14 @@
+{
+  "packet_id": "q1-local-review-20260925-v2",
+  "corrections": [
+    {
+      "review_id": "R074",
+      "stable_id": "-ri04Z7vwnc$_$2",
+      "previous_verdict": "听不清或无法判断",
+      "verdict": "实际内容与文本不一致",
+      "user_statement": "那其实就是没关系",
+      "context": "用户明确最后出现的语音与官方文本没有关系。",
+      "date": "2026-09-25"
+    }
+  ]
+}

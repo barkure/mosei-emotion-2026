@@ -1,0 +1,33 @@
+[workspace]
+name = "mosei-emotion-2026"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+python = "3.12.*"
+numpy = ">=2.0,<3"
+scipy = ">=1.14,<2"
+pandas = ">=2.2,<3"
+openpyxl = ">=3.1,<4"
+scikit-learn = ">=1.5,<2"
+matplotlib = ">=3.8,<4"
+
+[pypi-options]
+index-url = "https://mirror.sjtu.edu.cn/pypi/web/simple"
+
+[pypi-dependencies]
+torch = { version = "==2.11.0+cu128", index = "https://mirror.sjtu.edu.cn/pytorch-wheels/cu128" }
+transformers = "==4.57.6"
+mediapipe = "==1.0.1"
+
+[tasks]
+resources = "python src/common/prepare_resources.py"
+audit = "python src/common/audit_data.py"
+audit-attachment2 = "python src/common/audit_attachment2.py"
+verify-data-io = "python src/common/verify_data_io.py"
+attachment1-inventory = "python src/q1_features/attachment1_inventory.py"
+verify-timebase-attachment1 = "python src/q1_features/verify_timebase_attachment1.py"
+extract-features = "python src/q1_features/extract_native_features.py"
+summarize-features = "python src/q1_features/export_final_word_results.py"
+infer-attachment3-aligned = "python src/q2_prediction/infer_attachment3_q2_ensemble.py"

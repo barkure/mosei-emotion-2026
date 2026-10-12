@@ -1,0 +1,1195 @@
+{
+  "scope": {
+    "splits_audited": [
+      "train",
+      "valid"
+    ],
+    "note": "仅审计附件 2 的 train 与 valid；不使用 test 划分，不读取附件 3、4 的输入分布。",
+    "mask_contract": {
+      "text_observed": "content tokens only (= text_content_mask)",
+      "audio_struct": "position < declared length (audio_lengths for unaligned)",
+      "vision_struct": "unaligned: position < min(500, max(vision_lengths, last_nonzero+1)); conservative reading rule from attachment-2 train/valid only, does not claim to resolve the original semantics of vision_lengths",
+      "beyond_declared_basis": "original declared length field (not expanded struct length)"
+    }
+  },
+  "versions": {
+    "aligned": {
+      "file": "aligned_50.pkl",
+      "file_bytes": 993842861,
+      "splits": {
+        "train": {
+          "version": "aligned",
+          "split": "train",
+          "n_samples": 3395,
+          "meta": {
+            "version": "aligned",
+            "split": "train",
+            "n": 3395,
+            "text_positions": 50,
+            "audio_positions": 50,
+            "vision_positions": 50,
+            "audio_dim": 74,
+            "vision_dim": 35,
+            "text_dim": 768,
+            "has_length_fields": false,
+            "struct_rule": {
+              "text": "text_bert attention mask (contiguous prefix)",
+              "audio": "position < text_attention_length",
+              "vision": "position < text_attention_length",
+              "observed": "struct_mask & row is not all-zero; zero rows inside struct are 'unobserved'",
+              "text_observed": "content tokens only (attention & not [PAD]/[CLS]/[SEP])"
+            },
+            "vision_conservative_rule": null,
+            "beyond_declared_basis": "original declared length field (not the expanded struct length)",
+            "labels": {
+              "classification": "0=negative,1=neutral,2=positive",
+              "regression": "continuous intensity in [-3,3]"
+            },
+            "dtype": {
+              "text": "float32",
+              "audio": "float64",
+              "vision": "float64",
+              "text_tokens": "int64"
+            }
+          },
+          "id": {
+            "n_unique": 3395,
+            "duplicates": 0,
+            "all_match_video_clip_format": true,
+            "n_unique_video_id": 1528
+          },
+          "shapes": {
+            "text": [
+              3395,
+              50,
+              768
+            ],
+            "text_tokens": [
+              3395,
+              50
+            ],
+            "text_segment": [
+              3395,
+              50
+            ],
+            "audio": [
+              3395,
+              50,
+              74
+            ],
+            "vision": [
+              3395,
+              50,
+              35
+            ],
+            "text_struct_mask": [
+              3395,
+              50
+            ],
+            "audio_struct_mask": [
+              3395,
+              50
+            ],
+            "vision_struct_mask": [
+              3395,
+              50
+            ]
+          },
+          "dtypes": {
+            "text": "float32",
+            "audio": "float64",
+            "vision": "float64",
+            "text_tokens": "int64",
+            "labels_classification": "float64",
+            "labels_regression": "float64"
+          },
+          "nonfinite": {
+            "text": 0,
+            "audio": 0,
+            "vision": 0,
+            "regression_labels": 0
+          },
+          "text": {
+            "attn_len_range": {
+              "min": 3.0,
+              "max": 50.0,
+              "mean": 24.645655375552284
+            },
+            "attn_len_histogram": {
+              "3": 16,
+              "4": 6,
+              "5": 12,
+              "6": 34,
+              "7": 43,
+              "8": 70,
+              "9": 73,
+              "10": 78,
+              "11": 102,
+              "12": 74,
+              "13": 96,
+              "14": 112,
+              "15": 120,
+              "16": 135,
+              "17": 133,
+              "18": 111,
+              "19": 121,
+              "20": 129,
+              "21": 132,
+              "22": 104,
+              "23": 122,
+              "24": 105,
+              "25": 116,
+              "26": 94,
+              "27": 99,
+              "28": 81,
+              "29": 70,
+              "30": 78,
+              "31": 79,
+              "32": 53,
+              "33": 59,
+              "34": 48,
+              "35": 62,
+              "36": 47,
+              "37": 33,
+              "38": 36,
+              "39": 31,
+              "40": 43,
+              "41": 24,
+              "42": 21,
+              "43": 15,
+              "44": 26,
+              "45": 15,
+              "46": 21,
+              "47": 20,
+              "48": 24,
+              "49": 19,
+              "50": 253
+            },
+            "mask_is_contiguous_prefix": true,
+            "first_token_all_cls": true,
+            "last_valid_token_all_sep": true,
+            "segment_ids_all_zero": true,
+            "nonzero_tokens_outside_mask": 0,
+            "special_tokens_inside_mask": {
+              "pad": 0,
+              "cls": 3395,
+              "sep": 3395,
+              "other_special_like": 0
+            },
+            "content_positions": 76882,
+            "special_positions": 6790,
+            "observed_mask_equals_content_mask": true,
+            "observed_positions": 76882,
+            "undetectable_text_occlusion": "字段无法识别“词元与注意力掩码均未改变的文本遮挡”；text_observed_mask 只表示该位置是有效内容词元，不代表文本内容完整可用",
+            "samples_with_nonzero_text_rows_beyond_mask": 3142,
+            "text_768d_zero_rows_inside_mask": 0
+          },
+          "modalities": {
+            "audio": {
+              "positions": 50,
+              "dim": 74,
+              "declared_length_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 24.645655375552284
+              },
+              "struct_len_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 24.645655375552284
+              },
+              "struct_length_extended_vs_declared": 0,
+              "struct_extra_positions_total": 0,
+              "struct_positions": 83672,
+              "observed_positions": 76817,
+              "zero_row_ratio_in_struct": 0.08192704847499765,
+              "zero_row_ratio_whole_tensor": 0.5474698085419735,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "declared_length_field": null
+            },
+            "vision": {
+              "positions": 50,
+              "dim": 35,
+              "declared_length_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 24.645655375552284
+              },
+              "struct_len_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 24.645655375552284
+              },
+              "struct_length_extended_vs_declared": 0,
+              "struct_extra_positions_total": 0,
+              "struct_positions": 83672,
+              "observed_positions": 72633,
+              "zero_row_ratio_in_struct": 0.13193182904675405,
+              "zero_row_ratio_whole_tensor": 0.5721178203240059,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "declared_length_field": null
+            }
+          },
+          "aligned_special_positions": {
+            "position0_all_zero_audio": 1.0,
+            "position0_all_zero_vision": 1.0,
+            "position_last_valid_all_zero_audio": 1.0,
+            "position_last_valid_all_zero_vision": 1.0
+          },
+          "labels": {
+            "classification_exact_values": [
+              0.0,
+              1.0,
+              2.0
+            ],
+            "classification_exact_subset_of_0_1_2": true,
+            "classification_counts": {
+              "0.0": 967,
+              "1.0": 758,
+              "2.0": 1670
+            },
+            "classification_all_integral": true,
+            "regression_range": [
+              -3.0,
+              3.0
+            ],
+            "regression_within_minus3_3": true,
+            "regression_zero_count": 758,
+            "consistency_class_equals_sign_of_intensity": 1.0,
+            "consistency_violations": 0,
+            "negative_intensity_with_neutral_class": 0,
+            "positive_intensity_with_neutral_class": 0
+          },
+          "summary": {
+            "n": 3395,
+            "version": "aligned",
+            "split": "train",
+            "audio_struct_positions": 83672,
+            "audio_observed_positions": 76817,
+            "audio_zero_row_ratio_in_struct": 0.08192704847499765,
+            "vision_struct_positions": 83672,
+            "vision_observed_positions": 72633,
+            "vision_zero_row_ratio_in_struct": 0.13193182904675405,
+            "text_struct_positions": 83672,
+            "text_content_positions": 76882,
+            "text_special_positions": 6790
+          }
+        },
+        "valid": {
+          "version": "aligned",
+          "split": "valid",
+          "n_samples": 728,
+          "meta": {
+            "version": "aligned",
+            "split": "valid",
+            "n": 728,
+            "text_positions": 50,
+            "audio_positions": 50,
+            "vision_positions": 50,
+            "audio_dim": 74,
+            "vision_dim": 35,
+            "text_dim": 768,
+            "has_length_fields": false,
+            "struct_rule": {
+              "text": "text_bert attention mask (contiguous prefix)",
+              "audio": "position < text_attention_length",
+              "vision": "position < text_attention_length",
+              "observed": "struct_mask & row is not all-zero; zero rows inside struct are 'unobserved'",
+              "text_observed": "content tokens only (attention & not [PAD]/[CLS]/[SEP])"
+            },
+            "vision_conservative_rule": null,
+            "beyond_declared_basis": "original declared length field (not the expanded struct length)",
+            "labels": {
+              "classification": "0=negative,1=neutral,2=positive",
+              "regression": "continuous intensity in [-3,3]"
+            },
+            "dtype": {
+              "text": "float32",
+              "audio": "float64",
+              "vision": "float64",
+              "text_tokens": "int64"
+            }
+          },
+          "id": {
+            "n_unique": 728,
+            "duplicates": 0,
+            "all_match_video_clip_format": true,
+            "n_unique_video_id": 239
+          },
+          "shapes": {
+            "text": [
+              728,
+              50,
+              768
+            ],
+            "text_tokens": [
+              728,
+              50
+            ],
+            "text_segment": [
+              728,
+              50
+            ],
+            "audio": [
+              728,
+              50,
+              74
+            ],
+            "vision": [
+              728,
+              50,
+              35
+            ],
+            "text_struct_mask": [
+              728,
+              50
+            ],
+            "audio_struct_mask": [
+              728,
+              50
+            ],
+            "vision_struct_mask": [
+              728,
+              50
+            ]
+          },
+          "dtypes": {
+            "text": "float32",
+            "audio": "float64",
+            "vision": "float64",
+            "text_tokens": "int64",
+            "labels_classification": "float64",
+            "labels_regression": "float64"
+          },
+          "nonfinite": {
+            "text": 0,
+            "audio": 0,
+            "vision": 0,
+            "regression_labels": 0
+          },
+          "text": {
+            "attn_len_range": {
+              "min": 3.0,
+              "max": 50.0,
+              "mean": 25.587912087912088
+            },
+            "attn_len_histogram": {
+              "3": 4,
+              "4": 1,
+              "5": 4,
+              "6": 1,
+              "7": 5,
+              "8": 11,
+              "9": 15,
+              "10": 14,
+              "11": 12,
+              "12": 16,
+              "13": 9,
+              "14": 19,
+              "15": 32,
+              "16": 22,
+              "17": 27,
+              "18": 40,
+              "19": 26,
+              "20": 29,
+              "21": 32,
+              "22": 21,
+              "23": 24,
+              "24": 26,
+              "25": 21,
+              "26": 26,
+              "27": 17,
+              "28": 23,
+              "29": 18,
+              "30": 16,
+              "31": 17,
+              "32": 14,
+              "33": 5,
+              "34": 27,
+              "35": 15,
+              "36": 9,
+              "37": 9,
+              "38": 7,
+              "39": 8,
+              "40": 9,
+              "41": 7,
+              "42": 5,
+              "43": 6,
+              "44": 4,
+              "45": 5,
+              "46": 3,
+              "47": 8,
+              "48": 6,
+              "49": 6,
+              "50": 47
+            },
+            "mask_is_contiguous_prefix": true,
+            "first_token_all_cls": true,
+            "last_valid_token_all_sep": true,
+            "segment_ids_all_zero": true,
+            "nonzero_tokens_outside_mask": 0,
+            "special_tokens_inside_mask": {
+              "pad": 0,
+              "cls": 728,
+              "sep": 728,
+              "other_special_like": 0
+            },
+            "content_positions": 17172,
+            "special_positions": 1456,
+            "observed_mask_equals_content_mask": true,
+            "observed_positions": 17172,
+            "undetectable_text_occlusion": "字段无法识别“词元与注意力掩码均未改变的文本遮挡”；text_observed_mask 只表示该位置是有效内容词元，不代表文本内容完整可用",
+            "samples_with_nonzero_text_rows_beyond_mask": 681,
+            "text_768d_zero_rows_inside_mask": 0
+          },
+          "modalities": {
+            "audio": {
+              "positions": 50,
+              "dim": 74,
+              "declared_length_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 25.587912087912088
+              },
+              "struct_len_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 25.587912087912088
+              },
+              "struct_length_extended_vs_declared": 0,
+              "struct_extra_positions_total": 0,
+              "struct_positions": 18628,
+              "observed_positions": 17126,
+              "zero_row_ratio_in_struct": 0.08063130770882543,
+              "zero_row_ratio_whole_tensor": 0.5295054945054944,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "declared_length_field": null
+            },
+            "vision": {
+              "positions": 50,
+              "dim": 35,
+              "declared_length_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 25.587912087912088
+              },
+              "struct_len_range": {
+                "min": 3.0,
+                "max": 50.0,
+                "mean": 25.587912087912088
+              },
+              "struct_length_extended_vs_declared": 0,
+              "struct_extra_positions_total": 0,
+              "struct_positions": 18628,
+              "observed_positions": 16192,
+              "zero_row_ratio_in_struct": 0.13077088254240932,
+              "zero_row_ratio_whole_tensor": 0.5551648351648352,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "declared_length_field": null
+            }
+          },
+          "aligned_special_positions": {
+            "position0_all_zero_audio": 1.0,
+            "position0_all_zero_vision": 1.0,
+            "position_last_valid_all_zero_audio": 1.0,
+            "position_last_valid_all_zero_vision": 1.0
+          },
+          "labels": {
+            "classification_exact_values": [
+              0.0,
+              1.0,
+              2.0
+            ],
+            "classification_exact_subset_of_0_1_2": true,
+            "classification_counts": {
+              "0.0": 206,
+              "1.0": 184,
+              "2.0": 338
+            },
+            "classification_all_integral": true,
+            "regression_range": [
+              -3.0,
+              3.0
+            ],
+            "regression_within_minus3_3": true,
+            "regression_zero_count": 184,
+            "consistency_class_equals_sign_of_intensity": 1.0,
+            "consistency_violations": 0,
+            "negative_intensity_with_neutral_class": 0,
+            "positive_intensity_with_neutral_class": 0
+          },
+          "summary": {
+            "n": 728,
+            "version": "aligned",
+            "split": "valid",
+            "audio_struct_positions": 18628,
+            "audio_observed_positions": 17126,
+            "audio_zero_row_ratio_in_struct": 0.08063130770882543,
+            "vision_struct_positions": 18628,
+            "vision_observed_positions": 16192,
+            "vision_zero_row_ratio_in_struct": 0.13077088254240932,
+            "text_struct_positions": 18628,
+            "text_content_positions": 17172,
+            "text_special_positions": 1456
+          }
+        }
+      },
+      "train_valid_id_overlap": 0
+    },
+    "unaligned": {
+      "file": "unaligned_50.pkl",
+      "file_bytes": 2897003035,
+      "splits": {
+        "train": {
+          "version": "unaligned",
+          "split": "train",
+          "n_samples": 3395,
+          "meta": {
+            "version": "unaligned",
+            "split": "train",
+            "n": 3395,
+            "text_positions": 50,
+            "audio_positions": 500,
+            "vision_positions": 500,
+            "audio_dim": 74,
+            "vision_dim": 35,
+            "text_dim": 768,
+            "has_length_fields": true,
+            "struct_rule": {
+              "text": "text_bert attention mask (contiguous prefix)",
+              "audio": "position < audio_lengths (verified self-consistent; no expansion)",
+              "vision": "position < min(500, max(vision_lengths, last_nonzero_position + 1))",
+              "observed": "struct_mask & row is not all-zero; zero rows inside struct are 'unobserved'",
+              "text_observed": "content tokens only (attention & not [PAD]/[CLS]/[SEP])"
+            },
+            "vision_conservative_rule": "vision struct length keeps declared range plus any existing nonzero rows beyond it; conservative reading rule derived from attachment-2 train/valid data only; the original semantics of vision_lengths is NOT claimed to be resolved",
+            "beyond_declared_basis": "original declared length field (not the expanded struct length)",
+            "labels": {
+              "classification": "0=negative,1=neutral,2=positive",
+              "regression": "continuous intensity in [-3,3]"
+            },
+            "dtype": {
+              "text": "float32",
+              "audio": "float64",
+              "vision": "float64",
+              "text_tokens": "int64"
+            }
+          },
+          "id": {
+            "n_unique": 3395,
+            "duplicates": 0,
+            "all_match_video_clip_format": true,
+            "n_unique_video_id": 1528
+          },
+          "shapes": {
+            "text": [
+              3395,
+              50,
+              768
+            ],
+            "text_tokens": [
+              3395,
+              50
+            ],
+            "text_segment": [
+              3395,
+              50
+            ],
+            "audio": [
+              3395,
+              500,
+              74
+            ],
+            "vision": [
+              3395,
+              500,
+              35
+            ],
+            "text_struct_mask": [
+              3395,
+              50
+            ],
+            "audio_struct_mask": [
+              3395,
+              500
+            ],
+            "vision_struct_mask": [
+              3395,
+              500
+            ]
+          },
+          "dtypes": {
+            "text": "float32",
+            "audio": "float64",
+            "vision": "float64",
+            "text_tokens": "int64",
+            "labels_classification": "float64",
+            "labels_regression": "float64"
+          },
+          "nonfinite": {
+            "text": 0,
+            "audio": 0,
+            "vision": 0,
+            "regression_labels": 0
+          },
+          "text": {
+            "attn_len_range": {
+              "min": 3.0,
+              "max": 50.0,
+              "mean": 24.645655375552284
+            },
+            "attn_len_histogram": {
+              "3": 16,
+              "4": 6,
+              "5": 12,
+              "6": 34,
+              "7": 43,
+              "8": 70,
+              "9": 73,
+              "10": 78,
+              "11": 102,
+              "12": 74,
+              "13": 96,
+              "14": 112,
+              "15": 120,
+              "16": 135,
+              "17": 133,
+              "18": 111,
+              "19": 121,
+              "20": 129,
+              "21": 132,
+              "22": 104,
+              "23": 122,
+              "24": 105,
+              "25": 116,
+              "26": 94,
+              "27": 99,
+              "28": 81,
+              "29": 70,
+              "30": 78,
+              "31": 79,
+              "32": 53,
+              "33": 59,
+              "34": 48,
+              "35": 62,
+              "36": 47,
+              "37": 33,
+              "38": 36,
+              "39": 31,
+              "40": 43,
+              "41": 24,
+              "42": 21,
+              "43": 15,
+              "44": 26,
+              "45": 15,
+              "46": 21,
+              "47": 20,
+              "48": 24,
+              "49": 19,
+              "50": 253
+            },
+            "mask_is_contiguous_prefix": true,
+            "first_token_all_cls": true,
+            "last_valid_token_all_sep": true,
+            "segment_ids_all_zero": true,
+            "nonzero_tokens_outside_mask": 0,
+            "special_tokens_inside_mask": {
+              "pad": 0,
+              "cls": 3395,
+              "sep": 3395,
+              "other_special_like": 0
+            },
+            "content_positions": 76882,
+            "special_positions": 6790,
+            "observed_mask_equals_content_mask": true,
+            "observed_positions": 76882,
+            "undetectable_text_occlusion": "字段无法识别“词元与注意力掩码均未改变的文本遮挡”；text_observed_mask 只表示该位置是有效内容词元，不代表文本内容完整可用",
+            "samples_with_nonzero_text_rows_beyond_mask": 3142,
+            "text_768d_zero_rows_inside_mask": 0
+          },
+          "modalities": {
+            "audio": {
+              "positions": 500,
+              "dim": 74,
+              "declared_length_range": {
+                "min": 8.0,
+                "max": 500.0,
+                "mean": 147.28836524300442
+              },
+              "struct_len_range": {
+                "min": 8.0,
+                "max": 500.0,
+                "mean": 147.28836524300442
+              },
+              "struct_length_extended_vs_declared": 0,
+              "struct_extra_positions_total": 0,
+              "struct_positions": 500044,
+              "observed_positions": 500044,
+              "zero_row_ratio_in_struct": 0.0,
+              "zero_row_ratio_whole_tensor": 0.7054232695139911,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "declared_length_field": {
+                "name": "audio_lengths",
+                "range": {
+                  "min": 8.0,
+                  "max": 500.0,
+                  "mean": 147.28836524300442
+                },
+                "equals_nonzero_row_count": 1.0,
+                "nonzero_rows_less_than_declared": 0,
+                "nonzero_rows_greater_than_declared": 0,
+                "zero_rows_inside_declared": 0,
+                "samples_with_zero_rows_inside_declared": 0
+              }
+            },
+            "vision": {
+              "positions": 500,
+              "dim": 35,
+              "declared_length_range": {
+                "min": 1.0,
+                "max": 500.0,
+                "mean": 93.25036818851252
+              },
+              "struct_len_range": {
+                "min": 1.0,
+                "max": 500.0,
+                "mean": 107.47304860088366
+              },
+              "struct_length_extended_vs_declared": 618,
+              "struct_extra_positions_total": 48286,
+              "struct_positions": 364871,
+              "observed_positions": 353483,
+              "zero_row_ratio_in_struct": 0.031211030747853363,
+              "zero_row_ratio_whole_tensor": 0.7917625920471281,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 618,
+                "max_rows": 445,
+                "total_rows": 36928
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 618,
+                "max_rows": 445,
+                "total_rows": 36928
+              },
+              "declared_length_field": {
+                "name": "vision_lengths",
+                "range": {
+                  "min": 1.0,
+                  "max": 500.0,
+                  "mean": 93.25036818851252
+                },
+                "equals_nonzero_row_count": 0.8091310751104566,
+                "nonzero_rows_less_than_declared": 30,
+                "nonzero_rows_greater_than_declared": 618,
+                "zero_rows_inside_declared": 30,
+                "samples_with_zero_rows_inside_declared": 30
+              }
+            }
+          },
+          "labels": {
+            "classification_exact_values": [
+              0.0,
+              1.0,
+              2.0
+            ],
+            "classification_exact_subset_of_0_1_2": true,
+            "classification_counts": {
+              "0.0": 967,
+              "1.0": 758,
+              "2.0": 1670
+            },
+            "classification_all_integral": true,
+            "regression_range": [
+              -3.0,
+              3.0
+            ],
+            "regression_within_minus3_3": true,
+            "regression_zero_count": 758,
+            "consistency_class_equals_sign_of_intensity": 1.0,
+            "consistency_violations": 0,
+            "negative_intensity_with_neutral_class": 0,
+            "positive_intensity_with_neutral_class": 0
+          },
+          "summary": {
+            "n": 3395,
+            "version": "unaligned",
+            "split": "train",
+            "audio_struct_positions": 500044,
+            "audio_observed_positions": 500044,
+            "audio_zero_row_ratio_in_struct": 0.0,
+            "vision_struct_positions": 364871,
+            "vision_observed_positions": 353483,
+            "vision_zero_row_ratio_in_struct": 0.031211030747853363,
+            "text_struct_positions": 83672,
+            "text_content_positions": 76882,
+            "text_special_positions": 6790
+          }
+        },
+        "valid": {
+          "version": "unaligned",
+          "split": "valid",
+          "n_samples": 728,
+          "meta": {
+            "version": "unaligned",
+            "split": "valid",
+            "n": 728,
+            "text_positions": 50,
+            "audio_positions": 500,
+            "vision_positions": 500,
+            "audio_dim": 74,
+            "vision_dim": 35,
+            "text_dim": 768,
+            "has_length_fields": true,
+            "struct_rule": {
+              "text": "text_bert attention mask (contiguous prefix)",
+              "audio": "position < audio_lengths (verified self-consistent; no expansion)",
+              "vision": "position < min(500, max(vision_lengths, last_nonzero_position + 1))",
+              "observed": "struct_mask & row is not all-zero; zero rows inside struct are 'unobserved'",
+              "text_observed": "content tokens only (attention & not [PAD]/[CLS]/[SEP])"
+            },
+            "vision_conservative_rule": "vision struct length keeps declared range plus any existing nonzero rows beyond it; conservative reading rule derived from attachment-2 train/valid data only; the original semantics of vision_lengths is NOT claimed to be resolved",
+            "beyond_declared_basis": "original declared length field (not the expanded struct length)",
+            "labels": {
+              "classification": "0=negative,1=neutral,2=positive",
+              "regression": "continuous intensity in [-3,3]"
+            },
+            "dtype": {
+              "text": "float32",
+              "audio": "float64",
+              "vision": "float64",
+              "text_tokens": "int64"
+            }
+          },
+          "id": {
+            "n_unique": 728,
+            "duplicates": 0,
+            "all_match_video_clip_format": true,
+            "n_unique_video_id": 239
+          },
+          "shapes": {
+            "text": [
+              728,
+              50,
+              768
+            ],
+            "text_tokens": [
+              728,
+              50
+            ],
+            "text_segment": [
+              728,
+              50
+            ],
+            "audio": [
+              728,
+              500,
+              74
+            ],
+            "vision": [
+              728,
+              500,
+              35
+            ],
+            "text_struct_mask": [
+              728,
+              50
+            ],
+            "audio_struct_mask": [
+              728,
+              500
+            ],
+            "vision_struct_mask": [
+              728,
+              500
+            ]
+          },
+          "dtypes": {
+            "text": "float32",
+            "audio": "float64",
+            "vision": "float64",
+            "text_tokens": "int64",
+            "labels_classification": "float64",
+            "labels_regression": "float64"
+          },
+          "nonfinite": {
+            "text": 0,
+            "audio": 0,
+            "vision": 0,
+            "regression_labels": 0
+          },
+          "text": {
+            "attn_len_range": {
+              "min": 3.0,
+              "max": 50.0,
+              "mean": 25.587912087912088
+            },
+            "attn_len_histogram": {
+              "3": 4,
+              "4": 1,
+              "5": 4,
+              "6": 1,
+              "7": 5,
+              "8": 11,
+              "9": 15,
+              "10": 14,
+              "11": 12,
+              "12": 16,
+              "13": 9,
+              "14": 19,
+              "15": 32,
+              "16": 22,
+              "17": 27,
+              "18": 40,
+              "19": 26,
+              "20": 29,
+              "21": 32,
+              "22": 21,
+              "23": 24,
+              "24": 26,
+              "25": 21,
+              "26": 26,
+              "27": 17,
+              "28": 23,
+              "29": 18,
+              "30": 16,
+              "31": 17,
+              "32": 14,
+              "33": 5,
+              "34": 27,
+              "35": 15,
+              "36": 9,
+              "37": 9,
+              "38": 7,
+              "39": 8,
+              "40": 9,
+              "41": 7,
+              "42": 5,
+              "43": 6,
+              "44": 4,
+              "45": 5,
+              "46": 3,
+              "47": 8,
+              "48": 6,
+              "49": 6,
+              "50": 47
+            },
+            "mask_is_contiguous_prefix": true,
+            "first_token_all_cls": true,
+            "last_valid_token_all_sep": true,
+            "segment_ids_all_zero": true,
+            "nonzero_tokens_outside_mask": 0,
+            "special_tokens_inside_mask": {
+              "pad": 0,
+              "cls": 728,
+              "sep": 728,
+              "other_special_like": 0
+            },
+            "content_positions": 17172,
+            "special_positions": 1456,
+            "observed_mask_equals_content_mask": true,
+            "observed_positions": 17172,
+            "undetectable_text_occlusion": "字段无法识别“词元与注意力掩码均未改变的文本遮挡”；text_observed_mask 只表示该位置是有效内容词元，不代表文本内容完整可用",
+            "samples_with_nonzero_text_rows_beyond_mask": 681,
+            "text_768d_zero_rows_inside_mask": 0
+          },
+          "modalities": {
+            "audio": {
+              "positions": 500,
+              "dim": 74,
+              "declared_length_range": {
+                "min": 12.0,
+                "max": 500.0,
+                "mean": 154.11263736263737
+              },
+              "struct_len_range": {
+                "min": 12.0,
+                "max": 500.0,
+                "mean": 154.11263736263737
+              },
+              "struct_length_extended_vs_declared": 0,
+              "struct_extra_positions_total": 0,
+              "struct_positions": 112194,
+              "observed_positions": 112194,
+              "zero_row_ratio_in_struct": 0.0,
+              "zero_row_ratio_whole_tensor": 0.6917747252747253,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 0,
+                "max_rows": 0,
+                "total_rows": 0
+              },
+              "declared_length_field": {
+                "name": "audio_lengths",
+                "range": {
+                  "min": 12.0,
+                  "max": 500.0,
+                  "mean": 154.11263736263737
+                },
+                "equals_nonzero_row_count": 1.0,
+                "nonzero_rows_less_than_declared": 0,
+                "nonzero_rows_greater_than_declared": 0,
+                "zero_rows_inside_declared": 0,
+                "samples_with_zero_rows_inside_declared": 0
+              }
+            },
+            "vision": {
+              "positions": 500,
+              "dim": 35,
+              "declared_length_range": {
+                "min": 1.0,
+                "max": 500.0,
+                "mean": 98.6923076923077
+              },
+              "struct_len_range": {
+                "min": 1.0,
+                "max": 500.0,
+                "mean": 114.28846153846153
+              },
+              "struct_length_extended_vs_declared": 141,
+              "struct_extra_positions_total": 11354,
+              "struct_positions": 83202,
+              "observed_positions": 80303,
+              "zero_row_ratio_in_struct": 0.034842912429989714,
+              "zero_row_ratio_whole_tensor": 0.7793873626373626,
+              "nonzero_rows_beyond_declared": {
+                "basis": "original declared length field",
+                "n_samples": 141,
+                "max_rows": 355,
+                "total_rows": 8455
+              },
+              "nonzero_rows_rescued_by_struct": {
+                "n_samples": 141,
+                "max_rows": 355,
+                "total_rows": 8455
+              },
+              "declared_length_field": {
+                "name": "vision_lengths",
+                "range": {
+                  "min": 1.0,
+                  "max": 500.0,
+                  "mean": 98.6923076923077
+                },
+                "equals_nonzero_row_count": 0.8063186813186813,
+                "nonzero_rows_less_than_declared": 0,
+                "nonzero_rows_greater_than_declared": 141,
+                "zero_rows_inside_declared": 0,
+                "samples_with_zero_rows_inside_declared": 0
+              }
+            }
+          },
+          "labels": {
+            "classification_exact_values": [
+              0.0,
+              1.0,
+              2.0
+            ],
+            "classification_exact_subset_of_0_1_2": true,
+            "classification_counts": {
+              "0.0": 206,
+              "1.0": 184,
+              "2.0": 338
+            },
+            "classification_all_integral": true,
+            "regression_range": [
+              -3.0,
+              3.0
+            ],
+            "regression_within_minus3_3": true,
+            "regression_zero_count": 184,
+            "consistency_class_equals_sign_of_intensity": 1.0,
+            "consistency_violations": 0,
+            "negative_intensity_with_neutral_class": 0,
+            "positive_intensity_with_neutral_class": 0
+          },
+          "summary": {
+            "n": 728,
+            "version": "unaligned",
+            "split": "valid",
+            "audio_struct_positions": 112194,
+            "audio_observed_positions": 112194,
+            "audio_zero_row_ratio_in_struct": 0.0,
+            "vision_struct_positions": 83202,
+            "vision_observed_positions": 80303,
+            "vision_zero_row_ratio_in_struct": 0.034842912429989714,
+            "text_struct_positions": 18628,
+            "text_content_positions": 17172,
+            "text_special_positions": 1456
+          }
+        }
+      },
+      "train_valid_id_overlap": 0
+    }
+  },
+  "cross_version": {
+    "train": {
+      "n_equal": true,
+      "ids_same_order": true,
+      "text_bert_identical": true,
+      "text_vectors_identical": true,
+      "labels_identical": true
+    },
+    "valid": {
+      "n_equal": true,
+      "ids_same_order": true,
+      "text_bert_identical": true,
+      "text_vectors_identical": true,
+      "labels_identical": true
+    }
+  }
+}

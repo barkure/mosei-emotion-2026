@@ -1,0 +1,492 @@
+{
+  "stable_id": "-RfYyzHpjk4$_$11",
+  "official_text": "So get your friends lined up, get your business colleagues lined up and have a good time.",
+  "category": "previous_auto_accepted",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "So",
+      "normalized_target": "SO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "So",
+        "chosen": "SO",
+        "dropped": []
+      },
+      "candidate_start": 0.58,
+      "candidate_end": 0.72,
+      "start": 0.58,
+      "end": 0.72,
+      "confidence": 0.9992243349552155,
+      "local_confidence": 0.9992243349552155,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9988116025924683,
+      "local_start": 0.58,
+      "local_end": 0.72
+    },
+    {
+      "word_index": 1,
+      "word": "get",
+      "normalized_target": "GET",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "get",
+        "chosen": "GET",
+        "dropped": []
+      },
+      "candidate_start": 1.34,
+      "candidate_end": 1.46,
+      "start": 1.34,
+      "end": 1.46,
+      "confidence": 0.999385416507721,
+      "local_confidence": 0.999385416507721,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.998896062374115,
+      "local_start": 1.34,
+      "local_end": 1.46
+    },
+    {
+      "word_index": 2,
+      "word": "your",
+      "normalized_target": "YOUR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "your",
+        "chosen": "YOUR",
+        "dropped": []
+      },
+      "candidate_start": 1.52,
+      "candidate_end": 1.62,
+      "start": 1.52,
+      "end": 1.62,
+      "confidence": 0.9979431480169296,
+      "local_confidence": 0.9979431480169296,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9957196712493896,
+      "local_start": 1.52,
+      "local_end": 1.62
+    },
+    {
+      "word_index": 3,
+      "word": "friends",
+      "normalized_target": "FRIENDS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "friends",
+        "chosen": "FRIENDS",
+        "dropped": []
+      },
+      "candidate_start": 1.64,
+      "candidate_end": 1.86,
+      "start": 1.64,
+      "end": 1.86,
+      "confidence": 0.9635292717388698,
+      "local_confidence": 0.9635292717388698,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7858162522315979,
+      "local_start": 1.64,
+      "local_end": 1.86
+    },
+    {
+      "word_index": 4,
+      "word": "lined",
+      "normalized_target": "LINED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "lined",
+        "chosen": "LINED",
+        "dropped": []
+      },
+      "candidate_start": 1.92,
+      "candidate_end": 2.14,
+      "start": 1.92,
+      "end": 2.14,
+      "confidence": 0.7582819923758507,
+      "local_confidence": 0.7582819923758507,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.11389832943677902,
+      "local_start": 1.92,
+      "local_end": 2.14
+    },
+    {
+      "word_index": 5,
+      "word": "up,",
+      "normalized_target": "UP",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "up,",
+        "chosen": "UP",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": 2.24,
+      "candidate_end": 2.3,
+      "start": 2.24,
+      "end": 2.3,
+      "confidence": 0.9948737025260925,
+      "local_confidence": 0.9948737025260925,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9935685992240906,
+      "local_start": 2.24,
+      "local_end": 2.3
+    },
+    {
+      "word_index": 6,
+      "word": "get",
+      "normalized_target": "GET",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "get",
+        "chosen": "GET",
+        "dropped": []
+      },
+      "candidate_start": 2.4,
+      "candidate_end": 2.52,
+      "start": 2.4,
+      "end": 2.52,
+      "confidence": 0.9231072465578715,
+      "local_confidence": 0.9231072465578715,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7940608263015747,
+      "local_start": 2.4,
+      "local_end": 2.52
+    },
+    {
+      "word_index": 7,
+      "word": "your",
+      "normalized_target": "YOUR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "your",
+        "chosen": "YOUR",
+        "dropped": []
+      },
+      "candidate_start": 2.58,
+      "candidate_end": 2.68,
+      "start": 2.58,
+      "end": 2.68,
+      "confidence": 0.9155590236186981,
+      "local_confidence": 0.9155590236186981,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.6928055882453918,
+      "local_start": 2.58,
+      "local_end": 2.68
+    },
+    {
+      "word_index": 8,
+      "word": "business",
+      "normalized_target": "BUSINESS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "business",
+        "chosen": "BUSINESS",
+        "dropped": []
+      },
+      "candidate_start": 2.72,
+      "candidate_end": 2.96,
+      "start": 2.72,
+      "end": 2.96,
+      "confidence": 0.9709924459457397,
+      "local_confidence": 0.9709924459457397,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.8041083812713623,
+      "local_start": 2.72,
+      "local_end": 2.96
+    },
+    {
+      "word_index": 9,
+      "word": "colleagues",
+      "normalized_target": "COLLEAGUES",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "colleagues",
+        "chosen": "COLLEAGUES",
+        "dropped": []
+      },
+      "candidate_start": 2.98,
+      "candidate_end": 3.3,
+      "start": 2.98,
+      "end": 3.3,
+      "confidence": 0.5617317173629999,
+      "local_confidence": 0.5617317173629999,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.032521821558475494,
+      "local_start": 2.98,
+      "local_end": 3.3
+    },
+    {
+      "word_index": 10,
+      "word": "lined",
+      "normalized_target": "LINED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "lined",
+        "chosen": "LINED",
+        "dropped": []
+      },
+      "candidate_start": 3.34,
+      "candidate_end": 3.56,
+      "start": 3.34,
+      "end": 3.56,
+      "confidence": 0.8130578607320785,
+      "local_confidence": 0.8130578607320785,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.13041500747203827,
+      "local_start": 3.34,
+      "local_end": 3.56
+    },
+    {
+      "word_index": 11,
+      "word": "up",
+      "normalized_target": "UP",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "up",
+        "chosen": "UP",
+        "dropped": []
+      },
+      "candidate_start": 3.66,
+      "candidate_end": 3.72,
+      "start": 3.66,
+      "end": 3.72,
+      "confidence": 0.9989560842514038,
+      "local_confidence": 0.9989560842514038,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9987120032310486,
+      "local_start": 3.66,
+      "local_end": 3.72
+    },
+    {
+      "word_index": 12,
+      "word": "and",
+      "normalized_target": "AND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "and",
+        "chosen": "AND",
+        "dropped": []
+      },
+      "candidate_start": 3.8,
+      "candidate_end": 3.86,
+      "start": 3.8,
+      "end": 3.86,
+      "confidence": 0.9828338821729025,
+      "local_confidence": 0.9828338821729025,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9571908116340637,
+      "local_start": 3.8,
+      "local_end": 3.86
+    },
+    {
+      "word_index": 13,
+      "word": "have",
+      "normalized_target": "HAVE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "have",
+        "chosen": "HAVE",
+        "dropped": []
+      },
+      "candidate_start": 3.9,
+      "candidate_end": 4.02,
+      "start": 3.9,
+      "end": 4.02,
+      "confidence": 0.9469569325447083,
+      "local_confidence": 0.9469569325447083,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7963667511940002,
+      "local_start": 3.9,
+      "local_end": 4.02
+    },
+    {
+      "word_index": 14,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 4.06,
+      "candidate_end": 4.1,
+      "start": 4.06,
+      "end": 4.1,
+      "confidence": 0.8396009206771851,
+      "local_confidence": 0.8396009206771851,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.8396009206771851,
+      "local_start": 4.06,
+      "local_end": 4.1
+    },
+    {
+      "word_index": 15,
+      "word": "good",
+      "normalized_target": "GOOD",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "good",
+        "chosen": "GOOD",
+        "dropped": []
+      },
+      "candidate_start": 4.12,
+      "candidate_end": 4.26,
+      "start": 4.12,
+      "end": 4.26,
+      "confidence": 0.9894584119319916,
+      "local_confidence": 0.9894584119319916,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9721348881721497,
+      "local_start": 4.12,
+      "local_end": 4.26
+    },
+    {
+      "word_index": 16,
+      "word": "time.",
+      "normalized_target": "TIME",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "time.",
+        "chosen": "TIME",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 4.3,
+      "candidate_end": 4.5,
+      "start": 4.3,
+      "end": 4.5,
+      "confidence": 0.9918559342622757,
+      "local_confidence": 0.9918559342622757,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.9685984253883362,
+      "local_start": 4.3,
+      "local_end": 4.5
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "left": 0,
+      "right": 253
+    }
+  ],
+  "greedy_text": "SO UM GET YOUR FRIEND'S LIND UP GET YOUR BUSINESS COLLEGS LIND UP AND HAVE A GOOD TIME CATHY",
+  "silence": [
+    {
+      "start": 0.0,
+      "end": 0.630812,
+      "duration": 0.630812
+    },
+    {
+      "start": 1.13681,
+      "end": 1.35238,
+      "duration": 0.215563
+    },
+    {
+      "start": 2.26756,
+      "end": 2.42,
+      "duration": 0.152438
+    },
+    {
+      "start": 4.19487,
+      "end": 4.38025,
+      "duration": 0.185375
+    },
+    {
+      "start": 4.46025,
+      "end": 4.81631,
+      "duration": 0.356063
+    }
+  ],
+  "fingerprint": "29d8a083fb6db3fff80e842cb1158058e8375a1df36387b9a49a8ec8c791a4481b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983fb3014d83ffe47ed2b34bf9ddfb8d9bef5ff9936a82207e33ef7744a5a2bc84da69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R080",
+    "R081",
+    "R082"
+  ],
+  "source_candidate_sha256": "29d8a083fb6db3fff80e842cb1158058e8375a1df36387b9a49a8ec8c791a448",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "fb3014d83ffe47ed2b34bf9ddfb8d9bef5ff9936a82207e33ef7744a5a2bc84d",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "samples": 100,
+  "accepted_words_reconstructed": 1533,
+  "full_video_frames_checked": 23241,
+  "ctc_exhaustive_oracle_cases": 45,
+  "ctc_last_character_end_regression": true,
+  "half_open_display_interval_regression": true,
+  "no_fixed_grid": true,
+  "source_hashes_verified": true,
+  "native_and_word_feature_reconstruction": true,
+  "manual_boundary_claims_absent": true,
+  "category_counts": {
+    "human_whole_content_confirmed": 32,
+    "previous_auto_accepted": 30,
+    "human_flagged_words_confirmed": 16,
+    "human_partial_content": 2,
+    "content_mismatch": 14,
+    "no_audible_speech": 3,
+    "other_language": 3
+  },
+  "max_float32_audio_rounding_error": 0.00020626289369829465,
+  "max_float32_video_rounding_error": 2.9802322387695312e-08
+}

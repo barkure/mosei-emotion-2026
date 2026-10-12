@@ -1,0 +1,64 @@
+{
+  "data_version": "aligned_50",
+  "mode": "gate_recon",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "input_ids": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30"
+  ],
+  "n_predictions": 30,
+  "checkpoints": {
+    "2026": {
+      "path": "outputs/q2_prediction/q2_systematic/gate_recon_seed2026.pt",
+      "sha256": "81289a114bbc291f10ed59079f830a57a7e9ea21587e7859f4661cf60e0171f6"
+    },
+    "2027": {
+      "path": "outputs/q2_prediction/q2_systematic/gate_recon_seed2027.pt",
+      "sha256": "bbd4a564b7eb7fd2683018351e063634675e1e33f6c95bfb33a50367090d387e"
+    },
+    "2028": {
+      "path": "outputs/q2_prediction/q2_systematic/gate_recon_seed2028.pt",
+      "sha256": "b3282088198d2440be39bbd510fa2fe6d4f98c88220fd2f636f7d83100aa6204"
+    }
+  },
+  "ensemble_rule": "mean logits and raw strength; class/sign projection",
+  "output": "outputs/q2_prediction/attachment3_predictions_gate_recon_ensemble.csv",
+  "output_sha256": "cfa892464879cab4e97be37f8aa5bdd3f1c5b1694911402e5254907ac4d9136f",
+  "label_mapping": {
+    "0": "Negative",
+    "1": "Neutral",
+    "2": "Positive"
+  }
+}

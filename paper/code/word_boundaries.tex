@@ -1,0 +1,30 @@
+% Generated from the actual Q1 source; formatting only.
+\begin{lstlisting}
+STEP = 0.02
+
+def targets_for(norms, vocab):
+    tokens = []
+    positions = []
+    for word in norms:
+        if tokens:
+            tokens.append(vocab['|'])
+        indexes = []
+        for c in word:
+            token = vocab['|'] if c == ' ' else vocab[c]
+            indexes.append(len(tokens))
+            tokens.append(token)
+        positions.append(indexes)
+    return (tokens, positions)
+
+def align(lp, norms, vocab, offset=0):
+    targets, positions = targets_for(norms, vocab)
+    starts, ends, confidence, score = ctc_path(lp, targets)
+    rows = []
+    for pos in positions:
+        letters = [j for j in pos if targets[j] != vocab['|']]
+        if not letters:
+            rows.append(None)
+            continue
+        rows.append(dict(start=round((offset + starts[letters[0]]) * STEP, 6), end=round((offset + ends[letters[-1]]) * STEP, 6), confidence=float(confidence[letters].mean()), confidence_min=float(confidence[letters].min())))
+    return (rows, score)
+\end{lstlisting}

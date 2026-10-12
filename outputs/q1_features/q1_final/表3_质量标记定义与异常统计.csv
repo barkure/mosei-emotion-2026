@@ -1,0 +1,8 @@
+﻿状态码,说明,样本数
+human_whole_content_confirmed,整段内容经听审确认,32
+previous_auto_accepted,自动筛查样本，逐词复核时间,30
+human_partial_content,仅处理听审确认的短语,2
+human_flagged_words_confirmed,可疑词内容经听审确认,16
+content_mismatch,音文内容不一致,14
+no_audible_speech,未听到对应语音（含静音或纯音乐）,3
+other_language,其他语言,3

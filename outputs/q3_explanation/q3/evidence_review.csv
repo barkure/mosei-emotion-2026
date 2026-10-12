@@ -1,0 +1,21 @@
+sample_id,main_modality,feature_start,feature_end,transcript_excerpt,asr_similarity,min_evidence_word_confidence,time_start_candidate,time_end_candidate,video_frame_candidate,review_status
+01,text,7,10,the timing belt is,0.9594,0.5422,2.620,3.660,,user_reviewed_approximate_coverage
+02,text,9,12,other’s happiness - not,0.9778,0.9152,,,,unalignable_punctuation_in_evidence
+03,text,17,23,who don't take rental income,0.9293,0.8308,4.100,5.760,,user_reviewed_approximate_coverage
+04,text,21,25,goodbye?] Absolutely not.,0.9569,0.8990,4.480,6.240,,user_reviewed_approximate_coverage
+05,vision,2,4,"Hi, my name",0.9076,0.8070,,,1.733,user_reviewed_content_and_nearby_frame
+06,text,1,7,If you're a fan of,0.9073,0.0030,,,,low_word_alignment_confidence
+07,text,21,30,"“enthusiastically discussed the topics of growing the hobby, the",0.1356,0.7973,,,,transcript_audio_mismatch_or_low_asr_similarity
+08,text,2,3,brings us,0.9688,0.9660,0.860,1.180,,user_reviewed_approximate_coverage
+09,text,7,10,not like this movie,0.8806,0.8105,,,,transcript_audio_mismatch_or_low_asr_similarity
+10,text,12,17,see fluffy chick flicks sometimes,0.9141,0.7025,2.880,4.960,,user_reviewed_approximate_coverage
+11,text,2,4,would be ashamed,0.8908,0.1808,,,,transcript_audio_mismatch_or_low_asr_similarity
+12,text,34,41,"sag, and credit scores is very low.",0.9719,0.4720,,,,low_word_alignment_confidence
+13,text,23,28,two of the given factors or,0.8112,0.1526,,,,transcript_audio_mismatch_or_low_asr_similarity
+14,text,21,27,Uniform Final Examination (UFE),0.9205,0.3567,,,,low_word_alignment_confidence
+15,text,5,8,"poverty, the family",0.2126,0.1428,,,,transcript_audio_mismatch_or_low_asr_similarity
+16,text,9,10,a terrible,0.7561,0.9673,,,,transcript_audio_mismatch_or_low_asr_similarity
+17,text,10,14,"simple, easy and will",0.9538,0.9448,4.800,6.940,,user_reviewed_approximate_coverage
+18,text,3,12,in Denmark - the first Baltic Cod fishery has been,0.0718,0.8446,,,,transcript_audio_mismatch_or_low_asr_similarity
+19,text,12,19,"mistakes, and unfortunately some haters out",0.9829,0.9528,3.900,6.900,,user_reviewed_approximate_coverage
+20,text,19,27,we'll have more live updates and a,0.8508,0.3224,,,,transcript_audio_mismatch_or_low_asr_similarity

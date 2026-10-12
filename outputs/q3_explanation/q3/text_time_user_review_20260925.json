@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-25",
+  "source": "用户在当前对话中的试听反馈",
+  "user_feedback": "你让我看的那几个视频好像都还可以。基本都在那个区间里面",
+  "scope": "目标文本在所列候选区间内的粗粒度覆盖确认",
+  "status": "user_reviewed_approximate_coverage",
+  "not_assessed": [
+    "逐词边界误差",
+    "精确修正时间",
+    "样本05的特征到视频帧映射"
+  ],
+  "samples": [
+    {
+      "sample_id": "01",
+      "text": "the timing belt is",
+      "candidate_interval_seconds": [
+        2.62,
+        3.66
+      ]
+    },
+    {
+      "sample_id": "03",
+      "text": "who don't take rental income",
+      "candidate_interval_seconds": [
+        4.1,
+        5.76
+      ]
+    },
+    {
+      "sample_id": "04",
+      "text": "goodbye?] Absolutely not.",
+      "candidate_interval_seconds": [
+        4.48,
+        6.24
+      ]
+    },
+    {
+      "sample_id": "08",
+      "text": "brings us",
+      "candidate_interval_seconds": [
+        0.86,
+        1.18
+      ]
+    },
+    {
+      "sample_id": "10",
+      "text": "see fluffy chick flicks sometimes",
+      "candidate_interval_seconds": [
+        2.88,
+        4.96
+      ]
+    },
+    {
+      "sample_id": "17",
+      "text": "simple, easy and will",
+      "candidate_interval_seconds": [
+        4.8,
+        6.94
+      ]
+    },
+    {
+      "sample_id": "19",
+      "text": "mistakes, and unfortunately some haters out",
+      "candidate_interval_seconds": [
+        3.9,
+        6.9
+      ]
+    }
+  ]
+}

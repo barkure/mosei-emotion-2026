@@ -1,0 +1,510 @@
+{
+  "stable_id": "-UUCSKoHeMA$_$0",
+  "official_text": "I mentioned a word in the last clip called 'monotone', and I want to talk about that briefly.",
+  "category": "human_flagged_words_confirmed",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "I",
+      "normalized_target": "I",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "I",
+        "chosen": "I",
+        "dropped": []
+      },
+      "candidate_start": 1.44,
+      "candidate_end": 1.46,
+      "start": null,
+      "end": null,
+      "confidence": 0.12869851291179657,
+      "local_confidence": 0.12869851291179657,
+      "boundary_shift_s": 0.0,
+      "accepted": false,
+      "reason": "low_character_confidence",
+      "human_content_reviewed": true,
+      "confidence_min": 0.12869851291179657,
+      "local_start": 1.44,
+      "local_end": 1.46
+    },
+    {
+      "word_index": 1,
+      "word": "mentioned",
+      "normalized_target": "MENTIONED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "mentioned",
+        "chosen": "MENTIONED",
+        "dropped": []
+      },
+      "candidate_start": 1.64,
+      "candidate_end": 2.0,
+      "start": 1.64,
+      "end": 2.0,
+      "confidence": 0.9913650684886508,
+      "local_confidence": 0.9913650684886508,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9392200708389282,
+      "local_start": 1.64,
+      "local_end": 2.0
+    },
+    {
+      "word_index": 2,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": 2.06,
+      "candidate_end": 2.08,
+      "start": 2.06,
+      "end": 2.08,
+      "confidence": 0.9067779779434204,
+      "local_confidence": 0.9067779779434204,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9067779779434204,
+      "local_start": 2.06,
+      "local_end": 2.08
+    },
+    {
+      "word_index": 3,
+      "word": "word",
+      "normalized_target": "WORD",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "word",
+        "chosen": "WORD",
+        "dropped": []
+      },
+      "candidate_start": 2.12,
+      "candidate_end": 2.44,
+      "start": 2.12,
+      "end": 2.44,
+      "confidence": 0.9845593571662903,
+      "local_confidence": 0.9845593571662903,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9516044855117798,
+      "local_start": 2.12,
+      "local_end": 2.44
+    },
+    {
+      "word_index": 4,
+      "word": "in",
+      "normalized_target": "IN",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "in",
+        "chosen": "IN",
+        "dropped": []
+      },
+      "candidate_start": 2.68,
+      "candidate_end": 2.72,
+      "start": 2.68,
+      "end": 2.72,
+      "confidence": 0.6932688653469086,
+      "local_confidence": 0.6932688653469086,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.38789570331573486,
+      "local_start": 2.68,
+      "local_end": 2.72
+    },
+    {
+      "word_index": 5,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": 2.8,
+      "candidate_end": 2.86,
+      "start": 2.8,
+      "end": 2.86,
+      "confidence": 0.97858860095342,
+      "local_confidence": 0.97858860095342,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9770153164863586,
+      "local_start": 2.8,
+      "local_end": 2.86
+    },
+    {
+      "word_index": 6,
+      "word": "last",
+      "normalized_target": "LAST",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "last",
+        "chosen": "LAST",
+        "dropped": []
+      },
+      "candidate_start": 2.92,
+      "candidate_end": 3.2,
+      "start": 2.92,
+      "end": 3.2,
+      "confidence": 0.9842187613248825,
+      "local_confidence": 0.9842187613248825,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.947857677936554,
+      "local_start": 2.92,
+      "local_end": 3.2
+    },
+    {
+      "word_index": 7,
+      "word": "clip",
+      "normalized_target": "CLIP",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "clip",
+        "chosen": "CLIP",
+        "dropped": []
+      },
+      "candidate_start": 3.36,
+      "candidate_end": 3.62,
+      "start": 3.36,
+      "end": 3.62,
+      "confidence": 0.9619192630052567,
+      "local_confidence": 0.9619192630052567,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9217824339866638,
+      "local_start": 3.36,
+      "local_end": 3.62
+    },
+    {
+      "word_index": 8,
+      "word": "called",
+      "normalized_target": "CALLED",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "called",
+        "chosen": "CALLED",
+        "dropped": []
+      },
+      "candidate_start": 3.76,
+      "candidate_end": 4.0,
+      "start": 3.76,
+      "end": 4.0,
+      "confidence": 0.999015619357427,
+      "local_confidence": 0.999015619357427,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9968271851539612,
+      "local_start": 3.76,
+      "local_end": 4.0
+    },
+    {
+      "word_index": 9,
+      "word": "'monotone',",
+      "normalized_target": "'MONOTONE'",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "'monotone',",
+        "chosen": "'MONOTONE'",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": 4.1,
+      "candidate_end": 4.98,
+      "start": 4.1,
+      "end": 4.98,
+      "confidence": 0.7293337354927644,
+      "local_confidence": 0.7293337354927644,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 5.5522392358398065e-05,
+      "local_start": 4.1,
+      "local_end": 4.98
+    },
+    {
+      "word_index": 10,
+      "word": "and",
+      "normalized_target": "AND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "and",
+        "chosen": "AND",
+        "dropped": []
+      },
+      "candidate_start": 5.46,
+      "candidate_end": 5.54,
+      "start": 5.46,
+      "end": 5.54,
+      "confidence": 0.9087464809417725,
+      "local_confidence": 0.9087464809417725,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.7324128746986389,
+      "local_start": 5.46,
+      "local_end": 5.54
+    },
+    {
+      "word_index": 11,
+      "word": "I",
+      "normalized_target": "I",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "I",
+        "chosen": "I",
+        "dropped": []
+      },
+      "candidate_start": 5.58,
+      "candidate_end": 5.6,
+      "start": 5.58,
+      "end": 5.6,
+      "confidence": 0.9896506071090698,
+      "local_confidence": 0.9896506071090698,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9896506071090698,
+      "local_start": 5.58,
+      "local_end": 5.6
+    },
+    {
+      "word_index": 12,
+      "word": "want",
+      "normalized_target": "WANT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "want",
+        "chosen": "WANT",
+        "dropped": []
+      },
+      "candidate_start": 5.64,
+      "candidate_end": 5.78,
+      "start": 5.64,
+      "end": 5.78,
+      "confidence": 0.9003868252038956,
+      "local_confidence": 0.9003868252038956,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.6758087277412415,
+      "local_start": 5.64,
+      "local_end": 5.78
+    },
+    {
+      "word_index": 13,
+      "word": "to",
+      "normalized_target": "TO",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "to",
+        "chosen": "TO",
+        "dropped": []
+      },
+      "candidate_start": 5.8,
+      "candidate_end": 5.86,
+      "start": 5.8,
+      "end": 5.86,
+      "confidence": 0.7991568446159363,
+      "local_confidence": 0.7991568446159363,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.6493095755577087,
+      "local_start": 5.8,
+      "local_end": 5.86
+    },
+    {
+      "word_index": 14,
+      "word": "talk",
+      "normalized_target": "TALK",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "talk",
+        "chosen": "TALK",
+        "dropped": []
+      },
+      "candidate_start": 5.92,
+      "candidate_end": 6.1,
+      "start": 5.92,
+      "end": 6.1,
+      "confidence": 0.9931973218917847,
+      "local_confidence": 0.9931973218917847,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9728659987449646,
+      "local_start": 5.92,
+      "local_end": 6.1
+    },
+    {
+      "word_index": 15,
+      "word": "about",
+      "normalized_target": "ABOUT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "about",
+        "chosen": "ABOUT",
+        "dropped": []
+      },
+      "candidate_start": 6.2,
+      "candidate_end": 6.42,
+      "start": 6.2,
+      "end": 6.42,
+      "confidence": 0.963379967212677,
+      "local_confidence": 0.963379967212677,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.827936053276062,
+      "local_start": 6.2,
+      "local_end": 6.42
+    },
+    {
+      "word_index": 16,
+      "word": "that",
+      "normalized_target": "THAT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "that",
+        "chosen": "THAT",
+        "dropped": []
+      },
+      "candidate_start": 6.48,
+      "candidate_end": 6.64,
+      "start": 6.48,
+      "end": 6.64,
+      "confidence": 0.9832056313753128,
+      "local_confidence": 0.9832056313753128,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9413298964500427,
+      "local_start": 6.48,
+      "local_end": 6.64
+    },
+    {
+      "word_index": 17,
+      "word": "briefly.",
+      "normalized_target": "BRIEFLY",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "briefly.",
+        "chosen": "BRIEFLY",
+        "dropped": [
+          "."
+        ]
+      },
+      "candidate_start": 6.74,
+      "candidate_end": 7.18,
+      "start": 6.74,
+      "end": 7.18,
+      "confidence": 0.9883087192262922,
+      "local_confidence": 0.9883087192262922,
+      "boundary_shift_s": 0.0,
+      "accepted": true,
+      "reason": "accepted_automatic_with_content_evidence",
+      "human_content_reviewed": false,
+      "confidence_min": 0.9535661935806274,
+      "local_start": 6.74,
+      "local_end": 7.18
+    }
+  ],
+  "blocks": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "left": 0,
+      "right": 386
+    }
+  ],
+  "greedy_text": "OKA MENTIONED A WORD AN THE LAST CLIP CALLED MONOTONE AND I WANT TO TALK ABOUT THAT BRIEFLY WHAT YOU ",
+  "silence": [
+    {
+      "start": 0.0,
+      "end": 1.21981,
+      "duration": 1.21981
+    },
+    {
+      "start": 3.24956,
+      "end": 3.41213,
+      "duration": 0.162562
+    },
+    {
+      "start": 3.57788,
+      "end": 3.79025,
+      "duration": 0.212375
+    },
+    {
+      "start": 5.04769,
+      "end": 5.45838,
+      "duration": 0.410687
+    }
+  ],
+  "fingerprint": "bef4318fad11b844b23a2459ce183cd82c8db2700adc6b57e4d3dadff7b323021b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983f472f74b8058c414721bd9989a209ceb9f3b5dee56b91315f4079a6876c4f7bfa69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R006"
+  ],
+  "source_candidate_sha256": "bef4318fad11b844b23a2459ce183cd82c8db2700adc6b57e4d3dadff7b32302",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "f472f74b8058c414721bd9989a209ceb9f3b5dee56b91315f4079a6876c4f7bf",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

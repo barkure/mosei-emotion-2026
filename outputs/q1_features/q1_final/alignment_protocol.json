@@ -1,0 +1,54 @@
+{
+  "runtime_versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "mediapipe": "1.0.1"
+  },
+  "ffmpeg_version": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers",
+  "source_sha256": {
+    "src/q1_features/realign_reviewed_words.py": "31181730fed228dc1510b8a65d55aeab7a02c85ae621db9391e8c5812bed9bcd",
+    "src/q1_features/build_final_word_features.py": "0968d26cf1c902f3d97135600295ef066a04510c035e680485645af735b06cb0",
+    "src/q1_features/verify_final_word_features.py": "6fbb0931e7897fa38468e9a30d593f0d928211875c8b40bf76d38d9f6a84779e",
+    "src/q1_features/export_final_word_results.py": "6fb63e79bfc0420e0b351f6e0ac59e71c11ac5ad1869e288b8eb23589cef6a96",
+    "src/q1_features/word_intervals.py": "a5c95d0899237183261fdc802dc19732dd65027f19c70dd0365a708c340e4038",
+    "src/q1_features/extract_native_features.py": "2917448fb3903a0d323799fed7d8d3dea15b69bb54d67ef4c5d5fd98e8b34577",
+    "src/q1_features/feature_extractors.py": "59c5d8ceb774af5b0f6176e53914ce1a38e475424385c7efb5a1acc0c8ee44f0",
+    "src/q1_features/audio_features.py": "17f591e5f5311b913c3467acb347e0c2eb02bf6d22aa9236815d9ed06490fc58",
+    "src/q1_features/media_io.py": "a96931edcf34693871fcf97d4eafca990b9c9cdde7083298847c60b451e65da9",
+    "src/q1_features/align_words.py": "c7bb9ad91e2e52ab929f8ed4d046cb91dab3b50c7c832b8b283b4df3ea5b84cd",
+    ".cache/mediapipe/face_landmarker.task": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "outputs/q1_features/review_feedback/20260925_beb961ca30da/effective_feedback.json": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983"
+  },
+  "audio": {
+    "sample_rate": 16000,
+    "window_samples": 400,
+    "hop_samples": 160,
+    "feature_dimension": 17
+  },
+  "video": {
+    "mode": "VIDEO",
+    "all_display_frames": true,
+    "width": 640,
+    "num_faces": 2,
+    "min_face_detection_confidence": 0.5,
+    "min_face_presence_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "word_pooling": "display interval overlap, only n_faces == 1"
+  },
+  "word_time": {
+    "model": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "ctc_stride_s": 0.02,
+    "confidence_min": 0.5,
+    "local_boundary_difference_max_s": 0.1,
+    "independent_human_boundary_labels": false
+  },
+  "text": {
+    "model": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "hidden_dimension": 768,
+    "frozen": true
+  }
+}

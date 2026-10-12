@@ -1,0 +1,133 @@
+{
+  "stable_id": "-iRBcNs9oI8$_$6",
+  "official_text": "What is a power pose",
+  "category": "content_mismatch",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "What",
+      "normalized_target": "WHAT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "What",
+        "chosen": "WHAT",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 1,
+      "word": "is",
+      "normalized_target": "IS",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "is",
+        "chosen": "IS",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 2,
+      "word": "a",
+      "normalized_target": "A",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "a",
+        "chosen": "A",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 3,
+      "word": "power",
+      "normalized_target": "POWER",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "power",
+        "chosen": "POWER",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 4,
+      "word": "pose",
+      "normalized_target": "POSE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "pose",
+        "chosen": "POSE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    }
+  ],
+  "blocks": [],
+  "greedy_text": "",
+  "silence": [],
+  "fingerprint": "fc5c80fc10c3cbd565462190f4f42310658982a49cacc487669eef1a5f8e7ab11b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec9837e1dcaa246263b1d44faca8e971d7c98921ff52af39f73b3df9fd3f9e3e9c63ba69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R049"
+  ],
+  "source_candidate_sha256": "fc5c80fc10c3cbd565462190f4f42310658982a49cacc487669eef1a5f8e7ab1",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "7e1dcaa246263b1d44faca8e971d7c98921ff52af39f73b3df9fd3f9e3e9c63b",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

@@ -1,0 +1,47 @@
+% Three parallel tasks; attachment-one features do not feed attachment-two training.
+\definecolor{routeblue}{HTML}{394D96}
+\definecolor{routeteal}{HTML}{148C84}
+\definecolor{routegold}{HTML}{BE913C}
+\begin{tikzpicture}[
+  x=1cm,y=1cm,>=Latex,
+  box/.style={draw=#1!65,line width=.65pt,rounded corners=2pt,
+    fill=white,text=black,text width=4.05cm,minimum height=1.60cm,
+    align=center,inner sep=5pt,font=\fontsize{8.5}{11.5}\selectfont},
+  heading/.style={text=black,font=\fontsize{10}{13}\selectfont\bfseries,align=center},
+  flow/.style={->,line width=.8pt,draw=#1!85},
+  note/.style={font=\fontsize{8}{10}\selectfont,text=black,align=center}
+]
+% Soft column backgrounds distinguish tasks without heavy enclosing borders.
+\fill[routeblue!4,rounded corners=4pt] (0,0) rectangle (4.8,9.25);
+\fill[routeteal!4,rounded corners=4pt] (5.4,0) rectangle (10.2,9.25);
+\fill[routegold!5,rounded corners=4pt] (10.8,0) rectangle (15.6,9.25);
+\foreach \x/\col in {2.4/routeblue,7.8/routeteal,13.2/routegold}{
+  \draw[\col,line width=2pt] (\x-2.1,9.11)--(\x+2.1,9.11);
+}
+\node[heading] at (2.4,8.70) {问题一\quad 特征构建};
+\node[heading] at (7.8,8.70) {问题二\quad 鲁棒预测};
+\node[heading] at (13.2,8.70) {问题三\quad 分层解释};
+
+\node[box=routeblue] (a1) at (2.4,7.40) {\textbf{原始素材与时基}\\100条视频与官方转写\\样本编号、音画解码时间};
+\node[box=routeblue] (a2) at (2.4,5.30) {\textbf{三模态原生特征}\\BERT文本\quad 短窗声学\\视频面部系数};
+\node[box=routeblue] (a3) at (2.4,3.20) {\textbf{词时间戳对齐}\\局部词边界、区间交叠\\观测掩码与来源映射};
+\node[box=routeblue,fill=routeblue!9] (a4) at (2.4,1.10) {\textbf{全量特征与汇总}\\100条样本的三模态特征\\时间映射与对齐覆盖};
+
+\node[box=routeteal] (b1) at (7.8,7.40) {\textbf{训练与模型选择}\\附件二对齐版\\训练集拟合、验证集选模};
+\node[box=routeteal] (b2) at (7.8,5.30) {\textbf{混合专家训练}\\BERT与音视频编码\\缺失增强、文本表征引导};
+\node[box=routeteal] (b3) at (7.8,3.20) {\textbf{MoE预测与集成}\\极性分类、强度回归\\动态门控、三种子集成};
+\node[box=routeteal,fill=routeteal!9] (b4) at (7.8,1.10) {\textbf{专项预测结果}\\附件三：30条样本\\情感极性与连续强度};
+
+\node[box=routegold] (c1) at (13.2,7.40) {\textbf{专项样本与解释任务}\\附件四20条样本\\三模态特征与原视频};
+\node[box=routegold] (c2) at (13.2,5.30) {\textbf{固定MoE推理}\\沿用集成与决策规则\\预测类别与连续强度};
+\node[box=routegold] (c3) at (13.2,3.20) {\textbf{模态贡献与局部证据}\\Shapley与连续窗口遮挡\\验证集宽窗口忠实度复核};
+\node[box=routegold,fill=routegold!10] (c4) at (13.2,1.10) {\textbf{预测解释与媒体回溯}\\主要模态、贡献与关键位置\\文本区间与邻近画面};
+
+\foreach \a/\b in {a1/a2,a2/a3,a3/a4}{\draw[flow=routeblue] (\a.south)--(\b.north);}
+\foreach \a/\b in {b1/b2,b2/b3,b3/b4}{\draw[flow=routeteal] (\a.south)--(\b.north);}
+\foreach \a/\b in {c1/c2,c2/c3,c3/c4}{\draw[flow=routegold] (\a.south)--(\b.north);}
+% Short connector in the inter-column gutter carries the fixed ensemble.
+\draw[flow=routeteal] (b3.east)--(10.5,3.20)--(10.5,5.30)--(c2.west);
+\node[note,rotate=90,fill=white,inner sep=2pt] at (10.5,4.25) {固定模型};
+
+\end{tikzpicture}

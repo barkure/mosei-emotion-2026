@@ -1,0 +1,492 @@
+{
+  "stable_id": "-mJ2ud6oKI8$_$9",
+  "official_text": "It's safe and the person will feel better later on, but it's sort of like flossing your teeth for the first time",
+  "category": "content_mismatch",
+  "words": [
+    {
+      "word_index": 0,
+      "word": "It's",
+      "normalized_target": "IT'S",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "It's",
+        "chosen": "IT'S",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 1,
+      "word": "safe",
+      "normalized_target": "SAFE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "safe",
+        "chosen": "SAFE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 2,
+      "word": "and",
+      "normalized_target": "AND",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "and",
+        "chosen": "AND",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 3,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 4,
+      "word": "person",
+      "normalized_target": "PERSON",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "person",
+        "chosen": "PERSON",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 5,
+      "word": "will",
+      "normalized_target": "WILL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "will",
+        "chosen": "WILL",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 6,
+      "word": "feel",
+      "normalized_target": "FEEL",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "feel",
+        "chosen": "FEEL",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 7,
+      "word": "better",
+      "normalized_target": "BETTER",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "better",
+        "chosen": "BETTER",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 8,
+      "word": "later",
+      "normalized_target": "LATER",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "later",
+        "chosen": "LATER",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 9,
+      "word": "on,",
+      "normalized_target": "ON",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "on,",
+        "chosen": "ON",
+        "dropped": [
+          ","
+        ]
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 10,
+      "word": "but",
+      "normalized_target": "BUT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "but",
+        "chosen": "BUT",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 11,
+      "word": "it's",
+      "normalized_target": "IT'S",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "it's",
+        "chosen": "IT'S",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 12,
+      "word": "sort",
+      "normalized_target": "SORT",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "sort",
+        "chosen": "SORT",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 13,
+      "word": "of",
+      "normalized_target": "OF",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "of",
+        "chosen": "OF",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 14,
+      "word": "like",
+      "normalized_target": "LIKE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "like",
+        "chosen": "LIKE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 15,
+      "word": "flossing",
+      "normalized_target": "FLOSSING",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "flossing",
+        "chosen": "FLOSSING",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 16,
+      "word": "your",
+      "normalized_target": "YOUR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "your",
+        "chosen": "YOUR",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 17,
+      "word": "teeth",
+      "normalized_target": "TEETH",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "teeth",
+        "chosen": "TEETH",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 18,
+      "word": "for",
+      "normalized_target": "FOR",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "for",
+        "chosen": "FOR",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 19,
+      "word": "the",
+      "normalized_target": "THE",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "the",
+        "chosen": "THE",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 20,
+      "word": "first",
+      "normalized_target": "FIRST",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "first",
+        "chosen": "FIRST",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    },
+    {
+      "word_index": 21,
+      "word": "time",
+      "normalized_target": "TIME",
+      "normalization": {
+        "kind": "letter_normalization",
+        "original": "time",
+        "chosen": "TIME",
+        "dropped": []
+      },
+      "candidate_start": null,
+      "candidate_end": null,
+      "start": null,
+      "end": null,
+      "confidence": null,
+      "local_confidence": null,
+      "boundary_shift_s": null,
+      "accepted": false,
+      "reason": "content_mismatch",
+      "human_content_reviewed": true
+    }
+  ],
+  "blocks": [],
+  "greedy_text": "",
+  "silence": [],
+  "fingerprint": "781b0ac1af5d9fdb7a7689b908a029c685fb21dfc3bca61fc9e01bb89c728f271b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec98380ca4709a849a380346e6273688424ea5d1284b7b2b36e7a7d3676a5d127a762a69a7e56ef38a82299559bc4281e8a8769f5afa5866797e2bb9acc9b44f0a4bc",
+  "evidence_review_ids": [
+    "R054"
+  ],
+  "source_candidate_sha256": "781b0ac1af5d9fdb7a7689b908a029c685fb21dfc3bca61fc9e01bb89c728f27",
+  "feedback_sha256": "1b1f43380487af25e53cd86ca8600cc24bc09a8e318ded8fe0c5d476c2eec983",
+  "audio_sha256": "80ca4709a849a380346e6273688424ea5d1284b7b2b36e7a7d3676a5d127a762",
+  "model": "facebook/wav2vec2-base-960h",
+  "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "policy": {
+    "name": "reviewed-local-ctc-v1",
+    "character_confidence_min": 0.5,
+    "local_boundary_tolerance_s": 0.1,
+    "local_context_words_each_side": 3,
+    "context_padding_s": 0.16,
+    "maximum_word_span": "max(1.0, 0.2 * normalized_letter_count) seconds",
+    "note": "Heuristic acceptance; content reviews are not independent word-boundary labels."
+  }
+}

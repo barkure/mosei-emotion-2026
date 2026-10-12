@@ -1,0 +1,67 @@
+% Generated from the actual Q1 source; formatting only.
+\begin{lstlisting}
+CONFIDENCE = 0.50
+STABILITY = 0.10
+
+for block in blocks:
+    ids = block['indices']
+    left, right = (block['left'], block['right'])
+    ns = [norms[i] for i in ids]
+    try:
+        global_rows, _ = align(lp[left:right], ns, vocab, left)
+    except ValueError:
+        for i in ids:
+            results[i]['reason'] = 'ctc_path_unreachable'
+        continue
+    for j, i in enumerate(ids):
+        rr = results[i]
+        g = global_rows[j]
+        if not g:
+            rr['reason'] = 'no_supported_target_characters'
+            continue
+        rr.update(candidate_start=g['start'], candidate_end=g['end'], confidence=g['confidence'], confidence_min=g['confidence_min'])
+        a = max(0, j - 3)
+        b = min(len(ids), j + 4)
+        nonempty = [v for v in global_rows[a:b] if v]
+        lo = max(left, round(nonempty[0]['start'] / STEP) - 8)
+        hi = min(right, round(nonempty[-1]['end'] / STEP) + 8)
+        try:
+            local, _ = align(lp[lo:hi], [norms[x] for x in ids[a:b]], vocab, lo)
+            v = local[j - a]
+            if not v:
+                raise ValueError('No local word')
+        except ValueError:
+            rr['reason'] = 'local_path_unreachable'
+            continue
+        shift = max(abs(g['start'] - v['start']), abs(g['end'] - v['end']))
+        rr.update(local_start=v['start'], local_end=v['end'], local_confidence=v['confidence'], boundary_shift_s=round(shift, 6))
+        entirely_silent = any((v['start'] >= z['start'] and v['end'] <= (z['end'] if z['end'] is not None else len(lp) * STEP) for z in silence))
+        duration = v['end'] - v['start']
+        max_duration = max(1.0, 0.2 * len(norms[i].replace(' ', '')))
+        if min(g['confidence'], v['confidence']) < CONFIDENCE:
+            reason = 'low_character_confidence'
+        elif shift > STABILITY + 1e-08:
+            reason = 'unstable_local_boundary'
+        elif entirely_silent:
+            reason = 'inside_detected_silence'
+        elif duration > max_duration:
+            reason = 'excessive_word_span'
+        elif not 0 <= v['start'] < v['end'] <= len(lp) * STEP + 1e-08:
+            reason = 'invalid_time'
+        else:
+            reason = 'accepted_automatic_with_content_evidence'
+            rr.update(accepted=True, start=v['start'], end=v['end'])
+        rr['reason'] = reason
+
+previous = None
+
+for rr in results:
+    if not rr['accepted']:
+        continue
+    if previous and rr['start'] < previous['end'] - 1e-08:
+        for x in [previous, rr]:
+            x.update(accepted=False, start=None, end=None, reason='overlap_after_local_alignment')
+        previous = None
+    else:
+        previous = rr
+\end{lstlisting}

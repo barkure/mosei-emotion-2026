@@ -1,0 +1,3529 @@
+{
+  "model_revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "similarity_threshold": 0.9,
+  "word_confidence_threshold": 0.5,
+  "records": {
+    "01": {
+      "status": "aligned",
+      "greedy_similarity": 0.9594,
+      "greedy_text": "REPLACING THESE WARE COMPONENTS WHEN REPLACING THE TYMY BELT IS ESSENTIAL TO INSURING THE NEW BELT PERFORMS TO ITS MILAGE REQUIREMENTS",
+      "words": [
+        {
+          "word": "Replacing",
+          "start": 0.5,
+          "end": 0.94,
+          "confidence": 0.9866,
+          "status": "candidate"
+        },
+        {
+          "word": "these",
+          "start": 1.0,
+          "end": 1.14,
+          "confidence": 0.9725,
+          "status": "candidate"
+        },
+        {
+          "word": "wear",
+          "start": 1.22,
+          "end": 1.38,
+          "confidence": 0.7225,
+          "status": "candidate"
+        },
+        {
+          "word": "components",
+          "start": 1.48,
+          "end": 1.94,
+          "confidence": 0.9918,
+          "status": "candidate"
+        },
+        {
+          "word": "when",
+          "start": 1.98,
+          "end": 2.1,
+          "confidence": 0.9781,
+          "status": "candidate"
+        },
+        {
+          "word": "replacing",
+          "start": 2.16,
+          "end": 2.58,
+          "confidence": 0.998,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 2.62,
+          "end": 2.68,
+          "confidence": 0.9119,
+          "status": "candidate"
+        },
+        {
+          "word": "timing",
+          "start": 2.72,
+          "end": 3.0,
+          "confidence": 0.5422,
+          "status": "candidate"
+        },
+        {
+          "word": "belt",
+          "start": 3.04,
+          "end": 3.22,
+          "confidence": 0.9996,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 3.6,
+          "end": 3.66,
+          "confidence": 0.9493,
+          "status": "candidate"
+        },
+        {
+          "word": "essential",
+          "start": 3.78,
+          "end": 4.24,
+          "confidence": 0.9996,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 4.44,
+          "end": 4.52,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "ensuring",
+          "start": 4.64,
+          "end": 5.02,
+          "confidence": 0.9052,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 5.1,
+          "end": 5.18,
+          "confidence": 0.985,
+          "status": "candidate"
+        },
+        {
+          "word": "new",
+          "start": 5.24,
+          "end": 5.36,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "belt",
+          "start": 5.48,
+          "end": 5.7,
+          "confidence": 0.9986,
+          "status": "candidate"
+        },
+        {
+          "word": "performs",
+          "start": 6.16,
+          "end": 6.68,
+          "confidence": 0.9507,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 6.84,
+          "end": 6.92,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "its",
+          "start": 7.04,
+          "end": 7.12,
+          "confidence": 0.9882,
+          "status": "candidate"
+        },
+        {
+          "word": "mileage",
+          "start": 7.24,
+          "end": 7.62,
+          "confidence": 0.6605,
+          "status": "candidate"
+        },
+        {
+          "word": "requirements",
+          "start": 7.68,
+          "end": 8.26,
+          "confidence": 0.9752,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 8.986
+    },
+    "02": {
+      "status": "aligned",
+      "greedy_similarity": 0.9778,
+      "greedy_text": "WE WANT TO LIVE BY EACH OTHER'S HAPPINESS NOT BY EACH OTHER'S MISERY",
+      "words": [
+        {
+          "word": "We",
+          "start": 0.48,
+          "end": 0.54,
+          "confidence": 0.999,
+          "status": "candidate"
+        },
+        {
+          "word": "want",
+          "start": 0.6,
+          "end": 0.7,
+          "confidence": 0.9977,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 0.74,
+          "end": 0.78,
+          "confidence": 0.9954,
+          "status": "candidate"
+        },
+        {
+          "word": "live",
+          "start": 0.82,
+          "end": 0.94,
+          "confidence": 0.9995,
+          "status": "candidate"
+        },
+        {
+          "word": "by",
+          "start": 0.98,
+          "end": 1.04,
+          "confidence": 0.9989,
+          "status": "candidate"
+        },
+        {
+          "word": "each",
+          "start": 1.1,
+          "end": 1.18,
+          "confidence": 1.0,
+          "status": "candidate"
+        },
+        {
+          "word": "other’s",
+          "start": 1.24,
+          "end": 1.42,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "happiness",
+          "start": 1.44,
+          "end": 1.76,
+          "confidence": 0.9152,
+          "status": "candidate"
+        },
+        {
+          "word": "-",
+          "status": "no_usable_characters"
+        },
+        {
+          "word": "not",
+          "start": 1.82,
+          "end": 1.92,
+          "confidence": 0.9882,
+          "status": "candidate"
+        },
+        {
+          "word": "by",
+          "start": 1.98,
+          "end": 2.04,
+          "confidence": 0.9946,
+          "status": "candidate"
+        },
+        {
+          "word": "each",
+          "start": 2.1,
+          "end": 2.2,
+          "confidence": 0.9814,
+          "status": "candidate"
+        },
+        {
+          "word": "other’s",
+          "start": 2.24,
+          "end": 2.4,
+          "confidence": 0.844,
+          "status": "candidate"
+        },
+        {
+          "word": "misery.",
+          "start": 2.48,
+          "end": 2.76,
+          "confidence": 0.9999,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 3.328
+    },
+    "03": {
+      "status": "aligned",
+      "greedy_similarity": 0.9293,
+      "greedy_text": "OUNT THERE'S ONE LENDAR AT THE MOMENT WHICH I THINK ITS JUST BANK WEST WHO DON'T TAKE RENTEL INCOME INTO ACCOUNT THEY TAKE RENTEL YIELD INTO ACCOUNT SO THAT",
+      "words": [
+        {
+          "word": "There's",
+          "start": 0.5,
+          "end": 0.7,
+          "confidence": 0.9413,
+          "status": "candidate"
+        },
+        {
+          "word": "one",
+          "start": 0.88,
+          "end": 0.96,
+          "confidence": 0.9443,
+          "status": "candidate"
+        },
+        {
+          "word": "lender",
+          "start": 1.04,
+          "end": 1.4,
+          "confidence": 0.851,
+          "status": "candidate"
+        },
+        {
+          "word": "at",
+          "start": 1.56,
+          "end": 1.6,
+          "confidence": 0.9961,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 1.64,
+          "end": 1.72,
+          "confidence": 0.9694,
+          "status": "candidate"
+        },
+        {
+          "word": "moment",
+          "start": 1.78,
+          "end": 2.08,
+          "confidence": 0.9558,
+          "status": "candidate"
+        },
+        {
+          "word": "which",
+          "start": 2.16,
+          "end": 2.28,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 2.34,
+          "end": 2.36,
+          "confidence": 0.9988,
+          "status": "candidate"
+        },
+        {
+          "word": "think",
+          "start": 2.4,
+          "end": 2.54,
+          "confidence": 0.9649,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 2.6,
+          "end": 2.68,
+          "confidence": 0.6955,
+          "status": "candidate"
+        },
+        {
+          "word": "just",
+          "start": 2.72,
+          "end": 2.88,
+          "confidence": 0.9548,
+          "status": "candidate"
+        },
+        {
+          "word": "Bankwest",
+          "start": 3.0,
+          "end": 3.68,
+          "confidence": 0.9939,
+          "status": "candidate"
+        },
+        {
+          "word": "who",
+          "start": 4.1,
+          "end": 4.24,
+          "confidence": 0.9962,
+          "status": "candidate"
+        },
+        {
+          "word": "don't",
+          "start": 4.52,
+          "end": 4.72,
+          "confidence": 0.9857,
+          "status": "candidate"
+        },
+        {
+          "word": "take",
+          "start": 4.8,
+          "end": 4.98,
+          "confidence": 0.9972,
+          "status": "candidate"
+        },
+        {
+          "word": "rental",
+          "start": 5.14,
+          "end": 5.38,
+          "confidence": 0.8308,
+          "status": "candidate"
+        },
+        {
+          "word": "income",
+          "start": 5.48,
+          "end": 5.76,
+          "confidence": 0.9516,
+          "status": "candidate"
+        },
+        {
+          "word": "into",
+          "start": 5.9,
+          "end": 6.12,
+          "confidence": 0.9818,
+          "status": "candidate"
+        },
+        {
+          "word": "account,",
+          "start": 6.22,
+          "end": 6.52,
+          "confidence": 0.9559,
+          "status": "candidate"
+        },
+        {
+          "word": "they",
+          "start": 6.82,
+          "end": 6.94,
+          "confidence": 0.9348,
+          "status": "candidate"
+        },
+        {
+          "word": "take",
+          "start": 7.04,
+          "end": 7.22,
+          "confidence": 0.9422,
+          "status": "candidate"
+        },
+        {
+          "word": "rental",
+          "start": 7.5,
+          "end": 7.78,
+          "confidence": 0.8193,
+          "status": "candidate"
+        },
+        {
+          "word": "yield",
+          "start": 7.98,
+          "end": 8.32,
+          "confidence": 0.9525,
+          "status": "candidate"
+        },
+        {
+          "word": "into",
+          "start": 8.46,
+          "end": 8.62,
+          "confidence": 0.9992,
+          "status": "candidate"
+        },
+        {
+          "word": "account.",
+          "start": 8.7,
+          "end": 8.98,
+          "confidence": 0.967,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 9.584
+    },
+    "04": {
+      "status": "aligned",
+      "greedy_similarity": 0.9569,
+      "greedy_text": "IF I GLOW IT AT THE TEAM EXERCISE SHOULD I KISS MY CHANCES OF CHEERING GO BLUE GOOD BYE ABSOLUTELY NOT THERE",
+      "words": [
+        {
+          "word": "If",
+          "start": 0.5,
+          "end": 0.54,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 0.62,
+          "end": 0.64,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "blow",
+          "start": 0.74,
+          "end": 0.96,
+          "confidence": 0.8688,
+          "status": "candidate"
+        },
+        {
+          "word": "it",
+          "start": 1.02,
+          "end": 1.06,
+          "confidence": 0.5422,
+          "status": "candidate"
+        },
+        {
+          "word": "at",
+          "start": 1.1,
+          "end": 1.14,
+          "confidence": 0.9907,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 1.18,
+          "end": 1.24,
+          "confidence": 0.9919,
+          "status": "candidate"
+        },
+        {
+          "word": "team",
+          "start": 1.28,
+          "end": 1.42,
+          "confidence": 0.9921,
+          "status": "candidate"
+        },
+        {
+          "word": "exercise,",
+          "start": 1.54,
+          "end": 1.96,
+          "confidence": 0.9722,
+          "status": "candidate"
+        },
+        {
+          "word": "should",
+          "start": 2.18,
+          "end": 2.34,
+          "confidence": 0.9804,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 2.38,
+          "end": 2.4,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "kiss",
+          "start": 2.48,
+          "end": 2.66,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "my",
+          "start": 2.74,
+          "end": 2.8,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "chances",
+          "start": 2.9,
+          "end": 3.24,
+          "confidence": 0.9935,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 3.3,
+          "end": 3.34,
+          "confidence": 0.9981,
+          "status": "candidate"
+        },
+        {
+          "word": "cheering",
+          "start": 3.4,
+          "end": 3.66,
+          "confidence": 0.9918,
+          "status": "candidate"
+        },
+        {
+          "word": "\"GO",
+          "start": 3.78,
+          "end": 3.88,
+          "confidence": 0.7858,
+          "status": "candidate"
+        },
+        {
+          "word": "BLUE\"",
+          "start": 4.04,
+          "end": 4.26,
+          "confidence": 0.9799,
+          "status": "candidate"
+        },
+        {
+          "word": "goodbye?]",
+          "start": 4.48,
+          "end": 4.94,
+          "confidence": 0.899,
+          "status": "candidate"
+        },
+        {
+          "word": "Absolutely",
+          "start": 5.44,
+          "end": 5.94,
+          "confidence": 0.9929,
+          "status": "candidate"
+        },
+        {
+          "word": "not.",
+          "start": 6.02,
+          "end": 6.24,
+          "confidence": 0.9902,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 6.848
+    },
+    "05": {
+      "status": "aligned",
+      "greedy_similarity": 0.9076,
+      "greedy_text": "HI MY NAME WAS CHLOEY VIDIO MARKETER FOR RED WEG IN MARKETING",
+      "words": [
+        {
+          "word": "Hi,",
+          "start": 1.26,
+          "end": 1.46,
+          "confidence": 0.807,
+          "status": "candidate"
+        },
+        {
+          "word": "my",
+          "start": 1.96,
+          "end": 2.06,
+          "confidence": 0.9998,
+          "status": "candidate"
+        },
+        {
+          "word": "name",
+          "start": 2.12,
+          "end": 2.24,
+          "confidence": 0.9956,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 2.3,
+          "end": 2.34,
+          "confidence": 0.5006,
+          "status": "candidate"
+        },
+        {
+          "word": "Chloe,",
+          "start": 2.44,
+          "end": 2.76,
+          "confidence": 0.8526,
+          "status": "candidate"
+        },
+        {
+          "word": "video",
+          "start": 3.22,
+          "end": 3.52,
+          "confidence": 0.7659,
+          "status": "candidate"
+        },
+        {
+          "word": "marketer",
+          "start": 3.62,
+          "end": 4.0,
+          "confidence": 0.9583,
+          "status": "candidate"
+        },
+        {
+          "word": "for",
+          "start": 4.16,
+          "end": 4.26,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "Red",
+          "start": 4.38,
+          "end": 4.56,
+          "confidence": 0.9934,
+          "status": "candidate"
+        },
+        {
+          "word": "Wagon",
+          "start": 4.64,
+          "end": 4.92,
+          "confidence": 0.6752,
+          "status": "candidate"
+        },
+        {
+          "word": "Marketing.",
+          "start": 4.98,
+          "end": 5.38,
+          "confidence": 0.8803,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 6.014
+    },
+    "06": {
+      "status": "aligned",
+      "greedy_similarity": 0.9073,
+      "greedy_text": "IF YOU'RE FAN OF DANCING IN THAT SENSE JUST LIKE THO WATCH PEOPLE DANCE SEE IMPRESSIVE DANCE MOVES THAT YOU MIGHT WANT COHAVE Y SOLELY FOR THAT",
+      "words": [
+        {
+          "word": "If",
+          "start": 0.54,
+          "end": 0.58,
+          "confidence": 0.9375,
+          "status": "candidate"
+        },
+        {
+          "word": "you're",
+          "start": 0.62,
+          "end": 0.76,
+          "confidence": 0.7417,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 0.78,
+          "end": 0.8,
+          "confidence": 0.003,
+          "status": "candidate"
+        },
+        {
+          "word": "fan",
+          "start": 0.82,
+          "end": 0.94,
+          "confidence": 0.6299,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 1.02,
+          "end": 1.06,
+          "confidence": 0.8888,
+          "status": "candidate"
+        },
+        {
+          "word": "dancing",
+          "start": 1.1,
+          "end": 1.46,
+          "confidence": 0.9849,
+          "status": "candidate"
+        },
+        {
+          "word": "in",
+          "start": 1.54,
+          "end": 1.58,
+          "confidence": 0.9208,
+          "status": "candidate"
+        },
+        {
+          "word": "that",
+          "start": 1.64,
+          "end": 1.76,
+          "confidence": 0.9861,
+          "status": "candidate"
+        },
+        {
+          "word": "sense,",
+          "start": 1.84,
+          "end": 2.08,
+          "confidence": 0.9339,
+          "status": "candidate"
+        },
+        {
+          "word": "just",
+          "start": 2.14,
+          "end": 2.28,
+          "confidence": 0.9875,
+          "status": "candidate"
+        },
+        {
+          "word": "like",
+          "start": 2.34,
+          "end": 2.46,
+          "confidence": 0.9982,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 2.52,
+          "end": 2.58,
+          "confidence": 0.7301,
+          "status": "candidate"
+        },
+        {
+          "word": "watch",
+          "start": 2.66,
+          "end": 2.84,
+          "confidence": 0.9907,
+          "status": "candidate"
+        },
+        {
+          "word": "people",
+          "start": 2.94,
+          "end": 3.14,
+          "confidence": 0.9529,
+          "status": "candidate"
+        },
+        {
+          "word": "dance,",
+          "start": 3.22,
+          "end": 3.52,
+          "confidence": 0.9995,
+          "status": "candidate"
+        },
+        {
+          "word": "see",
+          "start": 3.72,
+          "end": 3.86,
+          "confidence": 0.9911,
+          "status": "candidate"
+        },
+        {
+          "word": "impressive",
+          "start": 3.96,
+          "end": 4.38,
+          "confidence": 0.9508,
+          "status": "candidate"
+        },
+        {
+          "word": "dance",
+          "start": 4.46,
+          "end": 4.7,
+          "confidence": 0.9327,
+          "status": "candidate"
+        },
+        {
+          "word": "moves",
+          "start": 4.84,
+          "end": 5.1,
+          "confidence": 0.9573,
+          "status": "candidate"
+        },
+        {
+          "word": "then",
+          "start": 5.58,
+          "end": 5.68,
+          "confidence": 0.5046,
+          "status": "candidate"
+        },
+        {
+          "word": "you",
+          "start": 5.72,
+          "end": 5.78,
+          "confidence": 0.9983,
+          "status": "candidate"
+        },
+        {
+          "word": "might",
+          "start": 5.82,
+          "end": 5.96,
+          "confidence": 0.9924,
+          "status": "candidate"
+        },
+        {
+          "word": "want",
+          "start": 5.98,
+          "end": 6.08,
+          "confidence": 0.6312,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 6.1,
+          "end": 6.14,
+          "confidence": 0.4772,
+          "status": "candidate"
+        },
+        {
+          "word": "check",
+          "start": 6.16,
+          "end": 6.28,
+          "confidence": 0.1881,
+          "status": "candidate"
+        },
+        {
+          "word": "out",
+          "start": 6.32,
+          "end": 6.38,
+          "confidence": 0.032,
+          "status": "candidate"
+        },
+        {
+          "word": "this",
+          "start": 6.4,
+          "end": 6.48,
+          "confidence": 0.0535,
+          "status": "candidate"
+        },
+        {
+          "word": "movie",
+          "start": 6.54,
+          "end": 6.72,
+          "confidence": 0.2265,
+          "status": "candidate"
+        },
+        {
+          "word": "solely",
+          "start": 6.8,
+          "end": 7.12,
+          "confidence": 0.9829,
+          "status": "candidate"
+        },
+        {
+          "word": "for",
+          "start": 7.22,
+          "end": 7.32,
+          "confidence": 0.9983,
+          "status": "candidate"
+        },
+        {
+          "word": "that",
+          "start": 7.38,
+          "end": 7.56,
+          "confidence": 0.75,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 8.158
+    },
+    "07": {
+      "status": "aligned",
+      "greedy_similarity": 0.1356,
+      "greedy_text": "AS LANDES ASSOCIATED INOR MICHAEBAKI REPORTS IN OUR NOVEMBER TWENTY EIGHTH ISSUE ATTEND DAYS ENTHUSIASTICALLY DISCUSS THE TOPICS OF GROWING THE HOBBY THE FUTURE OF STAMSHOWS AND DEALERS AND PHILOTILIC PARKNERSHIPS ALONG WITH WAYS THE LEADING ORGANIZATIONS INVOLVED IN THE STANHOBBY CAN WORK TOGETHER TO MAKE IT SUCCEED AND GROW",
+      "words": [
+        {
+          "word": "As",
+          "start": 0.58,
+          "end": 0.66,
+          "confidence": 0.9934,
+          "status": "candidate"
+        },
+        {
+          "word": "Linn’s",
+          "start": 0.76,
+          "end": 0.94,
+          "confidence": 0.5335,
+          "status": "candidate"
+        },
+        {
+          "word": "associate",
+          "start": 1.0,
+          "end": 1.4,
+          "confidence": 0.9224,
+          "status": "candidate"
+        },
+        {
+          "word": "editor",
+          "start": 1.46,
+          "end": 1.7,
+          "confidence": 0.727,
+          "status": "candidate"
+        },
+        {
+          "word": "Michael",
+          "start": 1.74,
+          "end": 1.96,
+          "confidence": 0.7884,
+          "status": "candidate"
+        },
+        {
+          "word": "Baadke",
+          "start": 2.0,
+          "end": 2.34,
+          "confidence": 0.43,
+          "status": "candidate"
+        },
+        {
+          "word": "reports",
+          "start": 2.42,
+          "end": 2.8,
+          "confidence": 0.9736,
+          "status": "candidate"
+        },
+        {
+          "word": "in",
+          "start": 2.88,
+          "end": 2.92,
+          "confidence": 0.9988,
+          "status": "candidate"
+        },
+        {
+          "word": "our",
+          "start": 3.0,
+          "end": 3.08,
+          "confidence": 0.9974,
+          "status": "candidate"
+        },
+        {
+          "word": "November",
+          "start": 3.16,
+          "end": 3.46,
+          "confidence": 0.987,
+          "status": "candidate"
+        },
+        {
+          "word": "28",
+          "status": "no_usable_characters"
+        },
+        {
+          "word": "issue,",
+          "start": 3.82,
+          "end": 4.28,
+          "confidence": 0.9571,
+          "status": "candidate"
+        },
+        {
+          "word": "attendees",
+          "start": 5.0,
+          "end": 5.54,
+          "confidence": 0.718,
+          "status": "candidate"
+        },
+        {
+          "word": "“enthusiastically",
+          "start": 6.0,
+          "end": 7.02,
+          "confidence": 0.9743,
+          "status": "candidate"
+        },
+        {
+          "word": "discussed",
+          "start": 7.1,
+          "end": 7.56,
+          "confidence": 0.7973,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 7.6,
+          "end": 7.66,
+          "confidence": 0.9986,
+          "status": "candidate"
+        },
+        {
+          "word": "topics",
+          "start": 7.7,
+          "end": 8.14,
+          "confidence": 0.9859,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 8.66,
+          "end": 8.7,
+          "confidence": 0.9998,
+          "status": "candidate"
+        },
+        {
+          "word": "growing",
+          "start": 8.82,
+          "end": 9.1,
+          "confidence": 0.9877,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 9.16,
+          "end": 9.22,
+          "confidence": 0.9225,
+          "status": "candidate"
+        },
+        {
+          "word": "hobby,",
+          "start": 9.28,
+          "end": 9.56,
+          "confidence": 0.8622,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 9.9,
+          "end": 9.96,
+          "confidence": 0.9887,
+          "status": "candidate"
+        },
+        {
+          "word": "future",
+          "start": 10.02,
+          "end": 10.34,
+          "confidence": 0.9783,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 10.42,
+          "end": 10.46,
+          "confidence": 0.7551,
+          "status": "candidate"
+        },
+        {
+          "word": "stamp",
+          "start": 10.52,
+          "end": 10.78,
+          "confidence": 0.8126,
+          "status": "candidate"
+        },
+        {
+          "word": "shows,",
+          "start": 10.84,
+          "end": 11.16,
+          "confidence": 0.9626,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 11.58,
+          "end": 11.68,
+          "confidence": 0.9919,
+          "status": "candidate"
+        },
+        {
+          "word": "dealers",
+          "start": 11.76,
+          "end": 12.14,
+          "confidence": 0.9155,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 12.22,
+          "end": 12.28,
+          "confidence": 0.8407,
+          "status": "candidate"
+        },
+        {
+          "word": "philatelic",
+          "start": 12.38,
+          "end": 12.82,
+          "confidence": 0.7971,
+          "status": "candidate"
+        },
+        {
+          "word": "partnerships,",
+          "start": 12.9,
+          "end": 13.46,
+          "confidence": 0.9195,
+          "status": "candidate"
+        },
+        {
+          "word": "along",
+          "start": 13.96,
+          "end": 14.24,
+          "confidence": 0.9974,
+          "status": "candidate"
+        },
+        {
+          "word": "with",
+          "start": 14.32,
+          "end": 14.42,
+          "confidence": 0.9936,
+          "status": "candidate"
+        },
+        {
+          "word": "ways",
+          "start": 14.5,
+          "end": 14.84,
+          "confidence": 0.9977,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 15.0,
+          "end": 15.06,
+          "confidence": 0.9991,
+          "status": "candidate"
+        },
+        {
+          "word": "leading",
+          "start": 15.12,
+          "end": 15.36,
+          "confidence": 0.9973,
+          "status": "candidate"
+        },
+        {
+          "word": "organizations",
+          "start": 15.42,
+          "end": 16.1,
+          "confidence": 0.9823,
+          "status": "candidate"
+        },
+        {
+          "word": "involved",
+          "start": 16.18,
+          "end": 16.58,
+          "confidence": 0.9684,
+          "status": "candidate"
+        },
+        {
+          "word": "in",
+          "start": 16.64,
+          "end": 16.68,
+          "confidence": 0.9887,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 16.74,
+          "end": 16.8,
+          "confidence": 0.8663,
+          "status": "candidate"
+        },
+        {
+          "word": "stamp",
+          "start": 16.86,
+          "end": 17.08,
+          "confidence": 0.6695,
+          "status": "candidate"
+        },
+        {
+          "word": "hobby",
+          "start": 17.12,
+          "end": 17.4,
+          "confidence": 0.887,
+          "status": "candidate"
+        },
+        {
+          "word": "can",
+          "start": 18.0,
+          "end": 18.1,
+          "confidence": 0.8758,
+          "status": "candidate"
+        },
+        {
+          "word": "work",
+          "start": 18.2,
+          "end": 18.34,
+          "confidence": 0.9991,
+          "status": "candidate"
+        },
+        {
+          "word": "together",
+          "start": 18.46,
+          "end": 18.86,
+          "confidence": 0.956,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 19.4,
+          "end": 19.48,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "make",
+          "start": 19.54,
+          "end": 19.7,
+          "confidence": 0.9441,
+          "status": "candidate"
+        },
+        {
+          "word": "it",
+          "start": 19.78,
+          "end": 19.82,
+          "confidence": 0.9245,
+          "status": "candidate"
+        },
+        {
+          "word": "succeed",
+          "start": 19.96,
+          "end": 20.44,
+          "confidence": 0.9988,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 20.62,
+          "end": 20.68,
+          "confidence": 0.938,
+          "status": "candidate"
+        },
+        {
+          "word": "grow",
+          "start": 20.78,
+          "end": 21.04,
+          "confidence": 0.9984,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 21.266
+    },
+    "08": {
+      "status": "aligned",
+      "greedy_similarity": 0.9688,
+      "greedy_text": "SO THAT BRINGS US TO TO NIGHT THE UNIVERSAL DESIGN GRAND CHALLENGE",
+      "words": [
+        {
+          "word": "That",
+          "start": 0.64,
+          "end": 0.78,
+          "confidence": 0.9119,
+          "status": "candidate"
+        },
+        {
+          "word": "brings",
+          "start": 0.86,
+          "end": 1.06,
+          "confidence": 0.966,
+          "status": "candidate"
+        },
+        {
+          "word": "us",
+          "start": 1.14,
+          "end": 1.18,
+          "confidence": 0.9921,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 1.26,
+          "end": 1.34,
+          "confidence": 0.9976,
+          "status": "candidate"
+        },
+        {
+          "word": "tonight,",
+          "start": 1.46,
+          "end": 1.78,
+          "confidence": 0.9911,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 1.84,
+          "end": 1.92,
+          "confidence": 0.9302,
+          "status": "candidate"
+        },
+        {
+          "word": "Universal",
+          "start": 2.04,
+          "end": 2.5,
+          "confidence": 0.9956,
+          "status": "candidate"
+        },
+        {
+          "word": "Design",
+          "start": 2.6,
+          "end": 3.02,
+          "confidence": 0.9985,
+          "status": "candidate"
+        },
+        {
+          "word": "Grand",
+          "start": 3.38,
+          "end": 3.68,
+          "confidence": 0.978,
+          "status": "candidate"
+        },
+        {
+          "word": "Challenge",
+          "start": 3.78,
+          "end": 4.24,
+          "confidence": 0.9614,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 4.908
+    },
+    "09": {
+      "status": "aligned",
+      "greedy_similarity": 0.8806,
+      "greedy_text": "AH I DID NOT LIKE THIS MOVIE AT ALL I WOULD NOT RECOMMEND IT I ONLY WATCH",
+      "words": [
+        {
+          "word": "(uhh)",
+          "start": 0.48,
+          "end": 0.84,
+          "confidence": 0.2761,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 1.12,
+          "end": 1.14,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "did",
+          "start": 1.22,
+          "end": 1.32,
+          "confidence": 0.993,
+          "status": "candidate"
+        },
+        {
+          "word": "not",
+          "start": 1.36,
+          "end": 1.44,
+          "confidence": 0.9327,
+          "status": "candidate"
+        },
+        {
+          "word": "like",
+          "start": 1.48,
+          "end": 1.58,
+          "confidence": 0.9482,
+          "status": "candidate"
+        },
+        {
+          "word": "this",
+          "start": 1.64,
+          "end": 1.74,
+          "confidence": 0.8105,
+          "status": "candidate"
+        },
+        {
+          "word": "movie",
+          "start": 1.88,
+          "end": 2.24,
+          "confidence": 0.8336,
+          "status": "candidate"
+        },
+        {
+          "word": "at",
+          "start": 2.28,
+          "end": 2.32,
+          "confidence": 0.9034,
+          "status": "candidate"
+        },
+        {
+          "word": "all,",
+          "start": 2.52,
+          "end": 2.62,
+          "confidence": 0.993,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 2.8,
+          "end": 2.82,
+          "confidence": 0.9979,
+          "status": "candidate"
+        },
+        {
+          "word": "would",
+          "start": 2.88,
+          "end": 3.0,
+          "confidence": 0.9717,
+          "status": "candidate"
+        },
+        {
+          "word": "not",
+          "start": 3.04,
+          "end": 3.14,
+          "confidence": 0.9903,
+          "status": "candidate"
+        },
+        {
+          "word": "recommend",
+          "start": 3.2,
+          "end": 3.62,
+          "confidence": 0.9991,
+          "status": "candidate"
+        },
+        {
+          "word": "it",
+          "start": 4.12,
+          "end": 4.3,
+          "confidence": 0.4992,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 4.964
+    },
+    "10": {
+      "status": "aligned",
+      "greedy_similarity": 0.9141,
+      "greedy_text": "OH AND YOU KNOW I REALLY DO LIKE TO SEE BLUFFY CHICKFLICKS SOMETIMES THOU NOT AGAINST THAT BUT THIS ONE WAS PRETTY TERRIBLE AND I",
+      "words": [
+        {
+          "word": "(umm)",
+          "start": 0.4,
+          "end": 0.54,
+          "confidence": 0.0303,
+          "status": "candidate"
+        },
+        {
+          "word": "And",
+          "start": 1.22,
+          "end": 1.28,
+          "confidence": 0.8247,
+          "status": "candidate"
+        },
+        {
+          "word": "you",
+          "start": 1.34,
+          "end": 1.4,
+          "confidence": 0.8967,
+          "status": "candidate"
+        },
+        {
+          "word": "know",
+          "start": 1.46,
+          "end": 1.56,
+          "confidence": 0.9901,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 1.92,
+          "end": 1.94,
+          "confidence": 0.9996,
+          "status": "candidate"
+        },
+        {
+          "word": "really",
+          "start": 2.04,
+          "end": 2.26,
+          "confidence": 0.972,
+          "status": "candidate"
+        },
+        {
+          "word": "do",
+          "start": 2.34,
+          "end": 2.42,
+          "confidence": 0.9989,
+          "status": "candidate"
+        },
+        {
+          "word": "like",
+          "start": 2.52,
+          "end": 2.66,
+          "confidence": 0.9697,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 2.74,
+          "end": 2.8,
+          "confidence": 0.9991,
+          "status": "candidate"
+        },
+        {
+          "word": "see",
+          "start": 2.88,
+          "end": 3.02,
+          "confidence": 0.9282,
+          "status": "candidate"
+        },
+        {
+          "word": "fluffy",
+          "start": 3.2,
+          "end": 3.52,
+          "confidence": 0.8092,
+          "status": "candidate"
+        },
+        {
+          "word": "chick",
+          "start": 3.64,
+          "end": 3.84,
+          "confidence": 0.9795,
+          "status": "candidate"
+        },
+        {
+          "word": "flicks",
+          "start": 3.9,
+          "end": 4.18,
+          "confidence": 0.7025,
+          "status": "candidate"
+        },
+        {
+          "word": "sometimes",
+          "start": 4.26,
+          "end": 4.96,
+          "confidence": 0.9912,
+          "status": "candidate"
+        },
+        {
+          "word": "so",
+          "start": 5.04,
+          "end": 5.12,
+          "confidence": 0.4908,
+          "status": "candidate"
+        },
+        {
+          "word": "I'm",
+          "start": 5.2,
+          "end": 5.26,
+          "confidence": 0.0838,
+          "status": "candidate"
+        },
+        {
+          "word": "not",
+          "start": 5.34,
+          "end": 5.48,
+          "confidence": 0.9786,
+          "status": "candidate"
+        },
+        {
+          "word": "against",
+          "start": 5.8,
+          "end": 6.16,
+          "confidence": 0.9586,
+          "status": "candidate"
+        },
+        {
+          "word": "that",
+          "start": 6.34,
+          "end": 6.58,
+          "confidence": 0.9942,
+          "status": "candidate"
+        },
+        {
+          "word": "but",
+          "start": 6.74,
+          "end": 6.84,
+          "confidence": 0.9024,
+          "status": "candidate"
+        },
+        {
+          "word": "this",
+          "start": 6.94,
+          "end": 7.1,
+          "confidence": 0.9978,
+          "status": "candidate"
+        },
+        {
+          "word": "one",
+          "start": 7.3,
+          "end": 7.4,
+          "confidence": 0.9291,
+          "status": "candidate"
+        },
+        {
+          "word": "was",
+          "start": 7.5,
+          "end": 7.66,
+          "confidence": 0.9969,
+          "status": "candidate"
+        },
+        {
+          "word": "pretty",
+          "start": 8.38,
+          "end": 8.6,
+          "confidence": 0.9993,
+          "status": "candidate"
+        },
+        {
+          "word": "terrible",
+          "start": 8.68,
+          "end": 9.12,
+          "confidence": 0.832,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 9.776
+    },
+    "11": {
+      "status": "aligned",
+      "greedy_similarity": 0.8908,
+      "greedy_text": "I'D BE ASHAMED TO HAVE MADE THIS FILM IF IL'S A DIRECTOR S",
+      "words": [
+        {
+          "word": "I",
+          "start": 0.56,
+          "end": 0.58,
+          "confidence": 0.4749,
+          "status": "candidate"
+        },
+        {
+          "word": "would",
+          "start": 0.62,
+          "end": 0.72,
+          "confidence": 0.1808,
+          "status": "candidate"
+        },
+        {
+          "word": "be",
+          "start": 0.78,
+          "end": 0.86,
+          "confidence": 0.9991,
+          "status": "candidate"
+        },
+        {
+          "word": "ashamed",
+          "start": 0.92,
+          "end": 1.34,
+          "confidence": 0.9716,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 3.22,
+          "end": 3.28,
+          "confidence": 0.9584,
+          "status": "candidate"
+        },
+        {
+          "word": "have",
+          "start": 3.34,
+          "end": 3.46,
+          "confidence": 0.9823,
+          "status": "candidate"
+        },
+        {
+          "word": "made",
+          "start": 3.52,
+          "end": 3.68,
+          "confidence": 0.9996,
+          "status": "candidate"
+        },
+        {
+          "word": "this",
+          "start": 3.72,
+          "end": 3.84,
+          "confidence": 0.9081,
+          "status": "candidate"
+        },
+        {
+          "word": "film",
+          "start": 3.92,
+          "end": 4.12,
+          "confidence": 0.975,
+          "status": "candidate"
+        },
+        {
+          "word": "if",
+          "start": 4.42,
+          "end": 4.46,
+          "confidence": 0.9951,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 4.54,
+          "end": 4.56,
+          "confidence": 0.6563,
+          "status": "candidate"
+        },
+        {
+          "word": "was",
+          "start": 4.62,
+          "end": 4.7,
+          "confidence": 0.2687,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 4.76,
+          "end": 4.78,
+          "confidence": 0.4621,
+          "status": "candidate"
+        },
+        {
+          "word": "director",
+          "start": 4.82,
+          "end": 5.22,
+          "confidence": 0.7959,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 5.759
+    },
+    "12": {
+      "status": "aligned",
+      "greedy_similarity": 0.9719,
+      "greedy_text": "OR WORSE AN INDIVIDUAL PREVIOUSLY HAD GOOD CREDIT BUT USUALLY BY NO FAULT OF THEIR OWN OR PERHAPS BY FAULT OF THEIR OWN THEY HAVE LET THEIR CREDIT SEG AND A CREDSCORES VERY LOW",
+      "words": [
+        {
+          "word": "Or",
+          "start": 0.58,
+          "end": 0.64,
+          "confidence": 0.9995,
+          "status": "candidate"
+        },
+        {
+          "word": "worse,",
+          "start": 0.72,
+          "end": 1.06,
+          "confidence": 0.9923,
+          "status": "candidate"
+        },
+        {
+          "word": "an",
+          "start": 1.16,
+          "end": 1.2,
+          "confidence": 0.9958,
+          "status": "candidate"
+        },
+        {
+          "word": "individual",
+          "start": 1.26,
+          "end": 1.72,
+          "confidence": 0.9958,
+          "status": "candidate"
+        },
+        {
+          "word": "previously",
+          "start": 1.94,
+          "end": 2.42,
+          "confidence": 0.9284,
+          "status": "candidate"
+        },
+        {
+          "word": "had",
+          "start": 2.5,
+          "end": 2.7,
+          "confidence": 0.9988,
+          "status": "candidate"
+        },
+        {
+          "word": "good",
+          "start": 2.82,
+          "end": 2.98,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "credit,",
+          "start": 3.08,
+          "end": 3.38,
+          "confidence": 0.9821,
+          "status": "candidate"
+        },
+        {
+          "word": "but",
+          "start": 3.88,
+          "end": 4.04,
+          "confidence": 0.9992,
+          "status": "candidate"
+        },
+        {
+          "word": "usually",
+          "start": 4.64,
+          "end": 4.86,
+          "confidence": 0.9947,
+          "status": "candidate"
+        },
+        {
+          "word": "by",
+          "start": 5.14,
+          "end": 5.26,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "no",
+          "start": 5.38,
+          "end": 5.46,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "fault",
+          "start": 5.58,
+          "end": 5.78,
+          "confidence": 0.9986,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 5.86,
+          "end": 5.9,
+          "confidence": 0.9476,
+          "status": "candidate"
+        },
+        {
+          "word": "their",
+          "start": 5.94,
+          "end": 6.1,
+          "confidence": 0.9986,
+          "status": "candidate"
+        },
+        {
+          "word": "own,",
+          "start": 6.26,
+          "end": 6.36,
+          "confidence": 0.9866,
+          "status": "candidate"
+        },
+        {
+          "word": "or",
+          "start": 6.96,
+          "end": 7.0,
+          "confidence": 0.9979,
+          "status": "candidate"
+        },
+        {
+          "word": "perhaps",
+          "start": 7.1,
+          "end": 7.46,
+          "confidence": 0.9562,
+          "status": "candidate"
+        },
+        {
+          "word": "by",
+          "start": 7.56,
+          "end": 7.68,
+          "confidence": 0.9995,
+          "status": "candidate"
+        },
+        {
+          "word": "fault",
+          "start": 7.8,
+          "end": 7.98,
+          "confidence": 0.9457,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 8.08,
+          "end": 8.12,
+          "confidence": 0.9944,
+          "status": "candidate"
+        },
+        {
+          "word": "their",
+          "start": 8.18,
+          "end": 8.34,
+          "confidence": 0.9956,
+          "status": "candidate"
+        },
+        {
+          "word": "own,",
+          "start": 8.46,
+          "end": 8.54,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "they",
+          "start": 8.66,
+          "end": 8.8,
+          "confidence": 0.9449,
+          "status": "candidate"
+        },
+        {
+          "word": "have",
+          "start": 8.88,
+          "end": 9.0,
+          "confidence": 0.9849,
+          "status": "candidate"
+        },
+        {
+          "word": "let",
+          "start": 9.08,
+          "end": 9.22,
+          "confidence": 0.9719,
+          "status": "candidate"
+        },
+        {
+          "word": "their",
+          "start": 9.26,
+          "end": 9.4,
+          "confidence": 0.9305,
+          "status": "candidate"
+        },
+        {
+          "word": "credit",
+          "start": 9.48,
+          "end": 9.76,
+          "confidence": 0.9906,
+          "status": "candidate"
+        },
+        {
+          "word": "sag,",
+          "start": 9.94,
+          "end": 10.28,
+          "confidence": 0.7312,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 10.62,
+          "end": 10.74,
+          "confidence": 0.9987,
+          "status": "candidate"
+        },
+        {
+          "word": "credit",
+          "start": 11.1,
+          "end": 11.3,
+          "confidence": 0.6654,
+          "status": "candidate"
+        },
+        {
+          "word": "scores",
+          "start": 11.32,
+          "end": 11.58,
+          "confidence": 0.663,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 11.62,
+          "end": 11.66,
+          "confidence": 0.472,
+          "status": "candidate"
+        },
+        {
+          "word": "very",
+          "start": 11.74,
+          "end": 11.92,
+          "confidence": 0.9061,
+          "status": "candidate"
+        },
+        {
+          "word": "low.",
+          "start": 12.02,
+          "end": 12.26,
+          "confidence": 0.9919,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 12.875
+    },
+    "13": {
+      "status": "aligned",
+      "greedy_similarity": 0.8112,
+      "greedy_text": "FOR EXAMPLE I CAN TAKE A SETOTATA AND FROM FROM THAT DATA A CONFEDER RELATIONSHIP BETWEEN ANY TWO OF THE GIVEN BEARER RMO",
+      "words": [
+        {
+          "word": "For",
+          "start": 0.0,
+          "end": 0.08,
+          "confidence": 0.9889,
+          "status": "candidate"
+        },
+        {
+          "word": "example,",
+          "start": 0.18,
+          "end": 0.54,
+          "confidence": 0.9809,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 0.88,
+          "end": 0.9,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "could",
+          "start": 0.96,
+          "end": 1.08,
+          "confidence": 0.4314,
+          "status": "candidate"
+        },
+        {
+          "word": "take",
+          "start": 1.1,
+          "end": 1.24,
+          "confidence": 0.9896,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 1.32,
+          "end": 1.34,
+          "confidence": 0.9151,
+          "status": "candidate"
+        },
+        {
+          "word": "set",
+          "start": 1.4,
+          "end": 1.56,
+          "confidence": 0.7101,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 1.62,
+          "end": 1.66,
+          "confidence": 0.3945,
+          "status": "candidate"
+        },
+        {
+          "word": "data",
+          "start": 1.72,
+          "end": 2.06,
+          "confidence": 0.604,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 2.88,
+          "end": 3.0,
+          "confidence": 0.9922,
+          "status": "candidate"
+        },
+        {
+          "word": "from",
+          "start": 3.28,
+          "end": 3.44,
+          "confidence": 0.9196,
+          "status": "candidate"
+        },
+        {
+          "word": "that",
+          "start": 3.9,
+          "end": 4.02,
+          "confidence": 0.8645,
+          "status": "candidate"
+        },
+        {
+          "word": "data,",
+          "start": 4.06,
+          "end": 4.36,
+          "confidence": 0.7162,
+          "status": "candidate"
+        },
+        {
+          "word": "I",
+          "start": 4.68,
+          "end": 4.7,
+          "confidence": 0.0216,
+          "status": "candidate"
+        },
+        {
+          "word": "can",
+          "start": 4.74,
+          "end": 4.82,
+          "confidence": 0.5824,
+          "status": "candidate"
+        },
+        {
+          "word": "find",
+          "start": 4.86,
+          "end": 5.0,
+          "confidence": 0.4575,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 5.06,
+          "end": 5.08,
+          "confidence": 0.0222,
+          "status": "candidate"
+        },
+        {
+          "word": "relationship",
+          "start": 5.1,
+          "end": 5.66,
+          "confidence": 0.9472,
+          "status": "candidate"
+        },
+        {
+          "word": "between",
+          "start": 5.76,
+          "end": 6.06,
+          "confidence": 0.9672,
+          "status": "candidate"
+        },
+        {
+          "word": "any",
+          "start": 6.32,
+          "end": 6.44,
+          "confidence": 0.9404,
+          "status": "candidate"
+        },
+        {
+          "word": "two",
+          "start": 6.54,
+          "end": 6.66,
+          "confidence": 0.9985,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 6.76,
+          "end": 6.8,
+          "confidence": 0.8883,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 6.86,
+          "end": 6.92,
+          "confidence": 0.8627,
+          "status": "candidate"
+        },
+        {
+          "word": "given",
+          "start": 6.98,
+          "end": 7.2,
+          "confidence": 0.8102,
+          "status": "candidate"
+        },
+        {
+          "word": "factors",
+          "start": 7.28,
+          "end": 7.66,
+          "confidence": 0.1526,
+          "status": "candidate"
+        },
+        {
+          "word": "or",
+          "start": 8.26,
+          "end": 8.34,
+          "confidence": 0.5343,
+          "status": "candidate"
+        },
+        {
+          "word": "more.",
+          "start": 8.44,
+          "end": 8.6,
+          "confidence": 0.5365,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 8.684
+    },
+    "14": {
+      "status": "aligned",
+      "greedy_similarity": 0.9205,
+      "greedy_text": "HE'S A COFOUNDER OF RAWSEN AND VITESTE LIMITED AND THE FORMER EXECUTIVE DIRECTOR OF UNIFORM FINAL EXAMINATION COURSES U F AT TORONO'S YORK UNIVERSITY",
+      "words": [
+        {
+          "word": "He",
+          "start": 0.5,
+          "end": 0.56,
+          "confidence": 0.9549,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 0.6,
+          "end": 0.64,
+          "confidence": 0.6148,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 0.68,
+          "end": 0.74,
+          "confidence": 0.2554,
+          "status": "candidate"
+        },
+        {
+          "word": "co-founder",
+          "start": 0.78,
+          "end": 1.3,
+          "confidence": 0.9649,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 1.4,
+          "end": 1.44,
+          "confidence": 0.9997,
+          "status": "candidate"
+        },
+        {
+          "word": "Rossen",
+          "start": 1.58,
+          "end": 1.94,
+          "confidence": 0.599,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 2.04,
+          "end": 2.1,
+          "confidence": 0.9939,
+          "status": "candidate"
+        },
+        {
+          "word": "Vettese",
+          "start": 2.14,
+          "end": 2.46,
+          "confidence": 0.6354,
+          "status": "candidate"
+        },
+        {
+          "word": "Limited",
+          "start": 2.54,
+          "end": 2.82,
+          "confidence": 0.9758,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 3.2,
+          "end": 3.26,
+          "confidence": 0.9549,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 3.32,
+          "end": 3.38,
+          "confidence": 0.9851,
+          "status": "candidate"
+        },
+        {
+          "word": "former",
+          "start": 3.46,
+          "end": 3.76,
+          "confidence": 0.9816,
+          "status": "candidate"
+        },
+        {
+          "word": "Executive",
+          "start": 3.82,
+          "end": 4.24,
+          "confidence": 0.9799,
+          "status": "candidate"
+        },
+        {
+          "word": "Director",
+          "start": 4.28,
+          "end": 4.64,
+          "confidence": 0.9877,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 4.84,
+          "end": 4.88,
+          "confidence": 0.9996,
+          "status": "candidate"
+        },
+        {
+          "word": "Uniform",
+          "start": 5.06,
+          "end": 5.48,
+          "confidence": 0.9712,
+          "status": "candidate"
+        },
+        {
+          "word": "Final",
+          "start": 5.64,
+          "end": 5.88,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "Examination",
+          "start": 5.94,
+          "end": 6.5,
+          "confidence": 0.9623,
+          "status": "candidate"
+        },
+        {
+          "word": "(UFE)",
+          "start": 6.64,
+          "end": 6.84,
+          "confidence": 0.3567,
+          "status": "candidate"
+        },
+        {
+          "word": "courses",
+          "start": 6.96,
+          "end": 7.86,
+          "confidence": 0.1431,
+          "status": "candidate"
+        },
+        {
+          "word": "at",
+          "start": 8.28,
+          "end": 8.32,
+          "confidence": 0.9957,
+          "status": "candidate"
+        },
+        {
+          "word": "Toronto's",
+          "start": 8.38,
+          "end": 8.76,
+          "confidence": 0.7981,
+          "status": "candidate"
+        },
+        {
+          "word": "York",
+          "start": 8.8,
+          "end": 8.96,
+          "confidence": 0.9623,
+          "status": "candidate"
+        },
+        {
+          "word": "University.",
+          "start": 9.06,
+          "end": 9.6,
+          "confidence": 0.981,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 10.226
+    },
+    "15": {
+      "status": "aligned",
+      "greedy_similarity": 0.2126,
+      "greedy_text": "HER FATHER THE BREAD WINTER DIED WHEN SHE WAS BARELY A YEAR OLD PUTTING THE FAMILY IN A DIRE FINANCIAL POSITION HOWEVER DESPITE THEIR POVER",
+      "words": [
+        {
+          "word": "However,",
+          "start": 0.08,
+          "end": 0.56,
+          "confidence": 0.3745,
+          "status": "candidate"
+        },
+        {
+          "word": "despite",
+          "start": 0.78,
+          "end": 1.2,
+          "confidence": 0.5261,
+          "status": "candidate"
+        },
+        {
+          "word": "their",
+          "start": 1.34,
+          "end": 1.58,
+          "confidence": 0.2,
+          "status": "candidate"
+        },
+        {
+          "word": "poverty,",
+          "start": 1.62,
+          "end": 1.76,
+          "confidence": 0.1428,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 1.78,
+          "end": 1.84,
+          "confidence": 0.5911,
+          "status": "candidate"
+        },
+        {
+          "word": "family",
+          "start": 2.06,
+          "end": 2.36,
+          "confidence": 0.4695,
+          "status": "candidate"
+        },
+        {
+          "word": "prioritize",
+          "start": 2.5,
+          "end": 2.94,
+          "confidence": 0.003,
+          "status": "candidate"
+        },
+        {
+          "word": "education",
+          "start": 3.0,
+          "end": 3.54,
+          "confidence": 0.3337,
+          "status": "candidate"
+        },
+        {
+          "word": "because",
+          "start": 3.62,
+          "end": 4.0,
+          "confidence": 0.1433,
+          "status": "candidate"
+        },
+        {
+          "word": "they",
+          "start": 4.24,
+          "end": 4.52,
+          "confidence": 0.239,
+          "status": "candidate"
+        },
+        {
+          "word": "believed",
+          "start": 4.56,
+          "end": 4.86,
+          "confidence": 0.125,
+          "status": "candidate"
+        },
+        {
+          "word": "in",
+          "start": 4.94,
+          "end": 5.04,
+          "confidence": 0.5,
+          "status": "candidate"
+        },
+        {
+          "word": "its",
+          "start": 5.32,
+          "end": 5.44,
+          "confidence": 0.6666,
+          "status": "candidate"
+        },
+        {
+          "word": "power",
+          "start": 6.02,
+          "end": 6.34,
+          "confidence": 0.7838,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 6.42,
+          "end": 6.5,
+          "confidence": 0.0,
+          "status": "candidate"
+        },
+        {
+          "word": "transform",
+          "start": 6.74,
+          "end": 6.98,
+          "confidence": 0.215,
+          "status": "candidate"
+        },
+        {
+          "word": "lives",
+          "start": 7.02,
+          "end": 7.28,
+          "confidence": 0.3957,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 7.314
+    },
+    "16": {
+      "status": "aligned",
+      "greedy_similarity": 0.7561,
+      "greedy_text": "ITA TERRIBLE IS A TERRIBLE MOVING I DO NOT",
+      "words": [
+        {
+          "word": "It's",
+          "start": 0.48,
+          "end": 0.62,
+          "confidence": 0.5517,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 0.68,
+          "end": 0.7,
+          "confidence": 0.88,
+          "status": "candidate"
+        },
+        {
+          "word": "terrible,",
+          "start": 0.8,
+          "end": 1.18,
+          "confidence": 0.9796,
+          "status": "candidate"
+        },
+        {
+          "word": "this",
+          "start": 1.5,
+          "end": 1.58,
+          "confidence": 0.2466,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 1.6,
+          "end": 1.64,
+          "confidence": 0.5889,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 1.72,
+          "end": 1.74,
+          "confidence": 0.9673,
+          "status": "candidate"
+        },
+        {
+          "word": "terrible",
+          "start": 1.82,
+          "end": 2.14,
+          "confidence": 0.996,
+          "status": "candidate"
+        },
+        {
+          "word": "movie",
+          "start": 2.2,
+          "end": 2.5,
+          "confidence": 0.7979,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 3.044
+    },
+    "17": {
+      "status": "aligned",
+      "greedy_similarity": 0.9538,
+      "greedy_text": "TY APPLY THESE FOUR DESIGN CONCEPTS TO YOUR PRESENTATIONS IS SIMPLE EASY AND WILL MAKE PEOPLE THINK YOU TURNED INTO A DESIGN GOROEW",
+      "words": [
+        {
+          "word": "Applying",
+          "start": 0.62,
+          "end": 1.0,
+          "confidence": 0.6351,
+          "status": "candidate"
+        },
+        {
+          "word": "these",
+          "start": 1.08,
+          "end": 1.28,
+          "confidence": 0.9985,
+          "status": "candidate"
+        },
+        {
+          "word": "four",
+          "start": 1.44,
+          "end": 1.64,
+          "confidence": 0.9817,
+          "status": "candidate"
+        },
+        {
+          "word": "design",
+          "start": 1.76,
+          "end": 2.1,
+          "confidence": 0.9911,
+          "status": "candidate"
+        },
+        {
+          "word": "concepts",
+          "start": 2.22,
+          "end": 2.74,
+          "confidence": 0.9835,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 2.82,
+          "end": 2.9,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "your",
+          "start": 2.96,
+          "end": 3.06,
+          "confidence": 0.9944,
+          "status": "candidate"
+        },
+        {
+          "word": "presentations",
+          "start": 3.12,
+          "end": 3.82,
+          "confidence": 0.9916,
+          "status": "candidate"
+        },
+        {
+          "word": "is",
+          "start": 4.36,
+          "end": 4.42,
+          "confidence": 0.9054,
+          "status": "candidate"
+        },
+        {
+          "word": "simple,",
+          "start": 4.8,
+          "end": 5.1,
+          "confidence": 0.9929,
+          "status": "candidate"
+        },
+        {
+          "word": "easy",
+          "start": 5.64,
+          "end": 5.86,
+          "confidence": 0.9448,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 6.42,
+          "end": 6.52,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "will",
+          "start": 6.8,
+          "end": 6.94,
+          "confidence": 0.999,
+          "status": "candidate"
+        },
+        {
+          "word": "make",
+          "start": 6.98,
+          "end": 7.1,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "people",
+          "start": 7.14,
+          "end": 7.36,
+          "confidence": 0.9984,
+          "status": "candidate"
+        },
+        {
+          "word": "think",
+          "start": 7.44,
+          "end": 7.6,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "you",
+          "start": 7.7,
+          "end": 7.78,
+          "confidence": 0.995,
+          "status": "candidate"
+        },
+        {
+          "word": "turned",
+          "start": 7.84,
+          "end": 8.04,
+          "confidence": 0.9334,
+          "status": "candidate"
+        },
+        {
+          "word": "into",
+          "start": 8.08,
+          "end": 8.2,
+          "confidence": 0.9845,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 8.24,
+          "end": 8.26,
+          "confidence": 0.9939,
+          "status": "candidate"
+        },
+        {
+          "word": "design",
+          "start": 8.3,
+          "end": 8.64,
+          "confidence": 0.9512,
+          "status": "candidate"
+        },
+        {
+          "word": "guru.",
+          "start": 8.74,
+          "end": 9.02,
+          "confidence": 0.553,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 9.563
+    },
+    "18": {
+      "status": "aligned",
+      "greedy_similarity": 0.0718,
+      "greedy_text": "AND IN DENMARK THE FIRST BAULTIC COD FISHERY HAS BEEN EMA C CERIFIED MEANWHILE THE PHARAOH'S MACKRIL FISHRY HAS BEEN DENIED ON THE SEA CERFICATION BASED ON THE FACT THAT THE FISHERY IS FAILED TO REACH AN AGREEMENT ON MACREL CROTAS WITH NORWAY AND THE EUROPEAN UNION",
+      "words": [
+        {
+          "word": "-And",
+          "start": 0.56,
+          "end": 0.64,
+          "confidence": 0.9108,
+          "status": "candidate"
+        },
+        {
+          "word": "in",
+          "start": 0.72,
+          "end": 0.76,
+          "confidence": 0.9958,
+          "status": "candidate"
+        },
+        {
+          "word": "Denmark",
+          "start": 0.82,
+          "end": 1.2,
+          "confidence": 0.8446,
+          "status": "candidate"
+        },
+        {
+          "word": "-",
+          "status": "no_usable_characters"
+        },
+        {
+          "word": "the",
+          "start": 1.58,
+          "end": 1.66,
+          "confidence": 0.9573,
+          "status": "candidate"
+        },
+        {
+          "word": "first",
+          "start": 1.72,
+          "end": 1.94,
+          "confidence": 0.9999,
+          "status": "candidate"
+        },
+        {
+          "word": "Baltic",
+          "start": 2.0,
+          "end": 2.36,
+          "confidence": 0.8657,
+          "status": "candidate"
+        },
+        {
+          "word": "Cod",
+          "start": 2.46,
+          "end": 2.72,
+          "confidence": 0.9543,
+          "status": "candidate"
+        },
+        {
+          "word": "fishery",
+          "start": 2.82,
+          "end": 3.24,
+          "confidence": 0.9532,
+          "status": "candidate"
+        },
+        {
+          "word": "has",
+          "start": 3.66,
+          "end": 3.76,
+          "confidence": 0.9921,
+          "status": "candidate"
+        },
+        {
+          "word": "been",
+          "start": 3.82,
+          "end": 3.94,
+          "confidence": 0.9954,
+          "status": "candidate"
+        },
+        {
+          "word": "MSC",
+          "start": 4.1,
+          "end": 4.32,
+          "confidence": 0.5705,
+          "status": "candidate"
+        },
+        {
+          "word": "–",
+          "status": "no_usable_characters"
+        },
+        {
+          "word": "certified",
+          "start": 4.52,
+          "end": 5.06,
+          "confidence": 0.7482,
+          "status": "candidate"
+        },
+        {
+          "word": "-Meanwhile,",
+          "start": 6.34,
+          "end": 6.82,
+          "confidence": 0.9906,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 7.14,
+          "end": 7.22,
+          "confidence": 0.9966,
+          "status": "candidate"
+        },
+        {
+          "word": "Faeroese",
+          "start": 7.3,
+          "end": 7.74,
+          "confidence": 0.4067,
+          "status": "candidate"
+        },
+        {
+          "word": "Mackerel",
+          "start": 7.82,
+          "end": 8.16,
+          "confidence": 0.6797,
+          "status": "candidate"
+        },
+        {
+          "word": "Fishery",
+          "start": 8.24,
+          "end": 8.56,
+          "confidence": 0.8575,
+          "status": "candidate"
+        },
+        {
+          "word": "has",
+          "start": 8.68,
+          "end": 8.76,
+          "confidence": 0.9837,
+          "status": "candidate"
+        },
+        {
+          "word": "been",
+          "start": 8.84,
+          "end": 8.98,
+          "confidence": 0.9971,
+          "status": "candidate"
+        },
+        {
+          "word": "denied",
+          "start": 9.02,
+          "end": 9.4,
+          "confidence": 0.9727,
+          "status": "candidate"
+        },
+        {
+          "word": "MSC",
+          "start": 9.52,
+          "end": 9.76,
+          "confidence": 0.2126,
+          "status": "candidate"
+        },
+        {
+          "word": "certification",
+          "start": 9.94,
+          "end": 10.62,
+          "confidence": 0.6935,
+          "status": "candidate"
+        },
+        {
+          "word": "based",
+          "start": 11.12,
+          "end": 11.38,
+          "confidence": 0.9966,
+          "status": "candidate"
+        },
+        {
+          "word": "on",
+          "start": 11.46,
+          "end": 11.5,
+          "confidence": 0.9998,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 11.56,
+          "end": 11.62,
+          "confidence": 0.9986,
+          "status": "candidate"
+        },
+        {
+          "word": "fact",
+          "start": 11.66,
+          "end": 11.86,
+          "confidence": 0.9821,
+          "status": "candidate"
+        },
+        {
+          "word": "that",
+          "start": 11.92,
+          "end": 12.02,
+          "confidence": 0.9849,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 12.06,
+          "end": 12.12,
+          "confidence": 0.9905,
+          "status": "candidate"
+        },
+        {
+          "word": "fishery",
+          "start": 12.18,
+          "end": 12.54,
+          "confidence": 0.9388,
+          "status": "candidate"
+        },
+        {
+          "word": "has",
+          "start": 12.58,
+          "end": 12.66,
+          "confidence": 0.4859,
+          "status": "candidate"
+        },
+        {
+          "word": "failed",
+          "start": 12.78,
+          "end": 13.08,
+          "confidence": 0.97,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 13.12,
+          "end": 13.18,
+          "confidence": 0.9692,
+          "status": "candidate"
+        },
+        {
+          "word": "reach",
+          "start": 13.26,
+          "end": 13.46,
+          "confidence": 0.9827,
+          "status": "candidate"
+        },
+        {
+          "word": "an",
+          "start": 13.52,
+          "end": 13.56,
+          "confidence": 0.9886,
+          "status": "candidate"
+        },
+        {
+          "word": "agreement",
+          "start": 13.62,
+          "end": 14.04,
+          "confidence": 0.965,
+          "status": "candidate"
+        },
+        {
+          "word": "on",
+          "start": 14.68,
+          "end": 14.72,
+          "confidence": 0.9987,
+          "status": "candidate"
+        },
+        {
+          "word": "mackerel",
+          "start": 14.8,
+          "end": 15.2,
+          "confidence": 0.6917,
+          "status": "candidate"
+        },
+        {
+          "word": "quotas",
+          "start": 15.3,
+          "end": 15.72,
+          "confidence": 0.6829,
+          "status": "candidate"
+        },
+        {
+          "word": "with",
+          "start": 15.96,
+          "end": 16.1,
+          "confidence": 0.9236,
+          "status": "candidate"
+        },
+        {
+          "word": "Norway",
+          "start": 16.58,
+          "end": 16.98,
+          "confidence": 0.9367,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 17.1,
+          "end": 17.16,
+          "confidence": 0.9199,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 17.2,
+          "end": 17.26,
+          "confidence": 0.9238,
+          "status": "candidate"
+        },
+        {
+          "word": "European",
+          "start": 17.34,
+          "end": 17.7,
+          "confidence": 0.9391,
+          "status": "candidate"
+        },
+        {
+          "word": "Union.",
+          "start": 17.84,
+          "end": 18.06,
+          "confidence": 0.9969,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 18.637
+    },
+    "19": {
+      "status": "aligned",
+      "greedy_similarity": 0.9829,
+      "greedy_text": "PEOPLE ARE SURPRISINGLY FORGIVING BRANDS WHEN THEY OWN UP TO MISTAKES AND UNFORTUNATELY SOME HATERS OUT THEIR LOVE TO POINT FINGERS AND JUMP ALL OVER IMPERFECTIONS BUT FOR THE MOST PART PEOPLE UNDERSTAND PE",
+      "words": [
+        {
+          "word": "People",
+          "start": 0.52,
+          "end": 0.72,
+          "confidence": 0.9992,
+          "status": "candidate"
+        },
+        {
+          "word": "are",
+          "start": 0.76,
+          "end": 0.82,
+          "confidence": 0.9487,
+          "status": "candidate"
+        },
+        {
+          "word": "surprisingly",
+          "start": 0.96,
+          "end": 1.7,
+          "confidence": 0.997,
+          "status": "candidate"
+        },
+        {
+          "word": "forgiving",
+          "start": 1.8,
+          "end": 2.22,
+          "confidence": 0.998,
+          "status": "candidate"
+        },
+        {
+          "word": "brands",
+          "start": 2.36,
+          "end": 2.74,
+          "confidence": 0.9956,
+          "status": "candidate"
+        },
+        {
+          "word": "when",
+          "start": 2.82,
+          "end": 2.94,
+          "confidence": 0.9914,
+          "status": "candidate"
+        },
+        {
+          "word": "they",
+          "start": 2.98,
+          "end": 3.08,
+          "confidence": 0.9858,
+          "status": "candidate"
+        },
+        {
+          "word": "own",
+          "start": 3.3,
+          "end": 3.4,
+          "confidence": 0.998,
+          "status": "candidate"
+        },
+        {
+          "word": "up",
+          "start": 3.6,
+          "end": 3.68,
+          "confidence": 0.8608,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 3.76,
+          "end": 3.84,
+          "confidence": 0.9988,
+          "status": "candidate"
+        },
+        {
+          "word": "mistakes,",
+          "start": 3.9,
+          "end": 4.4,
+          "confidence": 0.9794,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 5.2,
+          "end": 5.26,
+          "confidence": 0.9936,
+          "status": "candidate"
+        },
+        {
+          "word": "unfortunately",
+          "start": 5.34,
+          "end": 6.04,
+          "confidence": 0.9742,
+          "status": "candidate"
+        },
+        {
+          "word": "some",
+          "start": 6.14,
+          "end": 6.3,
+          "confidence": 0.9528,
+          "status": "candidate"
+        },
+        {
+          "word": "haters",
+          "start": 6.38,
+          "end": 6.72,
+          "confidence": 0.99,
+          "status": "candidate"
+        },
+        {
+          "word": "out",
+          "start": 6.82,
+          "end": 6.9,
+          "confidence": 0.9808,
+          "status": "candidate"
+        },
+        {
+          "word": "there",
+          "start": 6.98,
+          "end": 7.14,
+          "confidence": 0.8629,
+          "status": "candidate"
+        },
+        {
+          "word": "love",
+          "start": 7.6,
+          "end": 7.82,
+          "confidence": 0.9955,
+          "status": "candidate"
+        },
+        {
+          "word": "to",
+          "start": 8.06,
+          "end": 8.14,
+          "confidence": 0.9998,
+          "status": "candidate"
+        },
+        {
+          "word": "point",
+          "start": 8.2,
+          "end": 8.4,
+          "confidence": 0.9995,
+          "status": "candidate"
+        },
+        {
+          "word": "fingers",
+          "start": 8.5,
+          "end": 8.84,
+          "confidence": 0.9865,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 9.0,
+          "end": 9.08,
+          "confidence": 0.9996,
+          "status": "candidate"
+        },
+        {
+          "word": "jump",
+          "start": 9.16,
+          "end": 9.32,
+          "confidence": 1.0,
+          "status": "candidate"
+        },
+        {
+          "word": "all",
+          "start": 9.52,
+          "end": 9.64,
+          "confidence": 0.9998,
+          "status": "candidate"
+        },
+        {
+          "word": "over",
+          "start": 9.74,
+          "end": 9.88,
+          "confidence": 0.9803,
+          "status": "candidate"
+        },
+        {
+          "word": "imperfections,",
+          "start": 9.98,
+          "end": 10.68,
+          "confidence": 0.9693,
+          "status": "candidate"
+        },
+        {
+          "word": "but",
+          "start": 11.2,
+          "end": 11.28,
+          "confidence": 0.9825,
+          "status": "candidate"
+        },
+        {
+          "word": "for",
+          "start": 11.34,
+          "end": 11.42,
+          "confidence": 0.9995,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 11.48,
+          "end": 11.54,
+          "confidence": 0.9938,
+          "status": "candidate"
+        },
+        {
+          "word": "most",
+          "start": 11.58,
+          "end": 11.76,
+          "confidence": 0.9422,
+          "status": "candidate"
+        },
+        {
+          "word": "part,",
+          "start": 11.82,
+          "end": 12.0,
+          "confidence": 0.9856,
+          "status": "candidate"
+        },
+        {
+          "word": "people",
+          "start": 12.1,
+          "end": 12.34,
+          "confidence": 0.9843,
+          "status": "candidate"
+        },
+        {
+          "word": "understand",
+          "start": 12.44,
+          "end": 12.94,
+          "confidence": 0.8551,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 13.611
+    },
+    "20": {
+      "status": "aligned",
+      "greedy_similarity": 0.8508,
+      "greedy_text": "OUT AND OF COURSE CLICK IN THE LINK IN THE DESCRIPTION OF THIS VIDIOPHER MORE A AND WE'LL HAVE MORE LIVE UPDATES AND DOS STOCK MARKET VIDIO FOR YOU AT THE END OF THE DAY TO DAY RIGHT AND I DON'T F",
+      "words": [
+        {
+          "word": "And",
+          "start": 0.56,
+          "end": 0.64,
+          "confidence": 0.997,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 0.7,
+          "end": 0.74,
+          "confidence": 0.9987,
+          "status": "candidate"
+        },
+        {
+          "word": "course,",
+          "start": 0.82,
+          "end": 1.04,
+          "confidence": 0.9638,
+          "status": "candidate"
+        },
+        {
+          "word": "click",
+          "start": 1.18,
+          "end": 1.38,
+          "confidence": 0.9284,
+          "status": "candidate"
+        },
+        {
+          "word": "in",
+          "start": 1.5,
+          "end": 1.54,
+          "confidence": 0.9969,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 1.62,
+          "end": 1.68,
+          "confidence": 0.9788,
+          "status": "candidate"
+        },
+        {
+          "word": "link",
+          "start": 1.76,
+          "end": 1.96,
+          "confidence": 0.9811,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 2.06,
+          "end": 2.1,
+          "confidence": 0.0008,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 2.16,
+          "end": 2.22,
+          "confidence": 0.9843,
+          "status": "candidate"
+        },
+        {
+          "word": "description",
+          "start": 2.24,
+          "end": 2.62,
+          "confidence": 0.9897,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 2.66,
+          "end": 2.7,
+          "confidence": 0.9992,
+          "status": "candidate"
+        },
+        {
+          "word": "this",
+          "start": 2.76,
+          "end": 2.86,
+          "confidence": 0.8802,
+          "status": "candidate"
+        },
+        {
+          "word": "video",
+          "start": 2.96,
+          "end": 3.22,
+          "confidence": 0.7798,
+          "status": "candidate"
+        },
+        {
+          "word": "for",
+          "start": 3.32,
+          "end": 3.42,
+          "confidence": 0.4885,
+          "status": "candidate"
+        },
+        {
+          "word": "more,",
+          "start": 3.54,
+          "end": 3.78,
+          "confidence": 0.9694,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 4.56,
+          "end": 4.64,
+          "confidence": 0.9556,
+          "status": "candidate"
+        },
+        {
+          "word": "we'll",
+          "start": 4.7,
+          "end": 4.88,
+          "confidence": 0.9369,
+          "status": "candidate"
+        },
+        {
+          "word": "have",
+          "start": 4.94,
+          "end": 5.1,
+          "confidence": 0.9994,
+          "status": "candidate"
+        },
+        {
+          "word": "more",
+          "start": 5.22,
+          "end": 5.46,
+          "confidence": 0.9403,
+          "status": "candidate"
+        },
+        {
+          "word": "live",
+          "start": 5.64,
+          "end": 5.88,
+          "confidence": 0.9934,
+          "status": "candidate"
+        },
+        {
+          "word": "updates",
+          "start": 6.04,
+          "end": 6.44,
+          "confidence": 0.9773,
+          "status": "candidate"
+        },
+        {
+          "word": "and",
+          "start": 6.66,
+          "end": 6.78,
+          "confidence": 0.9557,
+          "status": "candidate"
+        },
+        {
+          "word": "a",
+          "start": 6.92,
+          "end": 6.94,
+          "confidence": 0.3224,
+          "status": "candidate"
+        },
+        {
+          "word": "stock",
+          "start": 7.08,
+          "end": 7.3,
+          "confidence": 0.9798,
+          "status": "candidate"
+        },
+        {
+          "word": "market",
+          "start": 7.4,
+          "end": 7.72,
+          "confidence": 0.9919,
+          "status": "candidate"
+        },
+        {
+          "word": "video",
+          "start": 7.8,
+          "end": 8.1,
+          "confidence": 0.7842,
+          "status": "candidate"
+        },
+        {
+          "word": "(wrap-up)",
+          "start": 8.24,
+          "end": 8.64,
+          "confidence": 0.2987,
+          "status": "candidate"
+        },
+        {
+          "word": "at",
+          "start": 8.78,
+          "end": 8.84,
+          "confidence": 0.9892,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 8.92,
+          "end": 8.98,
+          "confidence": 0.9923,
+          "status": "candidate"
+        },
+        {
+          "word": "end",
+          "start": 9.04,
+          "end": 9.1,
+          "confidence": 0.9992,
+          "status": "candidate"
+        },
+        {
+          "word": "of",
+          "start": 9.14,
+          "end": 9.18,
+          "confidence": 0.9937,
+          "status": "candidate"
+        },
+        {
+          "word": "the",
+          "start": 9.22,
+          "end": 9.28,
+          "confidence": 0.9788,
+          "status": "candidate"
+        },
+        {
+          "word": "day",
+          "start": 9.32,
+          "end": 9.42,
+          "confidence": 0.9987,
+          "status": "candidate"
+        },
+        {
+          "word": "today.",
+          "start": 9.46,
+          "end": 9.66,
+          "confidence": 0.9363,
+          "status": "candidate"
+        }
+      ],
+      "audio_duration_seconds": 10.81
+    }
+  }
+}

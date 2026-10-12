@@ -1,0 +1,25 @@
+{
+  "n_samples": 100,
+  "n_official_words": 1932,
+  "accepted_words": 1533,
+  "samples_with_word_times": 80,
+  "fully_accepted_samples": 32,
+  "audio_words": 1533,
+  "video_source_words": 1533,
+  "face_words": 1374,
+  "video_frames": 23241,
+  "multi_face_frames": 179,
+  "feature_bytes": 18872475,
+  "category_counts": {
+    "human_whole_content_confirmed": 32,
+    "previous_auto_accepted": 30,
+    "human_partial_content": 2,
+    "human_flagged_words_confirmed": 16,
+    "content_mismatch": 14,
+    "no_audible_speech": 3,
+    "other_language": 3
+  },
+  "fixed_time_grid": false,
+  "fixed_sequence_length": false,
+  "code_sha256": "676960f3f061d3e6826ba870eb457a8f71e2098aa5cf2c43fd931db5fc92bebf"
+}

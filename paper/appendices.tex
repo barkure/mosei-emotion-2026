@@ -1,0 +1,760 @@
+% Code excerpts follow the repository implementation; see docs/论文维护说明.md.
+\clearpage
+\appendix
+\renewcommand{\theHsection}{appendix.\Alph{section}}
+\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+\definecolor{codeKeyword}{HTML}{225EA8}
+\definecolor{codeString}{HTML}{98613D}
+\definecolor{codeComment}{HTML}{557368}
+\lstset{language=Python,basicstyle=\small\ttfamily\linespread{1.05}\selectfont,
+ keywordstyle=\color{codeKeyword},commentstyle=\color{codeComment},stringstyle=\color{codeString},
+ frame=single,rulecolor=\color{black!30},breaklines=true,breakatwhitespace=true,
+ columns=fullflexible,keepspaces=true,showstringspaces=false,tabsize=4,
+ aboveskip=8pt,belowskip=8pt}
+\BeforeBeginEnvironment{lstlisting}{\Needspace{5\baselineskip}}
+\section{补充结果与复现材料}
+\label{sec:appendix-reproduction}
+
+\subsection{问题一：特征维度与典型样本对应}
+\subsubsection*{（1）声学与面部特征的维度定义}
+文本表示为冻结BERT的768维末层向量。声学特征的列序、计算含义和可用条件见表~\ref{tab:appendix-audio-dimensions}；
+13个MFCC与四个声学量共同组成17维表示。表中列序从1开始，数组索引从0开始。
+静音窗仍保留声学特征，基频不可测时仅将该维的观测掩码置为假；
+词级基频汇聚仅使用可测窗，并重新归一化交叠权重。
+\input{tables/声学特征维度}
+
+面部系数按英文名称排序，分组与列序见表~\ref{tab:appendix-video-dimensions}。
+这些系数描述面部形变，其中基准系数\texttt{\_neutral}不代表情感分类中的中性概率。
+词级面部特征仅汇聚单脸有效帧。电子结果中的特征维度表列出全部17个声学量与52个面部系数的名称、索引和掩码，
+与每份特征文件内的名称序列一致。
+\input{tables/面部特征分组}
+\FloatBarrier
+
+\subsubsection*{（2）典型样本逐词对应}
+样本片段\texttt{-egA8-b7-3M\_9}的10个词均通过词时间筛查。
+表~\ref{tab:appendix-word-times} 给出自动时间与交叠来源数量；试听确认内容及大致位置，
+没有单独标注精确起止边界。
+\begin{table}[htbp]
+\centering
+\caption{典型样本词时间与来源数量}\label{tab:appendix-word-times}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+序号 & 单词 & 时间区间/s & 语音窗数 & 视频帧数\\\midrule
+1 & Secondly, & $[0.560, 1.040)$ & 51 & 16 \\
+2 & another & $[1.260, 1.620)$ & 38 & 12 \\
+3 & goal & $[1.680, 1.880)$ & 23 & 7 \\
+4 & of & $[1.960, 2.000)$ & 6 & 2 \\
+5 & exhibiting & $[2.100, 2.580)$ & 51 & 15 \\
+6 & is & $[2.740, 2.800)$ & 9 & 2 \\
+7 & building & $[2.900, 3.280)$ & 41 & 12 \\
+8 & your & $[3.320, 3.460)$ & 16 & 5 \\
+9 & company & $[3.520, 3.900)$ & 40 & 12 \\
+10 & image. & $[4.040, 4.300)$ & 28 & 8 \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\subsection{问题二：模型组件与逐类表现}
+\subsubsection*{（1）候选模型的组件配置}
+表~\ref{tab:appendix-model-components}列出统一训练器中六类候选的结构与辅助目标，
+与正文表~\ref{tab:p2-candidate-comparison}的对应模型名称一致。
+
+含文本的候选均采用冻结BERT，音视频卷积与BiLSTM候选仅使用音视频输入；
+各模型均有极性分类与强度回归目标，回归项权重为0.2。
+表中分支监督系数作用于相应分支的分类与回归联合损失。
+跨模态注意力使用两层、四头、128维编码；MoE的两个专家输出通过样本级门控融合。
+种子1、2、3依次为2026、2027、2028，各模型的训练轮次独立按验证集综合分数选择。
+这些候选涉及编码结构、融合方式或辅助目标的变化，比较范围以表中配置为准。
+
+\begin{table}[htbp]
+\centering
+\caption{候选模型的结构与辅助目标}\label{tab:appendix-model-components}
+\begin{tblr}{width=\linewidth,colspec={X[1.4,c] X[1.1,c] X[1.2,c] X[1.2,c] X[1.2,c] c},
+ cells={valign=m,font=\normalsize\songti},colsep=3pt,rowsep=2pt,hline{1,8}={0.8pt},hline{2}={0.4pt}}
+模型 & 音视频编码 & 融合方式 & 分支监督 & 辅助约束 & 种子 \\
+音视频卷积 & \makecell[c]{64维\\残差卷积} & 拼接与MLP & 无 & 无 & 1 \\
+\makecell[c]{音视频\\BiLSTM} & 双向LSTM & 拼接与MLP & 无 & 无 & 1 \\
+\makecell[c]{掩码跨模态\\注意力} & \makecell[c]{64维\\残差卷积} & \makecell[c]{两层跨模态\\注意力} & 无 & 无 & 1 \\
+基础MoE & \makecell[c]{64维\\残差卷积} & 双专家门控 & \makecell[c]{文本0.2\\音视频0.3} & 无 & 1、2、3 \\
+中性辅助MoE & \makecell[c]{64维\\残差卷积} & 双专家门控 & \makecell[c]{文本0.2\\音视频0.3} & \makecell[c]{中性二元\\损失0.3} & 1、2 \\
+\makecell[c]{文本表征引导\\MoE} & \makecell[c]{64维\\残差卷积} & 双专家门控 & \makecell[c]{文本0.2\\音视频0.3} & \makecell[c]{文本重构\\0.02} & 1、2、3 \\
+\end{tblr}
+\end{table}
+
+\FloatBarrier
+
+\subsubsection*{（2）完整输入与缺失场景的逐类指标}
+正文采用ACC、Macro-F1和回归指标比较缺失场景；表~\ref{tab:appendix-class-f1}
+补充完整输入及21种缺失场景的逐类F1与加权F1。所有结果来自同一固定集成模型和728条验证样本。
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{\extracolsep{\fill}}ccccccc@{}}
+\caption{完整输入与缺失场景的逐类F1}\label{tab:appendix-class-f1}\\
+\toprule
+缺失模态 & 比例 & 位置 & 负向F1 & 中性F1 & 正向F1 & 加权F1 \\
+\midrule
+\endfirsthead
+\multicolumn{7}{c}{表\thetable\ （续）}\\
+\toprule
+缺失模态 & 比例 & 位置 & 负向F1 & 中性F1 & 正向F1 & 加权F1 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+完整 & -- & -- & $0.6856$ & $0.4778$ & $0.7162$ & $0.6473$ \\
+文本 & 20\% & 首部 & $0.6579$ & $0.4543$ & $0.7011$ & $0.6265$ \\
+文本 & 20\% & 中部 & $0.6223$ & $0.4590$ & $0.6876$ & $0.6114$ \\
+文本 & 20\% & 尾部 & $0.6049$ & $0.4011$ & $0.6522$ & $0.5753$ \\
+文本 & 40\% & 首部 & $0.6208$ & $0.4474$ & $0.6688$ & $0.5993$ \\
+文本 & 40\% & 中部 & $0.6047$ & $0.4290$ & $0.6687$ & $0.5900$ \\
+文本 & 40\% & 尾部 & $0.5996$ & $0.4113$ & $0.6483$ & $0.5746$ \\
+文本 & 100\% & 全部 & $0.3850$ & $0.3123$ & $0.5340$ & $0.4358$ \\
+语音 & 20\% & 首部 & $0.6840$ & $0.4765$ & $0.7124$ & $0.6447$ \\
+语音 & 20\% & 中部 & $0.6872$ & $0.4820$ & $0.7162$ & $0.6488$ \\
+语音 & 20\% & 尾部 & $0.6825$ & $0.4791$ & $0.7170$ & $0.6471$ \\
+语音 & 40\% & 首部 & $0.6840$ & $0.4765$ & $0.7124$ & $0.6447$ \\
+语音 & 40\% & 中部 & $0.6841$ & $0.4780$ & $0.7124$ & $0.6451$ \\
+语音 & 40\% & 尾部 & $0.6825$ & $0.4847$ & $0.7170$ & $0.6485$ \\
+语音 & 100\% & 全部 & $0.6975$ & $0.4903$ & $0.7108$ & $0.6513$ \\
+视频 & 20\% & 首部 & $0.6825$ & $0.4807$ & $0.7173$ & $0.6476$ \\
+视频 & 20\% & 中部 & $0.6857$ & $0.4807$ & $0.7122$ & $0.6462$ \\
+视频 & 20\% & 尾部 & $0.6824$ & $0.4848$ & $0.7126$ & $0.6465$ \\
+视频 & 40\% & 首部 & $0.6857$ & $0.4848$ & $0.7162$ & $0.6491$ \\
+视频 & 40\% & 中部 & $0.6857$ & $0.4807$ & $0.7122$ & $0.6462$ \\
+视频 & 40\% & 尾部 & $0.6792$ & $0.4877$ & $0.7106$ & $0.6454$ \\
+视频 & 100\% & 全部 & $0.6634$ & $0.4736$ & $0.6962$ & $0.6306$ \\
+\end{longtable}
+\endgroup
+
+\subsection{问题三：模态贡献与局部证据}
+\subsubsection*{（1）极性概率贡献}
+表~\ref{tab:appendix-contributions} 补充附件四全部20条样本的有符号Shapley贡献。
+贡献针对各样本完整输入的预测类别计算，正值表示提高该类别概率，负值表示降低；
+三模态之和等于完整输入与全遮挡输入的概率差。数值保留四位小数。
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{\extracolsep{\fill}}ccccc@{}}
+\caption{附件四全部样本的三模态贡献}\label{tab:appendix-contributions}\\
+\toprule
+编号 & 文本贡献 & 语音贡献 & 视频贡献 & 极性主模态 \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{表\thetable\ （续）}\\
+\toprule
+编号 & 文本贡献 & 语音贡献 & 视频贡献 & 极性主模态 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+01 & $0.1652$ & $0.0421$ & $-0.1003$ & 文本 \\
+02 & $0.1711$ & $-0.0794$ & $0.0561$ & 文本 \\
+03 & $0.2647$ & $-0.1015$ & $0.0421$ & 文本 \\
+04 & $0.5303$ & $-0.0892$ & $-0.0444$ & 文本 \\
+05 & $0.1422$ & $0.0152$ & $0.1892$ & 视频 \\
+06 & $0.5870$ & $-0.0262$ & $-0.0482$ & 文本 \\
+07 & $0.3776$ & $0.0481$ & $0.1177$ & 文本 \\
+08 & $0.5085$ & $-0.0670$ & $-0.0093$ & 文本 \\
+09 & $0.5833$ & $0.0362$ & $0.0829$ & 文本 \\
+10 & $0.6612$ & $-0.0445$ & $0.0190$ & 文本 \\
+11 & $0.2944$ & $-0.0623$ & $0.1264$ & 文本 \\
+12 & $0.5900$ & $-0.1390$ & $0.0308$ & 文本 \\
+13 & $0.1220$ & $0.0481$ & $0.0000$ & 文本 \\
+14 & $0.4113$ & $0.0458$ & $-0.2255$ & 文本 \\
+15 & $0.4889$ & $0.1144$ & $0.0771$ & 文本 \\
+16 & $0.7318$ & $-0.0585$ & $0.0241$ & 文本 \\
+17 & $0.5789$ & $0.0210$ & $0.1000$ & 文本 \\
+18 & $0.1601$ & $-0.0499$ & $-0.0108$ & 文本 \\
+19 & $0.2497$ & $-0.1123$ & $0.0739$ & 文本 \\
+20 & $0.4820$ & $0.0219$ & $0.1167$ & 文本 \\
+\end{longtable}
+\endgroup
+
+
+\subsubsection*{（2）情感强度贡献}
+表~\ref{tab:appendix-strength-contributions}给出符号投影前原始回归输出的Shapley贡献。
+正值表示该模态提高原始强度，负值表示降低原始强度；强度主模态按贡献绝对值最大者确定。
+其方向与数值均针对连续回归输出。预测为负向时，负贡献也可能增强模型的负向判断；
+贡献绝对值描述影响幅度。中性样本的最终强度经投影置零，其原始回归贡献仍可非零。
+\input{tables/附件四强度贡献}
+
+\subsubsection*{（3）各模态的关键局部窗口}
+表~\ref{tab:appendix-local-evidence} 补充三种模态各自概率下降最大的局部窗口，位置采用
+特征序列零基索引，区间包含两端。下降量为完整输入概率减去遮挡后概率，负值表示遮挡后概率上升。
+表中区间表示特征位置，原素材的时间对应见正文表~\ref{tab:p3-attachment4-evidence}。
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{\extracolsep{\fill}}ccccccc@{}}
+\caption{附件四各模态的高分局部窗口}\label{tab:appendix-local-evidence}\\
+\toprule
+编号 & 文本位置 & 下降量 & 语音位置 & 下降量 & 视频位置 & 下降量 \\
+\midrule
+\endfirsthead
+\multicolumn{7}{c}{表\thetable\ （续）}\\
+\toprule
+编号 & 文本位置 & 下降量 & 语音位置 & 下降量 & 视频位置 & 下降量 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+01 & $[7, 10]$ & $0.1329$ & $[11, 14]$ & $0.0148$ & $[1, 4]$ & $0.0051$ \\
+02 & $[9, 12]$ & $0.2183$ & $[11, 14]$ & $0.0049$ & $[2, 5]$ & $0.0016$ \\
+03 & $[17, 23]$ & $0.2603$ & $[22, 28]$ & $0.0116$ & $[24, 30]$ & $0.0064$ \\
+04 & $[21, 25]$ & $0.3387$ & $[3, 7]$ & $0.0086$ & $[10, 14]$ & $0.0032$ \\
+05 & $[1, 3]$ & $0.2309$ & $[3, 5]$ & $0.0121$ & $[2, 4]$ & $0.0199$ \\
+06 & $[1, 7]$ & $0.4279$ & $[21, 27]$ & $0.0081$ & $[24, 30]$ & $0.0038$ \\
+07 & $[21, 30]$ & $0.3356$ & $[16, 25]$ & $0.0050$ & $[38, 47]$ & $0.0049$ \\
+08 & $[2, 3]$ & $0.2942$ & $[8, 9]$ & $0.0031$ & $[10, 11]$ & $0.0049$ \\
+09 & $[7, 10]$ & $0.0117$ & $[14, 17]$ & $0.0003$ & $[2, 5]$ & $0.0005$ \\
+10 & $[12, 17]$ & $0.2466$ & $[13, 18]$ & $0.0014$ & $[3, 8]$ & $0.0012$ \\
+11 & $[2, 4]$ & $0.4178$ & $[6, 8]$ & $0.0027$ & $[2, 4]$ & $0.0031$ \\
+12 & $[34, 41]$ & $0.1515$ & $[33, 40]$ & $0.0094$ & $[1, 8]$ & $0.0037$ \\
+13 & $[23, 28]$ & $0.0718$ & $[9, 14]$ & $0.0165$ & -- & -- \\
+14 & $[21, 27]$ & $0.1428$ & $[24, 30]$ & $0.0118$ & $[1, 7]$ & $0.0006$ \\
+15 & $[5, 8]$ & $0.3485$ & $[1, 4]$ & $0.0008$ & $[18, 21]$ & $0.0019$ \\
+16 & $[9, 10]$ & $0.1679$ & $[9, 10]$ & $0.0009$ & $[5, 6]$ & $0.0004$ \\
+17 & $[10, 14]$ & $0.0713$ & $[18, 22]$ & $0.0018$ & $[4, 8]$ & $0.0020$ \\
+18 & $[3, 12]$ & $0.2233$ & $[1, 10]$ & $0.0079$ & $[1, 10]$ & $0.0025$ \\
+19 & $[12, 19]$ & $0.2364$ & $[14, 21]$ & $0.0082$ & $[30, 37]$ & $0.0084$ \\
+20 & $[19, 27]$ & $0.1387$ & $[3, 11]$ & $0.0019$ & $[13, 21]$ & $0.0074$ \\
+\end{longtable}
+\endgroup
+
+\subsection{工具、预训练模型与实验配置}
+\label{sec:appendix-runtime}
+问题一按样本片段编号保存100份压缩NPZ文件。
+每份文件包含官方文本与标签、原生序列、词级特征、实际长度、时间与观测掩码，以及来源索引和聚合权重；
+另提供按样本和模态汇总的300行结果表、异常统计与逐词质量记录。
+复现材料保留模型修订号、权重校验值、依赖版本、解码参数及听审原始记录。
+
+表~\ref{tab:appendix-tools} 统一列出建模所用工具、公开预训练模型及核心设置。
+公开权重包括google-bert/bert-base-uncased、facebook/wav2vec2-base-960h和Face Landmarker模型包，
+分别用于文本编码、语音时间对齐和面部特征提取，使用过程中不更新这些权重。
+混合专家模型中的门控网络、预测头和重构头使用附件二训练集学习参数；验证集用于选择模型结构与训练轮次。
+表~\ref{tab:appendix-entry}列出核心程序及其输入，详细运行步骤见电子附件中的复现说明。
+环境由\texttt{pixi.toml}和\texttt{pixi.lock}固定；训练使用种子2026、2027、2028，推理采用已选定的模型参数。
+BERT与wav2vec 2.0使用权重修订号标识版本；Face Landmarker使用官方模型包版本和文件SHA-256标识。
+
+\noindent\textbf{BERT 完整权重修订号：}\par\nopagebreak
+\noindent\texttt{86b5e0934494bd15c9632b12f734a8a67f723594}\par\smallskip
+\noindent\textbf{wav2vec 2.0 完整权重修订号：}\par\nopagebreak
+\noindent\texttt{22aad52d435eb6dbaf354bdad9b0da84ce7d6156}\par\smallskip
+\noindent\textbf{Face Landmarker 模型包：}\texttt{float16/1}\par\nopagebreak
+\noindent\textbf{完整 SHA-256：}\par\nopagebreak
+\noindent{\small\texttt{64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff}}\par
+
+\begingroup
+\normalsize\songti
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}C{36mm}C{35mm}C{55mm}C{\dimexpr\linewidth-126mm-6\tabcolsep\relax}@{}}
+\caption{开源工具与预训练模型的版本、参数及用途}\label{tab:appendix-tools}\\
+\toprule
+工具或模型 & 版本或权重标识 & 核心设置 & 使用场景 \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}{表\thetable\ （续）}\\
+\toprule
+工具或模型 & 版本或权重标识 & 核心设置 & 使用场景 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\makecell[c]{BERT\\bert-base-uncased} & \makecell[c]{Transformers 4.57.6\\修订号86b5e093} & 冻结权重；词元表示768维；预测模型拼接CLS与观测词元均值得1536维表示 & 三问文本编码 \\
+\makecell[c]{wav2vec 2.0\\wav2vec2-base-960h} & \makecell[c]{Transformers 4.57.6\\修订号22aad52d} & 冻结英语CTC模型；16 kHz音频；输出步长20 ms；字符置信度阈值0.50 & 问题一词对齐、问题三时间候选 \\
+\makecell[c]{MediaPipe\\Face Landmarker} & \makecell[c]{MediaPipe 1.0.1\\模型包float16/1} & VIDEO模式；帧宽640像素；最多检测2张脸；检测、存在与跟踪阈值均0.5；输出52维系数 & 问题一视频特征 \\
+PyTorch & 2.11.0+cu128 & AdamW；学习率$3\times10^{-4}$；batch=64；随机种子2026、2027、2028；其余配置见表~\ref{tab:p2-training-config} & 情感模型训练、推理与遮挡解释 \\
+FFmpeg / ffprobe & 4.4.2 & 保留解码时间基准；音频转16 kHz单声道；读取帧显示时间与时长 & 原始音视频解码与时间记录 \\
+NumPy / SciPy & 2.5.3 / 1.18.1 & 声学窗25 ms、步长10 ms；13维MFCC及能量、过零率、质心、基频，共17维 & 问题一声学特征与区间聚合 \\
+scikit-learn & 1.9.1 & 固定三类标签；计算ACC、Macro-F1、逐类F1及MAE & 验证集指标评估 \\
+Matplotlib & 3.11.2 & 宋体与Times New Roman；矢量PDF；统一模态颜色与指标精度 & 论文结果可视化 \\
+Python & 3.12.14 & 使用锁定依赖环境；预训练工具按推理模式运行 & 三问程序运行 \\
+\end{longtable}
+\endgroup
+
+\begin{table}[!htbp]
+\centering
+\caption{核心程序及其输入}\label{tab:appendix-entry}
+\begin{tabularx}{\linewidth}{@{}C{23mm}C{65mm}Y@{}}
+\toprule
+计算任务 & 代码位置 & 输入数据与模型 \\
+\midrule
+特征提取 & \path{src/q1_features/} & 附件一视频、转写及预训练提取器 \\
+训练与评估 & \path{src/q2_prediction/} & 附件二对齐版训练集与验证集 \\
+专项预测 & \path{src/q2_prediction/} & 附件三对齐版、三种子参数 \\
+预测解释 & \path{src/q3_explanation/} & 附件四对齐版及视频、三种子参数 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\FloatBarrier
+\subsection{结果字段说明}
+正文已给出100条特征汇总、30条专项预测与20条专项解释。
+表~\ref{tab:appendix-fields} 补充电子结果中的字段含义，便于读取完整结果。
+\begin{table}[!htbp]
+\centering
+\caption{电子结果的主要字段说明}\label{tab:appendix-fields}
+\begin{tabularx}{\linewidth}{@{}C{25mm}C{36mm}Y@{}}
+\toprule
+结果材料 & 字段组 & 内容与含义 \\
+\midrule
+特征NPZ & 原生特征与位置 & 文本词元、声学短窗、面部系数及各自的来源位置 \\
+特征NPZ & 词级特征与掩码 & 词起止时间、结构有效掩码、模态来源与面部观测掩码 \\
+特征NPZ & 来源索引与权重 & 从原生特征重算词级值所需的索引和聚合权重 \\
+附件三CSV & 编号、极性、强度 & 全部30条样本的预测，强度按类别符号规则投影 \\
+附件四解释 & 模态贡献 & 三模态有符号贡献、正贡献占比及最大贡献模态 \\
+附件四解释 & 局部窗口 & 各模态窗口范围与预测类别概率下降量 \\
+内容核查 & 时间与对应关系 & 自动时间估计、音文一致性及视频画面对应的核查结论 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\FloatBarrier
+\Needspace{8\baselineskip}
+\section{核心代码}
+\label{sec:appendix-code}
+本附录列出词级对齐、三种子MoE集成和八组合解释的核心函数，完整实现见电子附件。
+
+
+\subsection{特征提取与时序对齐}
+\subsubsection*{（1）文本编码与词元对应}
+以下函数采用冻结BERT提取词元表示，并保存原文词与子词的对应索引。
+该索引用于关联文本内容；词的起止时间由另外的对齐过程确定。
+
+% Source: src/q1_features/feature_extractors.py :: encode_text
+\begin{lstlisting}
+def encode_text(text: str, tokenizer, model, device) -> dict:
+    import torch
+
+    # Pretokenize by official whitespace words so word_ids refer to the same
+    # word indices as the CTC alignment and human review tables.
+    words = text.split()
+    encoding = tokenizer(words, is_split_into_words=True, add_special_tokens=True, truncation=True,
+                         max_length=MAX_TEXT_TOKENS, return_tensors="pt")
+    input_ids = encoding["input_ids"][0]
+    attention = encoding["attention_mask"][0]
+    token_type = encoding.get("token_type_ids", torch.zeros_like(input_ids))[0]
+    n_before = len(tokenizer(words, is_split_into_words=True, add_special_tokens=True,
+                             truncation=False)["input_ids"])
+    with torch.no_grad():
+        outputs = model(input_ids=input_ids.unsqueeze(0).to(device),
+                        attention_mask=attention.unsqueeze(0).to(device))
+    hidden = outputs.last_hidden_state[0].cpu().numpy().astype(np.float32)
+    # 词 -> 子词映射（用快速分词器的 word_ids）
+    word_ids = encoding.word_ids(0) if hasattr(encoding, "word_ids") else None
+    if word_ids is None:
+        word_ids = tokenizer(words, is_split_into_words=True, add_special_tokens=True,
+                             truncation=True, max_length=MAX_TEXT_TOKENS).word_ids()
+    mapping = [-1 if w is None else int(w) for w in word_ids]
+    return {
+        "input_ids": input_ids.numpy().astype(np.int32),
+        "attention_mask": attention.numpy().astype(bool),
+        "token_type_ids": token_type.numpy().astype(np.int32),
+        "last_hidden_state": hidden,
+        "cls_vector": hidden[0].copy(),
+        "word_ids": np.asarray(mapping, dtype=np.int32),
+        "n_tokens": int(input_ids.shape[0]),
+        "n_tokens_before_truncation": int(n_before),
+        "truncated": bool(n_before > MAX_TEXT_TOKENS),
+    }
+\end{lstlisting}
+
+\subsubsection*{（2）CTC最大概率路径}
+以下函数在给定目标字符序列下求解CTC路径，并返回每个字符的首帧、末帧后一位置及置信度。
+\texttt{lp}为声学模型的对数后验，空白符编号为0；相邻相同字符必须经过空白状态。
+字符置信度取其占用帧后验的几何均值。
+\input{code/ctc_path}
+
+\subsubsection*{（3）字符路径到官方词边界}
+规范化文本与官方词保持对应。下列函数将目标字符位置映射到各词，
+以20 ms输出步长换算起止时间，并对词内非分隔字符的置信度取平均。
+\texttt{offset}为局部音频在完整音频中的输出帧偏移。
+\input{code/word_boundaries}
+
+\subsubsection*{（4）局部边界复核与词时间筛选}
+\texttt{blocks}给出内容核查确定的对齐范围，\texttt{norms}为规范化词序列，
+\texttt{results}保留全部官方词位置，\texttt{silence}为检测得到的静音区间。
+在每词前后各三个词、时间两侧各160 ms的局部范围内重新求解路径，
+结合字符置信度、边界变化、静音、跨度及交叠情况确定可用词时间。
+\input{code/local_word_filter}
+
+\subsubsection*{（5）词区间与原生语音窗聚合}
+交叠长度决定语音窗权重，基频仅使用可测窗并重新归一化。
+\begin{lstlisting}
+PITCH_DIM = 14
+def overlap_sources(start, end, left, right):
+    overlap = np.maximum(0., np.minimum(right, end) - np.maximum(left, start))
+    indices = np.flatnonzero(overlap > 1e-9)
+    lengths = overlap[indices]
+    return indices, lengths, lengths / lengths.sum() if len(lengths) else lengths
+
+
+def pooled_audio(features, pitch_mask, indices, weights):
+    out = np.zeros(features.shape[1], dtype=np.float64)
+    if len(indices):
+        out = weights @ features[indices].astype(np.float64)
+        voiced = pitch_mask[indices]
+        out[PITCH_DIM] = (weights[voiced] @ features[indices[voiced], PITCH_DIM]
+                          / weights[voiced].sum()) if voiced.any() else 0.
+    return out
+
+
+\end{lstlisting}
+\subsubsection*{（6）视频显示区间与词级汇聚}
+视频帧的显示区间由真实时间戳和帧时长确定。多人脸帧保留原生记录，
+仅单脸有效帧参与词级面部汇聚。
+\begin{lstlisting}
+def display_intervals(tb):
+    v = tb['video_frames']
+    start = np.array(v['display_times'], float)
+    duration = np.array(v['pkt_durations'], float)
+    stop = np.r_[start[1:], float(v['coverage_end_seconds'])]
+    end = np.where(
+        np.isfinite(duration) & (duration > 0),
+        np.minimum(start + duration, stop), stop)
+    assert np.all(np.diff(start) > 0) and np.all(end > start)
+    return start, end
+
+# For each accepted word [start[i], end[i]):
+vi, overlap, _ = overlap_sources(
+    start[i], end[i], pts, frame_end)
+video_source_observed[i] = len(vi) > 0
+weights = overlap * single_face_valid[vi]
+if weights.sum() > 0:
+    weights /= weights.sum()
+    word_video[i] = weights @ frame_features[vi]
+    face_observed[i] = True
+# Save vi, overlap and weights for independent reconstruction.
+\end{lstlisting}
+
+\subsection{局部缺失预测模型}
+\subsubsection*{（1）连续缺失区间}
+以下公共函数在已观测位置上选取连续区间，供固定位置评估与随机训练遮挡调用。
+区间长度按观测位置数和移除比例确定。
+
+% Source: src/common/prep.py :: missing_span
+\begin{lstlisting}
+def missing_span(observed: torch.Tensor, fraction: float, position: str,
+                 rng: random.Random | None = None) -> torch.Tensor:
+    """Choose a contiguous interval in the valid observed prefix of each sample."""
+    missing = torch.zeros_like(observed)
+    for row in range(len(observed)):
+        positions = torch.nonzero(observed[row], as_tuple=True)[0]
+        n = len(positions)
+        if n == 0:
+            continue
+        width = max(1, min(n, round(n * fraction)))
+        if position == "start":
+            start = 0
+        elif position == "middle":
+            start = (n - width) // 2
+        elif position == "end":
+            start = n - width
+        elif position == "random" and rng is not None:
+            start = rng.randint(0, n - width)
+        else:
+            raise ValueError(position)
+        missing[row, positions[start:start + width]] = True
+    return missing
+\end{lstlisting}
+
+\Needspace{7\baselineskip}
+上述区间通过以下函数同时作用于输入与观测掩码，结构掩码保持不变。
+
+% Source: src/common/prep.py :: apply_missing
+\begin{lstlisting}
+def apply_missing(batch: dict, modality: str, fraction: float, position: str,
+                  rng: random.Random | None = None, rows: np.ndarray | None = None) -> None:
+    key = f"{modality}_observed"
+    missing = missing_span(batch[key], fraction, position, rng)
+    if rows is not None:
+        selected = torch.zeros(len(missing), device=missing.device, dtype=torch.bool)
+        selected[rows] = True
+        missing &= selected[:, None]
+    batch[key] &= ~missing
+    if modality == "text":
+        batch["tokens"][missing] = 103  # [MASK], keeping the structural attention mask.
+    else:
+        batch[modality][missing] = 0
+\end{lstlisting}
+
+\subsubsection*{（2）音视频时序编码与混合专家模型}
+音视频编码器先做特征投影与时序卷积，再组合掩码均值、注意力池化和观测比例。
+本文模型使用64维编码表示。
+
+% Source: src/common/encoders.py :: AVEncoder
+\begin{lstlisting}
+class AVEncoder(nn.Module):
+    def __init__(self, input_dim: int, width: int = 96) -> None:
+        super().__init__()
+        self.project = nn.Sequential(nn.Linear(input_dim, width), nn.LayerNorm(width), nn.GELU())
+        self.position = nn.Parameter(torch.zeros(1, 50, width))
+        self.conv = nn.Conv1d(width, width, kernel_size=3, padding=1)
+        self.score = nn.Linear(width, 1)
+
+    def forward(self, x: torch.Tensor, observed: torch.Tensor) -> torch.Tensor:
+        h = self.project(x) + self.position[:, :x.shape[1]]
+        h = h * observed.unsqueeze(-1)
+        h = torch.nn.functional.gelu(h + self.conv(h.transpose(1, 2)).transpose(1, 2))
+        h = h * observed.unsqueeze(-1)
+        count = observed.sum(1, keepdim=True).clamp_min(1)
+        mean = h.sum(1) / count
+        score = self.score(h).squeeze(-1).masked_fill(~observed, -1e4)
+        active = observed.any(1)
+        score[~active, 0] = 0
+        attention = torch.softmax(score, dim=1)
+        pooled = (attention.unsqueeze(-1) * h).sum(1)
+        pooled = pooled * active.unsqueeze(-1)
+        fraction = observed.float().mean(1, keepdim=True)
+        return torch.cat([mean, pooled, fraction], dim=-1)
+\end{lstlisting}
+
+以下代码包含文本表征引导MoE及音视频单分支、BiLSTM和跨模态注意力对照。
+主模型对应\texttt{gate\_recon}分支。
+
+% Source: src/q2_prediction/experiment_q2_mask_fusion.py :: Specialist
+\begin{lstlisting}
+class Specialist(nn.Module):
+    def __init__(self, mode: str):
+        super().__init__()
+        self.mode = mode
+        encoder = MaskedBiLSTMEncoder if mode == "av_lstm" else lambda dim: AVEncoder(dim, 64)
+        self.audio = encoder(74)
+        self.vision = encoder(35)
+        av_width = 129 * 2
+        self.av_backbone = nn.Sequential(nn.Linear(av_width, 192), nn.LayerNorm(192),
+                                         nn.GELU(), nn.Dropout(.25), nn.Linear(192, 128),
+                                         nn.GELU())
+        self.av_class = nn.Linear(128, 3)
+        self.av_reg = nn.Linear(128, 1)
+        if mode not in ("av", "av_lstm"):
+            self.text_backbone = nn.Sequential(nn.Linear(1536, 192), nn.LayerNorm(192),
+                                               nn.GELU(), nn.Dropout(.25),
+                                               nn.Linear(192, 128), nn.GELU())
+            self.text_class = nn.Linear(128, 3)
+            self.text_reg = nn.Linear(128, 1)
+            self.gate = nn.Sequential(nn.Linear(128 * 2 + 3, 64), nn.GELU(),
+                                      nn.Linear(64, 1))
+        if mode == "gate_recon":
+            self.reconstruct = nn.Linear(128, 1536)
+        if mode == "cross_attn":
+            self.text_token = nn.Linear(1536, 128)
+            self.audio_token = nn.Linear(129, 128)
+            self.vision_token = nn.Linear(129, 128)
+            layer = nn.TransformerEncoderLayer(128, 4, 256, .2, batch_first=True)
+            self.cross_encoder = nn.TransformerEncoder(layer, 2)
+            self.cross_class = nn.Linear(128, 3)
+            self.cross_reg = nn.Linear(128, 1)
+
+    def forward(self, batch: dict, bert: nn.Module | None):
+        audio = self.audio(batch["audio"], batch["audio_observed"])
+        vision = self.vision(batch["vision"], batch["vision_observed"])
+        av_h = self.av_backbone(torch.cat([audio, vision], dim=-1))
+        av_logits, av_reg = self.av_class(av_h), self.av_reg(av_h).squeeze(-1)
+        if self.mode in ("av", "av_lstm"):
+            return av_logits, av_reg, {"av_logits": av_logits, "av_reg": av_reg}
+        with torch.no_grad():
+            h = bert(input_ids=batch["tokens"], attention_mask=batch["struct"].long(),
+                     token_type_ids=batch["segment"]).last_hidden_state.float()
+            w = batch["text_observed"].unsqueeze(-1).float()
+            text = torch.cat([h[:, 0], (h * w).sum(1) / w.sum(1).clamp_min(1)], dim=-1)
+        if self.mode == "cross_attn":
+            tokens = torch.stack([self.text_token(text), self.audio_token(audio),
+                                  self.vision_token(vision)], dim=1)
+            active = torch.stack([batch[f"{m}_observed"].any(1)
+                                  for m in ("text", "audio", "vision")], dim=1)
+            mixed = self.cross_encoder(tokens, src_key_padding_mask=~active)
+            pooled = (mixed * active.unsqueeze(-1)).sum(1) / active.sum(1, keepdim=True).clamp_min(1)
+            logits, reg = self.cross_class(pooled), self.cross_reg(pooled).squeeze(-1)
+            return logits, reg, {"av_logits": av_logits, "av_reg": av_reg}
+        text_h = self.text_backbone(text)
+        text_logits, text_reg = self.text_class(text_h), self.text_reg(text_h).squeeze(-1)
+        fractions = torch.stack([batch[f"{m}_observed"].float().mean(1)
+                                 for m in ("text", "audio", "vision")], dim=-1)
+        g = torch.sigmoid(self.gate(torch.cat([text_h, av_h, fractions], dim=-1))).squeeze(-1)
+        av_available = (fractions[:, 1] + fractions[:, 2]) > 0
+        text_available = fractions[:, 0] > 0
+        g = torch.where(text_available, g, torch.zeros_like(g))
+        g = torch.where(av_available, g, torch.ones_like(g))
+        logits = g[:, None] * text_logits + (1 - g[:, None]) * av_logits
+        reg = g * text_reg + (1 - g) * av_reg
+        aux = {"av_logits": av_logits, "av_reg": av_reg,
+               "text_logits": text_logits, "text_reg": text_reg,
+               "text_available": text_available, "gate_mean": g.mean()}
+        if self.mode == "gate_recon":
+            aux["reconstructed_text"] = self.reconstruct(av_h)
+        return logits, reg, aux
+\end{lstlisting}
+
+\subsubsection*{（3）联合目标与参数更新}
+以下节选训练循环中从前向计算到参数更新的部分。
+主模型未加入额外的中性类别损失，分类、强度、分支监督和辅助重构
+按正文给出的权重联合优化。重构目标由当前训练样本的冻结BERT表示得到。
+
+% Source: src/q2_prediction/experiment_q2_mask_fusion.py :: training loss
+\begin{lstlisting}
+logits, reg, aux = model(batch, bert)
+loss = nn.functional.cross_entropy(logits, batch["class"], weight=weights)
+loss += .2 * nn.functional.smooth_l1_loss(reg, batch["strength"])
+if args.neutral_loss_weight:
+    neutral_logit = logits[:, 1] - torch.logsumexp(logits[:, [0, 2]], dim=-1)
+    neutral_target = (batch["class"] == 1).float()
+    neutral_count = counts[1]
+    neutral_pos_weight = (counts.sum() - neutral_count) / neutral_count
+    loss += args.neutral_loss_weight * nn.functional.binary_cross_entropy_with_logits(
+        neutral_logit, neutral_target, pos_weight=neutral_pos_weight)
+if args.mode in ("gate", "gate_recon"):
+    av_loss = nn.functional.cross_entropy(aux["av_logits"], batch["class"], weight=weights)
+    av_loss += .2 * nn.functional.smooth_l1_loss(aux["av_reg"], batch["strength"])
+    loss += .3 * av_loss
+    available = aux["text_available"]
+    if available.any():
+        text_loss = nn.functional.cross_entropy(aux["text_logits"][available], batch["class"][available], weight=weights)
+        text_loss += .2 * nn.functional.smooth_l1_loss(aux["text_reg"][available], batch["strength"][available])
+        loss += .2 * text_loss
+    if args.mode == "gate_recon":
+        # Reconstruction is trained only on clean text samples. The target
+        # is the frozen BERT representation, never a validation embedding.
+        clean = batch["text_observed"].sum(1) == (
+            batch["struct"].sum(1) - 2)
+        if clean.any():
+            with torch.no_grad():
+                h = bert(input_ids=batch["tokens"][clean],
+                         attention_mask=batch["struct"][clean].long(),
+                         token_type_ids=batch["segment"][clean]).last_hidden_state.float()
+                w = batch["text_observed"][clean].unsqueeze(-1).float()
+                target = torch.cat([h[:, 0], (h * w).sum(1) / w.sum(1).clamp_min(1)], -1)
+            loss += .02 * nn.functional.mse_loss(aux["reconstructed_text"][clean], target)
+optimizer.zero_grad(set_to_none=True)
+loss.backward()
+nn.utils.clip_grad_norm_(model.parameters(), 1.)
+optimizer.step()
+\end{lstlisting}
+
+\subsubsection*{（4）三种子集成与强度输出}
+三个固定模型的分类logits和原始强度分别取平均，再计算类别概率。
+类别确定后，强度投影到对应符号区间。
+
+% Source: src/q3_explanation/explain_q3_gate_ensemble.py :: predict
+\begin{lstlisting}
+def predict(variants, models, bert, chunk=32):
+    outputs = []
+    with torch.inference_mode():
+        for first in range(0, len(variants), chunk):
+            group = variants[first:first + chunk]
+            batch = {key: torch.cat([row[key] for row in group], dim=0) for key in group[0]}
+            preds = [model(batch, bert) for model in models]
+            logits = torch.stack([p[0] for p in preds]).mean(0)
+            strength = torch.stack([p[1] for p in preds]).mean(0)
+            probabilities = torch.softmax(logits, dim=-1)
+            for p, z in zip(probabilities.cpu().numpy(), strength.cpu().numpy()):
+                outputs.append((p.astype(float), float(z)))
+    return outputs
+\end{lstlisting}
+
+% Source: src/common/prep.py :: consistent_strength
+\begin{lstlisting}
+def consistent_strength(classes: np.ndarray, strength: np.ndarray) -> np.ndarray:
+    """Project strength onto the official class/sign convention.
+
+    负向取 min(s, -1e-6)、中性取 0、正向取 max(s, 1e-6)，再 clip 到 [-3, 3]。
+    """
+    return np.where(classes == 1, 0.0,
+                    np.where(classes == 0, np.minimum(strength, -1e-6),
+                             np.maximum(strength, 1e-6))).clip(-3, 3)
+\end{lstlisting}
+
+\subsection{模态贡献与局部证据}
+\subsubsection*{（1）模态遮挡}
+解释阶段仅修改输入和观测掩码。文本位置替换为掩码词元后重新编码，
+语音与视频位置置零；模型权重保持固定。
+
+% Source: src/q3_explanation/explain_q3_gate_ensemble.py :: hide
+\begin{lstlisting}
+def hide(batch, name, positions):
+    key = f"{name}_observed"
+    positions = torch.as_tensor(positions, dtype=torch.long, device=batch["tokens"].device)
+    observed = batch[key][0, positions]
+    positions = positions[observed]
+    batch[key][0, positions] = False
+    if name == "text":
+        batch["tokens"][0, positions] = 103
+    else:
+        batch[name][0, positions] = 0
+\end{lstlisting}
+
+\subsubsection*{（2）八组合贡献分解}
+二进制掩码的三位依次表示文本、语音和视频。程序枚举八种输入组合，
+固定完整输入的预测类别，计算三模态Shapley值并检查加和关系。
+
+% Source: src/q3_explanation/explain_q3_gate_ensemble.py :: coalition_explanation
+\begin{lstlisting}
+def coalition_explanation(batch, models, bert):
+    variants = []
+    masks = list(range(8))
+    for mask in masks:
+        variant = one(batch, 0)
+        for bit, name in enumerate(NAMES):
+            if not mask & (1 << bit):
+                hide(variant, name, observed_positions(variant, name))
+        variants.append(variant)
+    predictions = predict(variants, models, bert)
+    complete = predictions[7]
+    target = int(np.argmax(complete[0]))
+    values = np.array([p[target] for p, _ in predictions])
+    strength_values = np.array([z for _, z in predictions])
+    # 3-player Shapley weights: |S|!(2-|S|)! / 3!.
+    weights = (1 / 3, 1 / 6, 1 / 3)
+    effects, strength_effects = [], []
+    for bit in range(3):
+        terms, reg_terms = [], []
+        for mask in masks:
+            if mask & (1 << bit):
+                continue
+            weight = weights[mask.bit_count()]
+            terms.append(weight * (values[mask | (1 << bit)] - values[mask]))
+            reg_terms.append(weight * (strength_values[mask | (1 << bit)] - strength_values[mask]))
+        effects.append(float(sum(terms)))
+        strength_effects.append(float(sum(reg_terms)))
+    if not np.isclose(sum(effects), values[7] - values[0], atol=1e-6):
+        raise AssertionError("Shapley additivity failed")
+    positive = np.maximum(effects, 0)
+    relative = positive / positive.sum() if positive.sum() > 0 else np.zeros(3)
+    strength = float(consistent_strength(np.array([target]), np.array([complete[1]]))[0])
+    return {"polarity": target, "strength": strength, "full_probability": float(values[7]),
+            "empty_probability": float(values[0]), "shapley_probability": effects,
+            "shapley_strength_raw": strength_effects, "positive_share": relative.tolist(),
+            "main_modality": NAMES[int(np.argmax(effects))],
+            "full_probabilities": complete[0].tolist()}
+\end{lstlisting}
+
+\subsubsection*{（3）局部窗口敏感性}
+逐窗遮挡观测位置，按预测类别概率下降量选取高分、低分和固定随机窗口。
+
+% Source: src/q3_explanation/explain_q3_gate_ensemble.py :: local_explanation
+\begin{lstlisting}
+def local_explanation(batch, models, bert, target, name):
+    positions = observed_positions(batch, name)
+    if not len(positions):
+        return None
+    width = max(1, round(len(positions) * WINDOW_FRACTION))
+    windows = [positions[start:start + width] for start in range(len(positions) - width + 1)]
+    variants = []
+    for window in windows:
+        variant = one(batch, 0)
+        hide(variant, name, window)
+        variants.append(variant)
+    base = predict([one(batch, 0)], models, bert)[0][0][target]
+    masked = predict(variants, models, bert)
+    drops = np.array([base - p[target] for p, _ in masked])
+    high = int(np.argmax(drops))
+    low = int(np.argmin(drops))
+    rng = np.random.default_rng(RANDOM_SEED + int(batch["tokens"][0].sum().item()) + len(name))
+    random_idx = int(rng.integers(len(windows)))
+    def record(index):
+        return {"start_position": int(windows[index][0]),
+                "end_position": int(windows[index][-1]),
+                "n_observed_positions": int(len(windows[index])),
+                "confidence_drop": float(drops[index])}
+    return {"high": record(high), "low": record(low), "random": record(random_idx),
+            "n_candidate_windows": len(windows), "all_window_drops": drops.tolist()}
+\end{lstlisting}

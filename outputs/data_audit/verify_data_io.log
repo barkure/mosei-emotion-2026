@@ -1,0 +1,208 @@
+✨ Pixi task (verify-data-io): python src/verify_data_io.py
+统一读取接口验证（仅 train / valid，不训练、不写文件）
+
+=== aligned / train ===
+  样本数=3395  text=(3395, 50, 768)  audio=(3395, 50, 74)  vision=(3395, 50, 35)  text_positions=50
+  [PASS] text 形状为 (N, 50, 768)
+  [PASS] audio 末维为 74
+  [PASS] vision 末维为 35
+  [PASS] 文本掩码与词元形状一致 (N, 50)
+  [PASS] audio 掩码形状与音频一致
+  [PASS] vision 掩码形状与视觉一致
+  [PASS] aligned 音频位置数 = 50
+  [PASS] aligned 视觉位置数 = 50
+  [PASS] 文本位置数恒为 50（两版一致）
+  [PASS] 结构掩码不超出原始位置范围（未压缩内部零值位置）
+  [PASS] 文本结构长度 == 注意力掩码行和
+  [PASS] 文本长度落在 [3, 50]
+  [PASS] 音频结构掩码行和 == audio_struct_lengths
+  [PASS] 视觉结构掩码行和 == vision_struct_lengths
+  [PASS] aligned: 音频结构长度 == 文本注意力长度
+  [PASS] aligned: 视觉结构长度 == 文本注意力长度
+  [PASS] aligned: 声明长度 == 结构长度
+  [PASS] audio observed ⊆ struct
+  [PASS] vision observed ⊆ struct
+  [PASS] text content ⊆ attention
+  [PASS] text_observed_mask 只覆盖内容词元（== text_content_mask）
+  [PASS] text observed ⊆ attention（单独保留 text_struct_mask）
+  [PASS] text_observed_mask 与 text_struct_mask 是两个不同的掩码
+  [PASS] 每条样本恰有 2 个特殊词元位置（[CLS] 与 [SEP]）
+  [PASS] [CLS]=101 位于首位、[SEP]=102 位于末有效位
+  结构区间内零行比例: audio=0.0819  vision=0.1319
+  [PASS] 零行比例落在 [0, 1]
+  [PASS] 分类标签精确取值 ⊆ {0,1,2}（实际取值 [0.0, 1.0, 2.0]）
+  [PASS] 强度标签落在 [-3, 3]
+  [PASS] 分类标签 == 强度符号 + 1（全部样本一致）
+
+  样本抽查（索引 [0, 1131, 2263, 3394]）：
+      idx              sample_id  textL  aDecl   aLen  vDecl   vLen  vBeyond  cls    reg
+        0        -3g5yACwYnA$_$4     41     41     41     41     41        0    2   1.00
+     1131              51224$_$9     20     20     20     20     20        0    1   0.00
+     2263        XFGHTk_3hGg$_$5     23     23     23     23     23        0    2   0.33
+     3394        zwTrXwi54us$_$9     50     50     50     50     50        0    2   0.67
+  [PASS] 抽查样本的结构掩码长度与观测掩码内部一致
+
+=== aligned / valid ===
+  样本数=728  text=(728, 50, 768)  audio=(728, 50, 74)  vision=(728, 50, 35)  text_positions=50
+  [PASS] text 形状为 (N, 50, 768)
+  [PASS] audio 末维为 74
+  [PASS] vision 末维为 35
+  [PASS] 文本掩码与词元形状一致 (N, 50)
+  [PASS] audio 掩码形状与音频一致
+  [PASS] vision 掩码形状与视觉一致
+  [PASS] aligned 音频位置数 = 50
+  [PASS] aligned 视觉位置数 = 50
+  [PASS] 文本位置数恒为 50（两版一致）
+  [PASS] 结构掩码不超出原始位置范围（未压缩内部零值位置）
+  [PASS] 文本结构长度 == 注意力掩码行和
+  [PASS] 文本长度落在 [3, 50]
+  [PASS] 音频结构掩码行和 == audio_struct_lengths
+  [PASS] 视觉结构掩码行和 == vision_struct_lengths
+  [PASS] aligned: 音频结构长度 == 文本注意力长度
+  [PASS] aligned: 视觉结构长度 == 文本注意力长度
+  [PASS] aligned: 声明长度 == 结构长度
+  [PASS] audio observed ⊆ struct
+  [PASS] vision observed ⊆ struct
+  [PASS] text content ⊆ attention
+  [PASS] text_observed_mask 只覆盖内容词元（== text_content_mask）
+  [PASS] text observed ⊆ attention（单独保留 text_struct_mask）
+  [PASS] text_observed_mask 与 text_struct_mask 是两个不同的掩码
+  [PASS] 每条样本恰有 2 个特殊词元位置（[CLS] 与 [SEP]）
+  [PASS] [CLS]=101 位于首位、[SEP]=102 位于末有效位
+  结构区间内零行比例: audio=0.0806  vision=0.1308
+  [PASS] 零行比例落在 [0, 1]
+  [PASS] 分类标签精确取值 ⊆ {0,1,2}（实际取值 [0.0, 1.0, 2.0]）
+  [PASS] 强度标签落在 [-3, 3]
+  [PASS] 分类标签 == 强度符号 + 1（全部样本一致）
+
+  样本抽查（索引 [0, 242, 485, 727]）：
+      idx              sample_id  textL  aDecl   aLen  vDecl   vLen  vBeyond  cls    reg
+        0        -UacrmKiTn4$_$7     28     28     28     28     28        0    2   0.33
+      242        8eaYvALnJ0o$_$1     26     26     26     26     26        0    2   2.00
+      485       _7HVhnSYX1Y$_$19     15     15     15     15     15        0    2   0.67
+      727        zk2jTlAtvSU$_$3     34     34     34     34     34        0    1   0.00
+  [PASS] 抽查样本的结构掩码长度与观测掩码内部一致
+
+=== unaligned / train ===
+  样本数=3395  text=(3395, 50, 768)  audio=(3395, 500, 74)  vision=(3395, 500, 35)  text_positions=50
+  [PASS] text 形状为 (N, 50, 768)
+  [PASS] audio 末维为 74
+  [PASS] vision 末维为 35
+  [PASS] 文本掩码与词元形状一致 (N, 50)
+  [PASS] audio 掩码形状与音频一致
+  [PASS] vision 掩码形状与视觉一致
+  [PASS] unaligned 音频位置数 = 500
+  [PASS] unaligned 视觉位置数 = 500
+  [PASS] 文本位置数恒为 50（两版一致）
+  [PASS] 结构掩码不超出原始位置范围（未压缩内部零值位置）
+  [PASS] 文本结构长度 == 注意力掩码行和
+  [PASS] 文本长度落在 [3, 50]
+  [PASS] 音频结构掩码行和 == audio_struct_lengths
+  [PASS] 视觉结构掩码行和 == vision_struct_lengths
+  [PASS] unaligned: 音频结构长度 == audio_lengths
+  [PASS] unaligned: 音频结构长度未被扩展（字段已自洽）
+  [PASS] unaligned: 视觉结构长度 >= 声明长度（保守规则不缩短区间）
+  [PASS] unaligned: 视觉结构长度不超过位置总数 500
+  [PASS] unaligned: 视觉结构长度 == min(500, max(vision_lengths, 最后一个非零位置+1))
+  [PASS] audio observed ⊆ struct
+  [PASS] vision observed ⊆ struct
+  [PASS] text content ⊆ attention
+  [PASS] text_observed_mask 只覆盖内容词元（== text_content_mask）
+  [PASS] text observed ⊆ attention（单独保留 text_struct_mask）
+  [PASS] text_observed_mask 与 text_struct_mask 是两个不同的掩码
+  [PASS] 每条样本恰有 2 个特殊词元位置（[CLS] 与 [SEP]）
+  [PASS] [CLS]=101 位于首位、[SEP]=102 位于末有效位
+  [PASS] unaligned: 视觉越界统计以原始声明长度为基准
+  [PASS] unaligned: rescued 计数 == 声明长度之外且落在结构掩码内的非零行数
+  [PASS] unaligned: rescued <= beyond（扩展不清零异常计数）
+  [PASS] unaligned: 确实存在越界非零行（异常未被清零）
+  结构区间内零行比例: audio=0.0000  vision=0.0312
+  [PASS] 零行比例落在 [0, 1]
+  [PASS] 分类标签精确取值 ⊆ {0,1,2}（实际取值 [0.0, 1.0, 2.0]）
+  [PASS] 强度标签落在 [-3, 3]
+  [PASS] 分类标签 == 强度符号 + 1（全部样本一致）
+
+  样本抽查（索引 [0, 1131, 2263, 3394]）：
+      idx              sample_id  textL  aDecl   aLen  vDecl   vLen  vBeyond  cls    reg
+        0        -3g5yACwYnA$_$4     41    295    295    221    221        0    2   1.00
+     1131              51224$_$9     20    135    135    102    102        0    1   0.00
+     2263        XFGHTk_3hGg$_$5     23    139    139    105    105        0    2   0.33
+     3394        zwTrXwi54us$_$9     50    227    227     85    170       78    2   0.67
+  [PASS] 抽查样本的结构掩码长度与观测掩码内部一致
+
+=== unaligned / valid ===
+  样本数=728  text=(728, 50, 768)  audio=(728, 500, 74)  vision=(728, 500, 35)  text_positions=50
+  [PASS] text 形状为 (N, 50, 768)
+  [PASS] audio 末维为 74
+  [PASS] vision 末维为 35
+  [PASS] 文本掩码与词元形状一致 (N, 50)
+  [PASS] audio 掩码形状与音频一致
+  [PASS] vision 掩码形状与视觉一致
+  [PASS] unaligned 音频位置数 = 500
+  [PASS] unaligned 视觉位置数 = 500
+  [PASS] 文本位置数恒为 50（两版一致）
+  [PASS] 结构掩码不超出原始位置范围（未压缩内部零值位置）
+  [PASS] 文本结构长度 == 注意力掩码行和
+  [PASS] 文本长度落在 [3, 50]
+  [PASS] 音频结构掩码行和 == audio_struct_lengths
+  [PASS] 视觉结构掩码行和 == vision_struct_lengths
+  [PASS] unaligned: 音频结构长度 == audio_lengths
+  [PASS] unaligned: 音频结构长度未被扩展（字段已自洽）
+  [PASS] unaligned: 视觉结构长度 >= 声明长度（保守规则不缩短区间）
+  [PASS] unaligned: 视觉结构长度不超过位置总数 500
+  [PASS] unaligned: 视觉结构长度 == min(500, max(vision_lengths, 最后一个非零位置+1))
+  [PASS] audio observed ⊆ struct
+  [PASS] vision observed ⊆ struct
+  [PASS] text content ⊆ attention
+  [PASS] text_observed_mask 只覆盖内容词元（== text_content_mask）
+  [PASS] text observed ⊆ attention（单独保留 text_struct_mask）
+  [PASS] text_observed_mask 与 text_struct_mask 是两个不同的掩码
+  [PASS] 每条样本恰有 2 个特殊词元位置（[CLS] 与 [SEP]）
+  [PASS] [CLS]=101 位于首位、[SEP]=102 位于末有效位
+  [PASS] unaligned: 视觉越界统计以原始声明长度为基准
+  [PASS] unaligned: rescued 计数 == 声明长度之外且落在结构掩码内的非零行数
+  [PASS] unaligned: rescued <= beyond（扩展不清零异常计数）
+  [PASS] unaligned: 确实存在越界非零行（异常未被清零）
+  结构区间内零行比例: audio=0.0000  vision=0.0348
+  [PASS] 零行比例落在 [0, 1]
+  [PASS] 分类标签精确取值 ⊆ {0,1,2}（实际取值 [0.0, 1.0, 2.0]）
+  [PASS] 强度标签落在 [-3, 3]
+  [PASS] 分类标签 == 强度符号 + 1（全部样本一致）
+
+  样本抽查（索引 [0, 242, 485, 727]）：
+      idx              sample_id  textL  aDecl   aLen  vDecl   vLen  vBeyond  cls    reg
+        0        -UacrmKiTn4$_$7     28    210    210    158    158        0    2   0.33
+      242        8eaYvALnJ0o$_$1     26    118    118     37     89       50    2   2.00
+      485       _7HVhnSYX1Y$_$19     15     92     92     69     69        0    2   0.67
+      727        zk2jTlAtvSU$_$3     34    221    221    149    166       16    1   0.00
+  [PASS] 抽查样本的结构掩码长度与观测掩码内部一致
+
+=== 真实异常样本检查（unaligned / train，vision_lengths 越界非零） ===
+  [PASS] 存在越界非零视觉样本（618 条）
+  样本 idx=1 id=-HwX2H8Z4hY$_$3  声明长度=1  结构长度=85  越界非零行=13
+  越界非零位置（前 8 个）: [3, 7, 8, 11, 12, 15, 38, 45]
+  [PASS] 该样本在声明长度之后存在非零视觉位置
+  [PASS] 该位置 3 位于声明长度 1 之后
+  [PASS] 该位置 3 位于实际结构长度 85 之内（被保留）
+  [PASS] 该位置在实际结构掩码内为 True
+  [PASS] 该位置在观测掩码内为 True（非全零行）
+  [PASS] 该位置数值与原始数据逐元素完全一致
+  [PASS] 原始数据该位置确实非零
+  [PASS] 声明长度与原始 vision_lengths 字段一致
+  [PASS] 整条样本的视觉张量与原始数据完全一致（位置与数值均未改动）
+  （该样本声明区间内无全零行，跳过内部零行检查）
+
+=== 跨版本 ID / 文本 / 标签一致性 ===
+  [PASS] train: 两版样本数相同 (3395)
+  [PASS] train: 两版 ID 顺序与取值完全对应
+  [PASS] train: 两版标签一致
+  [PASS] train: 两版文本注意力掩码一致
+  [PASS] train: 同一 ID 在两版中的文本长度一致
+  [PASS] valid: 两版样本数相同 (728)
+  [PASS] valid: 两版 ID 顺序与取值完全对应
+  [PASS] valid: 两版标签一致
+  [PASS] valid: 两版文本注意力掩码一致
+  [PASS] valid: 同一 ID 在两版中的文本长度一致
+
+============================================================
+结果：全部检查通过

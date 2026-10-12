@@ -1,0 +1,49 @@
+# 项目环境与模型缓存
+/.pixi/
+
+# Python 字节码与系统临时文件
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# 赛题原始数据：仅跟踪目录中的 README.md
+/data/**
+!/data/**/
+!/data/**/README.md
+
+# LaTeX 编译中间文件
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.toc
+*.xdv
+*.synctex.gz
+/paper/*.log
+/paper/*.out
+/docs/*.log
+/docs/*.out
+
+# 可重新解码的音频与生成的提交包
+/outputs/q1_features/attachment1_alignment/audio/
+/outputs/submission/
+/outputs/attachment_test_*/
+/outputs/repacked_submission/
+
+# 公开预训练资源：仅跟踪目录中的 README.md
+/models/**
+!/models/**/
+!/models/**/README.md
+
+/cache/
+
+# 比赛附件打包工具仅本地保留
+/src/submission/

@@ -1,0 +1,13 @@
+{
+  "n_samples": 100,
+  "model": "facebook/wav2vec2-base-960h@22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "status_counts": {
+    "candidate_for_manual_spot_check": 30,
+    "needs_review": 59,
+    "not_usable_for_formal_alignment": 11
+  },
+  "n_words": 1932,
+  "n_path_found": 1920,
+  "n_auto_usable_candidates": 543,
+  "note": "Times are automatic candidates; they are not promoted to formal features without manual review."
+}
